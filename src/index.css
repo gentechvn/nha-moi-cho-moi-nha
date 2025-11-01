@@ -57,16 +57,16 @@ All colors MUST be HSL.
     --shadow-md: 0 4px 12px -2px hsl(0 0% 0% / 0.12), 0 2px 6px -1px hsl(0 0% 0% / 0.08);
     --shadow-lg: 0 10px 20px -5px hsl(0 0% 0% / 0.15), 0 6px 12px -3px hsl(0 0% 0% / 0.1);
     --shadow-xl: 0 20px 35px -8px hsl(0 0% 0% / 0.2), 0 12px 20px -5px hsl(0 0% 0% / 0.12);
-    --shadow-2xl: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
-    --shadow-primary: 0 10px 35px -8px hsl(45 100% 50% / 0.35);
+    --shadow-2xl: 0 30px 60px -15px hsl(0 0% 0% / 0.3);
+    --shadow-primary: 0 15px 40px -10px hsl(45 100% 50% / 0.4);
     --shadow-accent: 0 10px 35px -8px hsl(0 85% 48% / 0.25);
     --shadow-inner: inset 0 2px 4px 0 hsl(0 0% 0% / 0.06);
 
     /* Transitions - Smooth & Natural */
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-slow: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-smooth: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
@@ -106,16 +106,53 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    letter-spacing: -0.01em;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold;
+    @apply font-bold tracking-tight;
+    font-feature-settings: 'ss01', 'ss02';
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl leading-tight;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl leading-snug;
   }
 
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Professional Card Styles */
+  .card-luxury {
+    @apply relative overflow-hidden bg-card border border-border/50 shadow-md hover:shadow-xl transition-all duration-500;
+  }
+
+  .card-luxury::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-500;
+    background: linear-gradient(135deg, transparent 0%, hsl(var(--primary) / 0.03) 100%);
+  }
+
+  /* Premium Glass Effect */
+  .glass-premium {
+    @apply backdrop-blur-2xl bg-background/90 border border-border/50 shadow-lg;
+  }
+
+  /* Professional Gradient Overlay */
+  .overlay-gradient {
+    @apply absolute inset-0;
+    background: linear-gradient(180deg, transparent 0%, hsl(0 0% 0% / 0.7) 100%);
   }
 }
 
@@ -141,7 +178,11 @@ All colors MUST be HSL.
   }
 
   .hover-lift {
-    @apply transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl;
+    @apply transition-all duration-700 ease-out hover:-translate-y-2 hover:shadow-2xl;
+  }
+
+  .hover-lift-sm {
+    @apply transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-lg;
   }
 
   .hover-shine {
@@ -150,21 +191,55 @@ All colors MUST be HSL.
 
   .hover-shine::before {
     content: '';
-    @apply absolute inset-0 translate-x-[-100%] hover:translate-x-[100%] transition-transform duration-1000;
+    @apply absolute inset-0 translate-x-[-100%] transition-transform duration-1000 ease-out;
     background-image: var(--gradient-shine);
   }
 
+  .hover-shine:hover::before {
+    @apply translate-x-[100%];
+  }
+
   .gradient-text {
-    @apply bg-clip-text text-transparent;
+    @apply bg-clip-text text-transparent font-bold;
     background-image: var(--gradient-primary);
   }
 
   .glass-effect {
-    @apply backdrop-blur-xl bg-background/80 border border-border/50;
+    @apply backdrop-blur-xl bg-background/80 border border-border/50 shadow-lg;
   }
 
   .glow-effect {
-    @apply shadow-primary animate-pulse;
+    @apply shadow-primary;
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  /* Professional Button Styles */
+  .btn-premium {
+    @apply relative overflow-hidden font-semibold transition-all duration-500;
+  }
+
+  .btn-premium::before {
+    content: '';
+    @apply absolute inset-0 translate-y-full transition-transform duration-500;
+    background: linear-gradient(180deg, transparent, hsl(var(--primary-foreground) / 0.1));
+  }
+
+  .btn-premium:hover::before {
+    @apply translate-y-0;
+  }
+
+  /* Image Zoom Effect */
+  .img-zoom {
+    @apply transition-transform duration-700 ease-out;
+  }
+
+  .img-zoom:hover {
+    @apply scale-110;
+  }
+
+  /* Badge Styles */
+  .badge-premium {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold shadow-sm backdrop-blur-sm;
   }
 }
 
@@ -220,5 +295,23 @@ All colors MUST be HSL.
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.6);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }
