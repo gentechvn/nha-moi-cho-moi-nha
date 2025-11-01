@@ -119,13 +119,13 @@ const News = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-overlay" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-primary-foreground">
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <span className="inline-block bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-xs font-semibold mb-3">
                     {news[0].category}
                   </span>
-                  <h3 className="text-2xl font-bold mb-2">{news[0].title}</h3>
-                  <p className="text-sm text-primary-foreground/90 mb-2">{news[0].excerpt}</p>
-                  <p className="text-sm">{news[0].date}</p>
+                  <h3 className="text-2xl font-bold mb-2 text-white">{news[0].title}</h3>
+                  <p className="text-sm text-white/90 mb-2">{news[0].excerpt}</p>
+                  <p className="text-sm text-white">{news[0].date}</p>
                 </div>
               </div>
             </div>
