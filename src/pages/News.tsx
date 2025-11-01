@@ -140,7 +140,7 @@ const News = () => {
                       className="w-40 h-full object-cover"
                     />
                     <div className="flex-1 p-4">
-                      <span className="inline-block bg-secondary/10 text-secondary text-xs font-semibold px-2 py-1 rounded mb-2">
+                      <span className="inline-block bg-yellow-600 text-white text-xs font-semibold px-2 py-1 rounded mb-2">
                         {item.category}
                       </span>
                       <h4 className="font-bold text-sm mb-2 line-clamp-2">{item.title}</h4>
