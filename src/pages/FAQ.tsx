@@ -117,7 +117,7 @@ const FAQ = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             {faqs.map((category, idx) => (
               <Card key={idx} className="p-6 shadow-md">
-                <h2 className="text-2xl font-bold text-primary mb-6">{category.category}</h2>
+                <h2 className="text-xl font-bold text-primary mb-6">{category.category}</h2>
                 <Accordion type="single" collapsible className="w-full">
                   {category.questions.map((item, qIdx) => (
                     <AccordionItem key={qIdx} value={`item-${idx}-${qIdx}`}>
@@ -137,7 +137,7 @@ const FAQ = () => {
           {/* Contact CTA */}
           <div className="mt-12 max-w-4xl mx-auto">
             <Card className="p-8 bg-gradient-card text-center">
-              <h3 className="text-2xl font-bold mb-3">Không tìm thấy câu trả lời?</h3>
+              <h3 className="text-xl font-bold mb-3">Không tìm thấy câu trả lời?</h3>
               <p className="text-muted-foreground mb-6">
                 Liên hệ với chúng tôi để được tư vấn chi tiết hơn
               </p>
