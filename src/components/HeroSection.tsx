@@ -41,7 +41,7 @@ const HeroSection = () => {
               </Button>
             </Link>
             <Link to="/projects" className="group">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-10 glass-effect border-2 border-white/40 text-lg font-semibold hover:scale-105 transition-all duration-500 text-slate-50 bg-red-600 hover:bg-red-500">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-10 border-2 border-white/40 text-lg font-semibold hover:scale-105 transition-all duration-500 text-white bg-red-600 hover:bg-red-700 shadow-xl">
                 Xem dự án
               </Button>
             </Link>
