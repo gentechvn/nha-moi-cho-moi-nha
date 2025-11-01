@@ -17,8 +17,8 @@ const HeroSection = () => {
       <div className="container relative z-20 mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-4xl">
           {/* Premium Badge */}
-          <div className="inline-block mb-6 px-5 py-2.5 glass-effect rounded-full border border-secondary/30 animate-fade-in bg-red-600">
-            <span className="text-secondary font-bold text-sm tracking-wide">✨ Chương trình ưu đãi đặc biệt 2024 - Giảm đến 15%</span>
+          <div className="inline-block mb-6 px-5 py-2.5 bg-red-600 rounded-full border border-white/30 animate-fade-in shadow-xl">
+            <span className="text-white font-bold text-sm tracking-wide">✨ Chương trình ưu đãi đặc biệt 2024 - Giảm đến 15%</span>
           </div>
           
           {/* Main Heading with Gradient */}
