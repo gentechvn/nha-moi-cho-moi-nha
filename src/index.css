@@ -8,54 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 40 90% 85%;
-    --foreground: 0 60% 20%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 15%;
 
-    --card: 40 80% 92%;
-    --card-foreground: 0 60% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
 
-    --popover: 40 80% 92%;
-    --popover-foreground: 0 60% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
 
-    /* Primary: Dark Maroon - Trust & Elegance */
-    --primary: 0 60% 30%;
-    --primary-foreground: 40 90% 95%;
-    --primary-light: 0 60% 40%;
-    --primary-dark: 0 60% 20%;
+    /* Primary: Vietnamese Gold - Professional & Warm */
+    --primary: 45 100% 50%;
+    --primary-foreground: 0 0% 15%;
+    --primary-light: 45 100% 65%;
+    --primary-dark: 45 100% 40%;
 
-    /* Secondary: Golden Yellow - Warmth & Happiness */
-    --secondary: 40 95% 60%;
-    --secondary-foreground: 0 60% 20%;
-    --secondary-light: 40 95% 70%;
+    /* Secondary: Light Gold - Soft & Elegant */
+    --secondary: 48 95% 88%;
+    --secondary-foreground: 0 0% 15%;
+    --secondary-light: 48 95% 92%;
 
-    /* Accent: Red Orange */
-    --accent: 10 80% 50%;
-    --accent-foreground: 40 90% 95%;
+    /* Accent: Vietnamese Red - Trust & Heritage */
+    --accent: 0 85% 48%;
+    --accent-foreground: 0 0% 100%;
 
-    --muted: 40 60% 90%;
-    --muted-foreground: 0 20% 40%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 90% 95%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 40 50% 80%;
-    --input: 40 50% 80%;
-    --ring: 0 60% 30%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 45 100% 50%;
 
     --radius: 0.75rem;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(0 60% 30%) 0%, hsl(10 80% 50%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(0 60% 20% / 0.95) 0%, hsl(0 60% 30% / 0.9) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(40 80% 92%) 0%, hsl(40 70% 88%) 100%);
-    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(0 60% 20% / 0.6) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(45 100% 50%) 0%, hsl(48 100% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(45 100% 45% / 0.95) 0%, hsl(45 100% 50% / 0.9) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(48 95% 96%) 100%);
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(0 0% 15% / 0.7) 100%);
     
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(0 60% 20% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(0 60% 20% / 0.1), 0 2px 4px -1px hsl(0 60% 20% / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(0 60% 20% / 0.1), 0 4px 6px -2px hsl(0 60% 20% / 0.05);
-    --shadow-xl: 0 20px 25px -5px hsl(0 60% 20% / 0.15), 0 10px 10px -5px hsl(0 60% 20% / 0.08);
-    --shadow-primary: 0 10px 30px -10px hsl(0 60% 30% / 0.4);
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -2px hsl(0 0% 0% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.15), 0 10px 10px -5px hsl(0 0% 0% / 0.08);
+    --shadow-primary: 0 10px 30px -10px hsl(45 100% 50% / 0.3);
 
     /* Transitions */
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,33 +63,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 60% 12%;
-    --foreground: 40 90% 95%;
+    --background: 0 0% 10%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 60% 16%;
-    --card-foreground: 40 90% 95%;
+    --card: 0 0% 14%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 60% 16%;
-    --popover-foreground: 40 90% 95%;
+    --popover: 0 0% 14%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 10 80% 50%;
-    --primary-foreground: 40 90% 95%;
+    --primary: 45 100% 55%;
+    --primary-foreground: 0 0% 15%;
 
-    --secondary: 40 95% 60%;
-    --secondary-foreground: 0 60% 12%;
+    --secondary: 48 95% 88%;
+    --secondary-foreground: 0 0% 15%;
 
-    --accent: 10 80% 50%;
-    --accent-foreground: 40 90% 95%;
+    --accent: 0 85% 55%;
+    --accent-foreground: 0 0% 100%;
 
-    --muted: 0 40% 20%;
-    --muted-foreground: 40 30% 65%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 40 90% 95%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 40% 20%;
-    --input: 0 40% 20%;
-    --ring: 10 80% 50%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 45 100% 55%;
   }
 }
 
