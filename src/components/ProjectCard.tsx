@@ -39,9 +39,9 @@ const ProjectCard = ({ id, title, location, image, units, price, status, area }:
         </div>
 
         {/* Premium View Details Button */}
-        <Link to={`/projects/${id}`}>
+        <Link to={`/projects/${id}`} className="absolute bottom-5 right-5 z-20 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 pointer-events-none group-hover:pointer-events-auto">
           <Button
-            className="absolute bottom-5 right-5 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 bg-secondary hover:bg-secondary-light text-secondary-foreground shadow-2xl font-bold"
+            className="bg-secondary hover:bg-secondary-light text-secondary-foreground shadow-2xl font-bold"
             size="sm"
           >
             Xem chi tiết
