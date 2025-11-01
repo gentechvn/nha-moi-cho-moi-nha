@@ -97,7 +97,7 @@ const ProjectCard = ({ id, title, location, image, units, price, status, area }:
         {/* Price Section with Premium Styling */}
         <div className="pt-5 border-t-2 border-border/50">
           <p className="text-sm text-muted-foreground mb-2 font-medium">Giá từ</p>
-          <p className="text-3xl font-extrabold bg-gradient-primary bg-clip-text text-transparent">{price}</p>
+          <p className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">{price}</p>
         </div>
       </div>
     </Card>
