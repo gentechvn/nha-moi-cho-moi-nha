@@ -2,10 +2,11 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
+import PageBanner from "@/components/PageBanner";
 import NewsCard from "@/components/NewsCard";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Search } from "lucide-react";
+import { Search, Newspaper } from "lucide-react";
 import {
   Pagination,
   PaginationContent,
@@ -194,19 +195,11 @@ const News = () => {
       <Header />
       <FloatingCTA />
 
-      {/* Page Header */}
-      <section className="relative pt-32 pb-16 bg-gradient-primary text-primary-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 animate-fade-in">
-              Tin tức & Sự kiện
-            </h1>
-            <p className="text-lg text-primary-foreground/90 animate-fade-in">
-              Cập nhật thông tin mới nhất về chính sách, dự án và thị trường nhà ở xã hội
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageBanner
+        title="Tin tức & Sự kiện"
+        description="Cập nhật thông tin mới nhất về chính sách, dự án và thị trường nhà ở xã hội, giúp bạn đưa ra quyết định đúng đắn"
+        icon={<Newspaper className="w-8 h-8 text-primary-foreground" />}
+      />
 
       {/* Search & Categories */}
       <section className="py-8 bg-background border-b">

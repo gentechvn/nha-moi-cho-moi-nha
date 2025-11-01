@@ -1,8 +1,9 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
+import PageBanner from "@/components/PageBanner";
 import { Card } from "@/components/ui/card";
-import { Phone, Mail, MapPin, Clock, Facebook, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, MessageCircle, Headphones } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -10,19 +11,11 @@ const Contact = () => {
       <Header />
       <FloatingCTA />
 
-      {/* Page Header */}
-      <section className="relative pt-32 pb-16 bg-gradient-primary text-primary-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 animate-fade-in">
-              Liên hệ với chúng tôi
-            </h1>
-            <p className="text-lg text-primary-foreground/90 animate-fade-in">
-              Đội ngũ chuyên viên của chúng tôi sẵn sàng hỗ trợ bạn mọi lúc, mọi nơi
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageBanner
+        title="Liên hệ với chúng tôi"
+        description="Đội ngũ chuyên viên giàu kinh nghiệm của chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn 24/7"
+        icon={<Headphones className="w-8 h-8 text-primary-foreground" />}
+      />
 
       {/* Contact Info */}
       <section className="py-16">

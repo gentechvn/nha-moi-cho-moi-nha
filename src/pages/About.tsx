@@ -1,8 +1,9 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
+import PageBanner from "@/components/PageBanner";
 import { Card } from "@/components/ui/card";
-import { Target, Eye, Award, Users, TrendingUp, Shield } from "lucide-react";
+import { Target, Eye, Award, Users, TrendingUp, Shield, Building2 } from "lucide-react";
 
 const About = () => {
   const values = [
@@ -40,19 +41,11 @@ const About = () => {
       <Header />
       <FloatingCTA />
 
-      {/* Page Header */}
-      <section className="relative pt-32 pb-16 bg-gradient-primary text-primary-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 animate-fade-in">
-              Về chúng tôi
-            </h1>
-            <p className="text-lg text-primary-foreground/90 animate-fade-in">
-              Đồng hành cùng hàng nghìn gia đình Việt trong hành trình sở hữu tổ ấm
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageBanner
+        title="Về chúng tôi"
+        description="Đồng hành cùng hàng nghìn gia đình Việt trong hành trình sở hữu tổ ấm, xây dựng cộng đồng sống hiện đại và bền vững"
+        icon={<Building2 className="w-8 h-8 text-primary-foreground" />}
+      />
 
       {/* Introduction */}
       <section className="py-16">

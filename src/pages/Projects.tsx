@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
+import PageBanner from "@/components/PageBanner";
 import ProjectCard from "@/components/ProjectCard";
 import FilterDialog, { FilterState } from "@/components/FilterDialog";
 import { Button } from "@/components/ui/button";
@@ -14,7 +15,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
-import { Search } from "lucide-react";
+import { Search, Home } from "lucide-react";
 import { useState, useMemo } from "react";
 
 const Projects = () => {
@@ -128,19 +129,11 @@ const Projects = () => {
       <Header />
       <FloatingCTA />
 
-      {/* Page Header */}
-      <section className="relative pt-32 pb-16 bg-gradient-primary text-primary-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 animate-fade-in">
-              Dự án nhà ở xã hội
-            </h1>
-            <p className="text-lg text-primary-foreground/90 animate-fade-in">
-              Khám phá các dự án chất lượng cao với giá cả phải chăng, phù hợp với mọi gia đình
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageBanner
+        title="Dự án nhà ở xã hội"
+        description="Khám phá các dự án chất lượng cao với giá cả phải chăng, đáp ứng tiêu chuẩn xây dựng hiện đại và đầy đủ tiện ích"
+        icon={<Home className="w-8 h-8 text-primary-foreground" />}
+      />
 
       {/* Search & Filter */}
       <section className="py-6 md:py-8 bg-background border-b">

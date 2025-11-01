@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
+import PageBanner from "@/components/PageBanner";
 import {
   Accordion,
   AccordionContent,
@@ -9,7 +10,7 @@ import {
 } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
+import { Search, HelpCircle } from "lucide-react";
 
 const FAQ = () => {
   const faqs = [
@@ -88,19 +89,11 @@ const FAQ = () => {
       <Header />
       <FloatingCTA />
 
-      {/* Page Header */}
-      <section className="relative pt-32 pb-16 bg-gradient-primary text-primary-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 animate-fade-in">
-              Câu hỏi thường gặp
-            </h1>
-            <p className="text-lg text-primary-foreground/90 animate-fade-in">
-              Tìm câu trả lời cho các thắc mắc về nhà ở xã hội
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageBanner
+        title="Câu hỏi thường gặp"
+        description="Tìm câu trả lời cho các thắc mắc phổ biến về quy trình, điều kiện và quyền lợi khi mua nhà ở xã hội"
+        icon={<HelpCircle className="w-8 h-8 text-primary-foreground" />}
+      />
 
       {/* Search */}
       <section className="py-8 bg-background border-b">
