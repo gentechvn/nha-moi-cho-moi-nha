@@ -2,11 +2,17 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 import HeroSection from "@/components/HeroSection";
+import VideoIntro from "@/components/home/VideoIntro";
+import ProcessSteps from "@/components/home/ProcessSteps";
+import Testimonials from "@/components/home/Testimonials";
+import ComparisonSection from "@/components/home/ComparisonSection";
+import PartnersSection from "@/components/home/PartnersSection";
+import FAQPreview from "@/components/home/FAQPreview";
 import ProjectCard from "@/components/ProjectCard";
 import NewsCard from "@/components/NewsCard";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { CheckCircle2, Shield, TrendingUp, Users, ArrowRight } from "lucide-react";
+import { CheckCircle2, Shield, TrendingUp, Users, ArrowRight, MapPin, Calendar, Trophy } from "lucide-react";
 
 const Index = () => {
   const featuredProjects = [
@@ -100,45 +106,60 @@ const Index = () => {
       {/* Hero Section */}
       <HeroSection />
 
+      {/* Video Intro Section */}
+      <VideoIntro />
+
       {/* Benefits Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-20 bg-gradient-to-br from-background via-muted/20 to-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <div className="inline-block mb-4 px-4 py-2 bg-primary/10 rounded-full">
+              <span className="text-primary font-semibold text-sm">✨ Ưu điểm</span>
+            </div>
+            <h2 className="text-3xl sm:text-5xl font-bold text-foreground mb-4">
               Vì sao chọn <span className="text-primary">Nhà Ở Xã Hội</span>?
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Chúng tôi cam kết mang đến cho bạn những giá trị tốt nhất với chất lượng và dịch vụ hoàn hảo
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="bg-card p-6 rounded-xl shadow-md hover:shadow-lg transition-all hover-lift animate-fade-in"
+                className="group bg-card p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 animate-fade-in border border-border/50 relative overflow-hidden"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
-                  <benefit.icon className="w-7 h-7 text-primary-foreground" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-primary opacity-0 group-hover:opacity-10 rounded-full blur-3xl transition-opacity" />
+                <div className="relative">
+                  <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                    <benefit.icon className="w-8 h-8 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-3">{benefit.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">{benefit.title}</h3>
-                <p className="text-sm text-muted-foreground">{benefit.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Process Steps */}
+      <ProcessSteps />
+
       {/* Featured Projects Section */}
-      <section className="py-16">
+      <section className="py-20 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-12">
+          <div className="flex items-center justify-between mb-16 animate-fade-in">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
-                Dự án nổi bật
+              <div className="inline-block mb-4 px-4 py-2 bg-primary/10 rounded-full">
+                <span className="text-primary font-semibold text-sm">🏘️ Dự án</span>
+              </div>
+              <h2 className="text-3xl sm:text-5xl font-bold text-foreground mb-2">
+                Dự Án <span className="text-primary">Nổi Bật</span>
               </h2>
-              <p className="text-muted-foreground">Khám phá các dự án nhà ở xã hội chất lượng cao</p>
+              <p className="text-muted-foreground text-lg">Khám phá các dự án nhà ở xã hội chất lượng cao</p>
             </div>
             <Link to="/projects">
               <Button variant="outline" className="hidden sm:flex items-center gap-2">
@@ -148,9 +169,15 @@ const Index = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-            {featuredProjects.map((project) => (
-              <ProjectCard key={project.id} {...project} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {featuredProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <ProjectCard {...project} />
+              </div>
             ))}
           </div>
 
@@ -163,40 +190,73 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Comparison Section */}
+      <ComparisonSection />
+
+      {/* Testimonials */}
+      <Testimonials />
+
       {/* CTA Banner */}
-      <section className="py-16 bg-gradient-primary text-primary-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Sẵn sàng sở hữu ngôi nhà mơ ước?
+      <section className="py-20 bg-gradient-primary text-primary-foreground relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+        
+        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
+          <div className="inline-block mb-6 px-4 py-2 bg-primary-foreground/20 backdrop-blur-sm rounded-full">
+            <span className="text-primary-foreground font-semibold text-sm">🎉 Ưu đãi đặc biệt</span>
+          </div>
+          <h2 className="text-3xl sm:text-5xl font-bold mb-6">
+            Sẵn Sàng Sở Hữu<br />Ngôi Nhà <span className="text-secondary">Mơ Ước</span>?
           </h2>
-          <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Đăng ký ngay hôm nay để nhận tư vấn miễn phí và ưu đãi đặc biệt dành cho khách hàng đăng ký sớm
+          <p className="text-xl text-primary-foreground/90 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Đăng ký ngay hôm nay để nhận tư vấn miễn phí và ưu đãi đặc biệt dành cho 100 khách hàng đăng ký sớm nhất
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link to="/register">
-              <Button size="lg" className="w-full sm:w-auto bg-secondary hover:bg-secondary-light text-secondary-foreground shadow-xl">
-                Đăng ký tư vấn
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button size="lg" className="w-full sm:w-auto bg-card hover:bg-card/90 text-foreground shadow-2xl px-10 group">
+                Đăng ký tư vấn miễn phí
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                Liên hệ ngay
+              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-10">
+                Liên hệ hotline
               </Button>
             </Link>
+          </div>
+          
+          {/* Trust indicators */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 max-w-3xl mx-auto">
+            {[
+              { icon: MapPin, text: "50+ Dự án trên toàn quốc" },
+              { icon: Calendar, text: "Bàn giao đúng tiến độ" },
+              { icon: Trophy, text: "Top 10 nhà phát triển BĐS" }
+            ].map((item, index) => (
+              <div key={index} className="flex items-center justify-center gap-3 bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4">
+                <item.icon className="w-5 h-5 text-primary-foreground" />
+                <span className="text-sm text-primary-foreground font-medium">{item.text}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* Partners Section */}
+      <PartnersSection />
+
       {/* Latest News Section */}
-      <section className="py-16">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-12">
+          <div className="flex items-center justify-between mb-16 animate-fade-in">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
-                Tin tức mới nhất
+              <div className="inline-block mb-4 px-4 py-2 bg-accent/10 rounded-full">
+                <span className="text-accent font-semibold text-sm">📰 Tin tức</span>
+              </div>
+              <h2 className="text-3xl sm:text-5xl font-bold text-foreground mb-2">
+                Tin Tức <span className="text-primary">Mới Nhất</span>
               </h2>
-              <p className="text-muted-foreground">Cập nhật thông tin và chính sách mới nhất</p>
+              <p className="text-muted-foreground text-lg">Cập nhật thông tin và chính sách mới nhất</p>
             </div>
             <Link to="/news">
               <Button variant="outline" className="hidden sm:flex items-center gap-2">
@@ -206,9 +266,15 @@ const Index = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-            {latestNews.map((news) => (
-              <NewsCard key={news.id} {...news} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {latestNews.map((news, index) => (
+              <div
+                key={news.id}
+                className="animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <NewsCard {...news} />
+              </div>
             ))}
           </div>
 
@@ -220,6 +286,9 @@ const Index = () => {
           </Link>
         </div>
       </section>
+
+      {/* FAQ Preview */}
+      <FAQPreview />
 
       <Footer />
     </div>
