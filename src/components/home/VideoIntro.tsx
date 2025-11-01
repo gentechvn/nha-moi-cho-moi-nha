@@ -48,7 +48,7 @@ const VideoIntro = () => {
               ].map((stat, index) => (
                 <div key={index} className="flex items-center space-x-4">
                   <div className={`w-16 h-16 bg-${stat.color}/10 rounded-xl flex items-center justify-center flex-shrink-0`}>
-                    <span className={`text-2xl font-bold text-${stat.color}`}>{stat.number}</span>
+                    <span className="text-2xl font-bold text-primary">{stat.number}</span>
                   </div>
                   <p className="text-foreground font-medium">{stat.label}</p>
                 </div>
