@@ -41,7 +41,7 @@ const HeroSection = () => {
               </Button>
             </Link>
             <Link to="/projects" className="group">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-10 glass-effect border-2 border-white/40 text-lg font-semibold hover:scale-105 transition-all duration-500 text-slate-50 bg-red-700 hover:bg-red-600">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-10 glass-effect border-2 border-white/40 text-lg font-semibold hover:scale-105 transition-all duration-500 text-slate-50 bg-red-600 hover:bg-red-500">
                 Xem dự án
               </Button>
             </Link>
@@ -69,7 +69,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="group flex items-center space-x-4 glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-primary/50 bg-amber-200">
+            <div className="group flex items-center space-x-4 glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-primary/50 bg-yellow-200">
               <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center flex-shrink-0 shadow-primary group-hover:animate-float">
                 <Award className="w-7 h-7 text-primary-foreground" />
               </div>
