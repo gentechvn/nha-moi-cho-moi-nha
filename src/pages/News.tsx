@@ -6,9 +6,20 @@ import NewsCard from "@/components/NewsCard";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
 
 const News = () => {
   const [selectedCategory, setSelectedCategory] = useState("Tất cả");
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
 
   const news = [
     {
@@ -163,6 +174,21 @@ const News = () => {
     ? news 
     : news.filter(item => item.category === selectedCategory);
 
+  const totalPages = Math.ceil(filteredNews.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentNews = filteredNews.slice(startIndex, endIndex);
+
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategory(category);
+    setCurrentPage(1);
+  };
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -200,7 +226,7 @@ const News = () => {
                 key={category}
                 variant={category === selectedCategory ? "default" : "outline"}
                 size="sm"
-                onClick={() => setSelectedCategory(category)}
+                onClick={() => handleCategoryChange(category)}
               >
                 {category}
               </Button>
@@ -264,11 +290,60 @@ const News = () => {
               <h2 className="text-2xl font-bold mb-8">
                 {selectedCategory === "Tất cả" ? "Tất cả tin tức" : `Tin tức ${selectedCategory}`}
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredNews.map((item) => (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                {currentNews.map((item) => (
                   <NewsCard key={item.id} {...item} />
                 ))}
               </div>
+
+              {/* Pagination */}
+              {totalPages > 1 && (
+                <Pagination>
+                  <PaginationContent>
+                    <PaginationItem>
+                      <PaginationPrevious 
+                        onClick={() => currentPage > 1 && handlePageChange(currentPage - 1)}
+                        className={currentPage === 1 ? "pointer-events-none opacity-50" : "cursor-pointer"}
+                      />
+                    </PaginationItem>
+                    
+                    {[...Array(totalPages)].map((_, index) => {
+                      const page = index + 1;
+                      if (
+                        page === 1 ||
+                        page === totalPages ||
+                        (page >= currentPage - 1 && page <= currentPage + 1)
+                      ) {
+                        return (
+                          <PaginationItem key={page}>
+                            <PaginationLink
+                              onClick={() => handlePageChange(page)}
+                              isActive={currentPage === page}
+                              className="cursor-pointer"
+                            >
+                              {page}
+                            </PaginationLink>
+                          </PaginationItem>
+                        );
+                      } else if (page === currentPage - 2 || page === currentPage + 2) {
+                        return (
+                          <PaginationItem key={page}>
+                            <PaginationEllipsis />
+                          </PaginationItem>
+                        );
+                      }
+                      return null;
+                    })}
+
+                    <PaginationItem>
+                      <PaginationNext 
+                        onClick={() => currentPage < totalPages && handlePageChange(currentPage + 1)}
+                        className={currentPage === totalPages ? "pointer-events-none opacity-50" : "cursor-pointer"}
+                      />
+                    </PaginationItem>
+                  </PaginationContent>
+                </Pagination>
+              )}
             </>
           )}
 
