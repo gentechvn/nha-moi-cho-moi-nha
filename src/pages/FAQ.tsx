@@ -116,15 +116,18 @@ const FAQ = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-8">
             {faqs.map((category, idx) => (
-              <Card key={idx} className="p-6 shadow-md">
-                <h2 className="text-xl font-bold text-primary mb-6">{category.category}</h2>
+              <Card key={idx} className="p-8 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-l-primary">
+                <h2 className="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
+                  <span className="w-1 h-8 bg-primary rounded-full"></span>
+                  {category.category}
+                </h2>
                 <Accordion type="single" collapsible className="w-full">
                   {category.questions.map((item, qIdx) => (
                     <AccordionItem key={qIdx} value={`item-${idx}-${qIdx}`}>
-                      <AccordionTrigger className="text-left hover:text-primary">
+                      <AccordionTrigger className="text-left text-base font-bold hover:text-primary transition-colors py-4">
                         {item.question}
                       </AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground">
+                      <AccordionContent className="text-muted-foreground text-base leading-relaxed pt-2 pb-4">
                         {item.answer}
                       </AccordionContent>
                     </AccordionItem>
