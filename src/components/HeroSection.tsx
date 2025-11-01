@@ -69,8 +69,8 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="group flex items-center space-x-4 glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-primary/50 bg-yellow-200">
-              <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center flex-shrink-0 shadow-primary group-hover:animate-float">
+            <div className="group flex items-center space-x-4 rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-primary/20 hover:border-primary/50 bg-yellow-200 shadow-xl">
+              <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:animate-float">
                 <Award className="w-7 h-7 text-primary-foreground" />
               </div>
               <div>
