@@ -1,31 +1,23 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Home, Users, Award } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-[95vh] flex items-center overflow-hidden">
+  return <section className="relative min-h-[95vh] flex items-center overflow-hidden">
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-hero z-10" />
-        <div className="absolute inset-0 z-5" 
-          style={{
-            backgroundImage: 'radial-gradient(circle at 25% 25%, hsl(45 100% 60% / 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, hsl(48 100% 65% / 0.1) 0%, transparent 50%)',
-            animation: 'pulse-slow 4s ease-in-out infinite'
-          }}
-        />
-        <img
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070"
-          alt="Modern housing development"
-          className="w-full h-full object-cover"
-        />
+        <div className="absolute inset-0 z-5" style={{
+        backgroundImage: 'radial-gradient(circle at 25% 25%, hsl(45 100% 60% / 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, hsl(48 100% 65% / 0.1) 0%, transparent 50%)',
+        animation: 'pulse-slow 4s ease-in-out infinite'
+      }} />
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070" alt="Modern housing development" className="w-full h-full object-cover" />
       </div>
 
       {/* Content */}
       <div className="container relative z-20 mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="max-w-4xl">
           {/* Premium Badge */}
-          <div className="inline-block mb-6 px-5 py-2.5 glass-effect rounded-full border border-secondary/30 animate-fade-in">
+          <div className="inline-block mb-6 px-5 py-2.5 glass-effect rounded-full border border-secondary/30 animate-fade-in bg-red-600">
             <span className="text-secondary font-bold text-sm tracking-wide">✨ Chương trình ưu đãi đặc biệt 2024 - Giảm đến 15%</span>
           </div>
           
@@ -49,7 +41,7 @@ const HeroSection = () => {
               </Button>
             </Link>
             <Link to="/projects" className="group">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-10 glass-effect border-2 border-white/40 text-white hover:bg-white hover:text-primary text-lg font-semibold hover:scale-105 transition-all duration-500">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-10 glass-effect border-2 border-white/40 text-lg font-semibold hover:scale-105 transition-all duration-500 text-slate-50 bg-red-700 hover:bg-red-600">
                 Xem dự án
               </Button>
             </Link>
@@ -57,7 +49,7 @@ const HeroSection = () => {
 
           {/* Enhanced Stats with Glass Effect */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 animate-slide-up">
-            <div className="group flex items-center space-x-4 glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-secondary/50">
+            <div className="group flex items-center space-x-4 glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-secondary/50 bg-red-600">
               <div className="w-14 h-14 bg-gradient-to-br from-secondary to-secondary-light rounded-xl flex items-center justify-center flex-shrink-0 shadow-primary group-hover:animate-float">
                 <Home className="w-7 h-7 text-secondary-foreground" />
               </div>
@@ -67,23 +59,23 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="group flex items-center space-x-4 glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-accent/50">
+            <div className="group flex items-center space-x-4 glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-accent/50 bg-red-50">
               <div className="w-14 h-14 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center flex-shrink-0 shadow-accent group-hover:animate-float">
                 <Users className="w-7 h-7 text-accent-foreground" />
               </div>
               <div>
-                <p className="text-3xl font-bold text-white">5,000+</p>
-                <p className="text-sm text-white/80 font-medium">Cư dân</p>
+                <p className="text-3xl font-bold text-slate-900">5,000+</p>
+                <p className="text-sm font-medium text-slate-900">Cư dân</p>
               </div>
             </div>
 
-            <div className="group flex items-center space-x-4 glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-primary/50">
+            <div className="group flex items-center space-x-4 glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-primary/50 bg-amber-200">
               <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center flex-shrink-0 shadow-primary group-hover:animate-float">
                 <Award className="w-7 h-7 text-primary-foreground" />
               </div>
               <div>
-                <p className="text-3xl font-bold text-white">98%</p>
-                <p className="text-sm text-white/80 font-medium">Hài lòng</p>
+                <p className="text-3xl font-bold text-slate-900">98%</p>
+                <p className="text-sm font-medium text-slate-900">Hài lòng</p>
               </div>
             </div>
           </div>
@@ -92,12 +84,8 @@ const HeroSection = () => {
 
       {/* Elegant Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce-slow">
-        <div className="w-7 h-11 border-2 border-white/60 rounded-full flex items-start justify-center p-2 backdrop-blur-sm bg-white/5">
-          <div className="w-1.5 h-3 bg-white/80 rounded-full animate-pulse" />
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
