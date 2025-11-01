@@ -16,7 +16,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ id, title, location, image, units, price, status, area }: ProjectCardProps) => {
   const statusLabels = {
-    selling: { text: "Đang bán", color: "bg-secondary" },
+    selling: { text: "Đang bán", color: "bg-yellow-600" },
     upcoming: { text: "Sắp mở bán", color: "bg-accent" },
     completed: { text: "Đã bàn giao", color: "bg-muted-foreground" },
   };
