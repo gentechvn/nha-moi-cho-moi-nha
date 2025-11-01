@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
@@ -7,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
 
 const News = () => {
+  const [selectedCategory, setSelectedCategory] = useState("Tất cả");
+
   const news = [
     {
       id: 1,
@@ -156,6 +159,10 @@ const News = () => {
 
   const categories = ["Tất cả", "Chính sách", "Dự án", "Hướng dẫn", "Tư vấn", "Tiện ích"];
 
+  const filteredNews = selectedCategory === "Tất cả" 
+    ? news 
+    : news.filter(item => item.category === selectedCategory);
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -191,8 +198,9 @@ const News = () => {
             {categories.map((category) => (
               <Button
                 key={category}
-                variant={category === "Tất cả" ? "default" : "outline"}
+                variant={category === selectedCategory ? "default" : "outline"}
                 size="sm"
+                onClick={() => setSelectedCategory(category)}
               >
                 {category}
               </Button>
@@ -206,55 +214,69 @@ const News = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold mb-8">Tin nổi bật</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="md:col-span-2 lg:col-span-1">
-              <div className="relative h-96 rounded-xl overflow-hidden group">
-                <img
-                  src={news[0].image}
-                  alt={news[0].title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-overlay" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <span className="inline-block bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-xs font-semibold mb-3">
-                    {news[0].category}
-                  </span>
-                  <h3 className="text-2xl font-bold mb-2 text-white">{news[0].title}</h3>
-                  <p className="text-sm text-white/90 mb-2">{news[0].excerpt}</p>
-                  <p className="text-sm text-white">{news[0].date}</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              {news.slice(1, 3).map((item) => (
-                <div key={item.id} className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                  <div className="flex h-40">
+          {filteredNews.length > 0 && (
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div className="md:col-span-2 lg:col-span-1">
+                  <div className="relative h-96 rounded-xl overflow-hidden group">
                     <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-40 h-full object-cover"
+                      src={filteredNews[0].image}
+                      alt={filteredNews[0].title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="flex-1 p-4">
-                      <span className="inline-block bg-yellow-600 text-white text-xs font-semibold px-2 py-1 rounded mb-2">
-                        {item.category}
+                    <div className="absolute inset-0 bg-gradient-overlay" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                      <span className="inline-block bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-xs font-semibold mb-3">
+                        {filteredNews[0].category}
                       </span>
-                      <h4 className="font-bold text-sm mb-2 line-clamp-2">{item.title}</h4>
-                      <p className="text-xs text-muted-foreground">{item.date}</p>
+                      <h3 className="text-2xl font-bold mb-2 text-white">{filteredNews[0].title}</h3>
+                      <p className="text-sm text-white/90 mb-2">{filteredNews[0].excerpt}</p>
+                      <p className="text-sm text-white">{filteredNews[0].date}</p>
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
 
-          {/* All News */}
-          <h2 className="text-2xl font-bold mb-8">Tất cả tin tức</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {news.map((item) => (
-              <NewsCard key={item.id} {...item} />
-            ))}
-          </div>
+                {filteredNews.length > 1 && (
+                  <div className="space-y-4">
+                    {filteredNews.slice(1, 3).map((item) => (
+                      <div key={item.id} className="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <div className="flex h-40">
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className="w-40 h-full object-cover"
+                          />
+                          <div className="flex-1 p-4">
+                            <span className="inline-block bg-yellow-600 text-white text-xs font-semibold px-2 py-1 rounded mb-2">
+                              {item.category}
+                            </span>
+                            <h4 className="font-bold text-sm mb-2 line-clamp-2">{item.title}</h4>
+                            <p className="text-xs text-muted-foreground">{item.date}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* All News */}
+              <h2 className="text-2xl font-bold mb-8">
+                {selectedCategory === "Tất cả" ? "Tất cả tin tức" : `Tin tức ${selectedCategory}`}
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {filteredNews.map((item) => (
+                  <NewsCard key={item.id} {...item} />
+                ))}
+              </div>
+            </>
+          )}
+
+          {filteredNews.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-muted-foreground">Không có tin tức nào trong danh mục này.</p>
+            </div>
+          )}
         </div>
       </section>
 
