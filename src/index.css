@@ -17,19 +17,19 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 15%;
 
-    /* Primary: Vietnamese Gold - Professional & Warm */
-    --primary: 45 100% 50%;
-    --primary-foreground: 0 0% 15%;
-    --primary-light: 45 100% 65%;
-    --primary-dark: 45 100% 40%;
+    /* Primary: Vietnamese Gold - Professional & Warm - Vibrant */
+    --primary: 45 100% 51%;
+    --primary-foreground: 0 0% 10%;
+    --primary-light: 45 100% 62%;
+    --primary-dark: 45 100% 38%;
 
     /* Secondary: Light Gold - Soft & Elegant */
     --secondary: 48 95% 88%;
     --secondary-foreground: 0 0% 15%;
     --secondary-light: 48 95% 92%;
 
-    /* Accent: Vietnamese Red - Trust & Heritage */
-    --accent: 0 85% 48%;
+    /* Accent: Vietnamese Red - Trust & Heritage - More Vibrant */
+    --accent: 0 90% 52%;
     --accent-foreground: 0 0% 100%;
 
     --muted: 0 0% 96%;
