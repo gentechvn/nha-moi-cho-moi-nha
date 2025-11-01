@@ -25,7 +25,7 @@ const Contact = () => {
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-bold mb-2">Hotline</h3>
+              <h3 className="text-xl font-bold mb-2">Hotline</h3>
               <p className="text-sm text-muted-foreground mb-1">1900 xxxx</p>
               <p className="text-sm text-muted-foreground">0901 234 567</p>
             </Card>
@@ -34,7 +34,7 @@ const Contact = () => {
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-bold mb-2">Email</h3>
+              <h3 className="text-xl font-bold mb-2">Email</h3>
               <p className="text-sm text-muted-foreground">info@nhaoxahoi.vn</p>
               <p className="text-sm text-muted-foreground">support@nhaoxahoi.vn</p>
             </Card>
@@ -43,7 +43,7 @@ const Contact = () => {
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-bold mb-2">Zalo/Facebook</h3>
+              <h3 className="text-xl font-bold mb-2">Zalo/Facebook</h3>
               <p className="text-sm text-muted-foreground mb-1">Zalo: 0901 234 567</p>
               <p className="text-sm text-muted-foreground">FB: @nhaoxahoi</p>
             </Card>
@@ -52,7 +52,7 @@ const Contact = () => {
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-bold mb-2">Giờ làm việc</h3>
+              <h3 className="text-xl font-bold mb-2">Giờ làm việc</h3>
               <p className="text-sm text-muted-foreground mb-1">T2-T7: 8:00 - 18:00</p>
               <p className="text-sm text-muted-foreground">CN: 8:00 - 12:00</p>
             </Card>
@@ -74,21 +74,21 @@ const Contact = () => {
               
               <div className="space-y-4">
                 <div>
-                  <h3 className="font-semibold mb-2">Phòng kinh doanh</h3>
+                  <h3 className="text-xl font-bold mb-2">Phòng kinh doanh</h3>
                   <p className="text-sm text-muted-foreground">
                     📞 Hotline: 1900 xxxx (ext. 101)<br />
                     📧 sales@nhaoxahoi.vn
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">Phòng chăm sóc khách hàng</h3>
+                  <h3 className="text-xl font-bold mb-2">Phòng chăm sóc khách hàng</h3>
                   <p className="text-sm text-muted-foreground">
                     📞 Hotline: 1900 xxxx (ext. 102)<br />
                     📧 support@nhaoxahoi.vn
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">Phòng pháp lý</h3>
+                  <h3 className="text-xl font-bold mb-2">Phòng pháp lý</h3>
                   <p className="text-sm text-muted-foreground">
                     📞 Hotline: 1900 xxxx (ext. 103)<br />
                     📧 legal@nhaoxahoi.vn
