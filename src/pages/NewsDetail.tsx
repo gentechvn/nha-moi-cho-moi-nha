@@ -156,7 +156,7 @@ const NewsDetail = () => {
             <div className="inline-block mb-3 px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-semibold">
               {article.category}
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
               {article.title}
             </h1>
             <p className="text-lg text-muted-foreground mb-6">{article.excerpt}</p>
@@ -191,7 +191,7 @@ const NewsDetail = () => {
                 />
 
                 <div
-                  className="prose prose-lg max-w-none prose-headings:text-foreground prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-xl prose-h3:font-bold prose-h3:mt-6 prose-h3:mb-3 prose-p:text-muted-foreground prose-p:mb-4 prose-ul:text-muted-foreground prose-ol:text-muted-foreground prose-li:mb-2 prose-strong:text-foreground"
+                  className="prose prose-lg max-w-none prose-headings:text-foreground prose-h2:text-xl prose-h2:font-bold prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-lg prose-h3:font-bold prose-h3:mt-6 prose-h3:mb-3 prose-p:text-muted-foreground prose-p:mb-4 prose-ul:text-muted-foreground prose-ol:text-muted-foreground prose-li:mb-2 prose-strong:text-foreground"
                   dangerouslySetInnerHTML={{ __html: article.content }}
                 />
 
@@ -251,7 +251,7 @@ const NewsDetail = () => {
 
               {/* CTA Card */}
               <Card className="p-6 bg-gradient-primary text-primary-foreground">
-                <h3 className="text-lg font-bold mb-2">Cần tư vấn?</h3>
+                <h3 className="text-base font-bold mb-2">Cần tư vấn?</h3>
                 <p className="text-sm text-primary-foreground/90 mb-4">
                   Liên hệ với chúng tôi để được tư vấn chi tiết về chính sách và dự án
                 </p>
@@ -264,7 +264,7 @@ const NewsDetail = () => {
 
               {/* Newsletter */}
               <Card className="p-6">
-                <h3 className="font-bold mb-2">Nhận tin mới nhất</h3>
+                <h3 className="text-base font-bold mb-2">Nhận tin mới nhất</h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   Đăng ký để nhận bản tin về chính sách và dự án mới
                 </p>
@@ -285,7 +285,7 @@ const NewsDetail = () => {
       {/* Related News */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-foreground mb-8">Tin liên quan</h2>
+          <h2 className="text-2xl font-bold text-foreground mb-8">Tin liên quan</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {relatedNews.map((news) => (
               <NewsCard key={news.id} {...news} />
