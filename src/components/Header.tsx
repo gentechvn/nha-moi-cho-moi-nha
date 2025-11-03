@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -39,10 +39,10 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 ${
                   isActive(item.href)
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-muted"
+                    ? "bg-primary text-primary-foreground shadow-lg scale-105"
+                    : "text-foreground hover:bg-primary/10 hover:text-primary hover:scale-105"
                 }`}
               >
                 {item.name}
@@ -52,13 +52,14 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-3">
-            <Button variant="outline" size="sm" className="gap-2">
+            <Button variant="outline" size="sm" className="gap-2 border-2 hover:border-primary">
               <Phone className="w-4 h-4" />
-              <span>1900 xxxx</span>
+              <span className="font-bold">1900 xxxx</span>
             </Button>
             <Link to="/register">
-              <Button size="sm" className="bg-gradient-primary shadow-primary">
+              <Button variant="premium" size="sm" className="gap-2 shadow-2xl">
                 Đăng ký ngay
+                <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </div>

@@ -35,13 +35,13 @@ const HeroSection = () => {
           {/* Premium CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-5 mb-16 animate-scale-in">
             <Link to="/register" className="group">
-              <Button size="lg" className="w-full sm:w-auto h-14 px-10 bg-secondary hover:bg-secondary-light text-secondary-foreground shadow-2xl hover:shadow-primary transition-all duration-500 text-lg font-bold hover:scale-105 hover-shine">
+              <Button variant="premium" size="lg" className="w-full sm:w-auto h-16 px-12 shadow-2xl hover:shadow-primary transition-all duration-500 text-lg hover:scale-110">
                 Đăng ký ngay
                 <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
               </Button>
             </Link>
             <Link to="/projects" className="group">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-10 border-2 border-white/40 text-lg font-semibold hover:scale-105 transition-all duration-500 text-white bg-red-600 hover:bg-red-700 shadow-xl">
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto h-16 px-12 text-lg font-bold hover:scale-110 transition-all duration-500 shadow-2xl">
                 Xem dự án
               </Button>
             </Link>
@@ -49,33 +49,33 @@ const HeroSection = () => {
 
           {/* Enhanced Stats with Glass Effect */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 animate-slide-up">
-            <div className="group flex items-center space-x-4 rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-secondary/50 bg-red-600 shadow-xl">
-              <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:animate-float">
-                <Home className="w-7 h-7 text-white" />
+            <div className="group flex items-center space-x-4 rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/30 hover:border-white/60 bg-white/15 backdrop-blur-md shadow-2xl hover:shadow-primary">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg">
+                <Home className="w-8 h-8 text-primary-foreground" />
               </div>
               <div>
-                <p className="text-3xl font-bold text-white">1,200+</p>
-                <p className="text-sm text-white/80 font-medium">Căn hộ</p>
+                <p className="text-4xl font-black text-white">1,200+</p>
+                <p className="text-sm text-white/90 font-semibold">Căn hộ</p>
               </div>
             </div>
 
-            <div className="group flex items-center space-x-4 glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/20 hover:border-accent/50 bg-red-50">
-              <div className="w-14 h-14 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center flex-shrink-0 shadow-accent group-hover:animate-float">
-                <Users className="w-7 h-7 text-accent-foreground" />
+            <div className="group flex items-center space-x-4 rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/30 hover:border-white/60 bg-white/15 backdrop-blur-md shadow-2xl hover:shadow-accent">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/90 rounded-xl flex items-center justify-center flex-shrink-0 shadow-accent group-hover:scale-110 transition-transform">
+                <Users className="w-8 h-8 text-accent-foreground" />
               </div>
               <div>
-                <p className="text-3xl font-bold text-slate-900">5,000+</p>
-                <p className="text-sm font-medium text-slate-900">Cư dân</p>
+                <p className="text-4xl font-black text-white">10,000+</p>
+                <p className="text-sm text-white/90 font-semibold">Gia đình</p>
               </div>
             </div>
 
-            <div className="group flex items-center space-x-4 rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-primary/20 hover:border-primary/50 bg-yellow-200 shadow-xl">
-              <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:animate-float">
-                <Award className="w-7 h-7 text-primary-foreground" />
+            <div className="group flex items-center space-x-4 rounded-2xl p-6 hover:scale-105 transition-all duration-500 border border-white/30 hover:border-white/60 bg-white/15 backdrop-blur-md shadow-2xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary-light rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg">
+                <Award className="w-8 h-8 text-secondary-foreground" />
               </div>
               <div>
-                <p className="text-3xl font-bold text-slate-900">98%</p>
-                <p className="text-sm font-medium text-slate-900">Hài lòng</p>
+                <p className="text-4xl font-black text-white">98%</p>
+                <p className="text-sm text-white/90 font-semibold">Hài lòng</p>
               </div>
             </div>
           </div>
