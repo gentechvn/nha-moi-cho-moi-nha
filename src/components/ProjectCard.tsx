@@ -39,7 +39,7 @@ const ProjectCard = ({ id, title, location, image, units, price, status, area }:
         </div>
 
         {/* Premium View Details Button */}
-        <Link to={`/projects/${id}`} className="absolute bottom-5 right-5 z-20 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 pointer-events-none group-hover:pointer-events-auto">
+        <Link to={`/apartments/${id}`} className="absolute bottom-5 right-5 z-20 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 pointer-events-none group-hover:pointer-events-auto">
           <Button
             className="bg-secondary hover:bg-secondary-light text-secondary-foreground shadow-2xl font-bold"
             size="sm"
@@ -61,7 +61,7 @@ const ProjectCard = ({ id, title, location, image, units, price, status, area }:
 
       {/* Enhanced Content */}
       <div className="p-7">
-        <Link to={`/projects/${id}`}>
+        <Link to={`/apartments/${id}`}>
           <h3 className="text-2xl font-extrabold text-foreground mb-3 group-hover:text-primary transition-colors duration-300 line-clamp-1">
             {title}
           </h3>
