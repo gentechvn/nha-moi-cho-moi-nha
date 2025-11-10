@@ -159,16 +159,24 @@ const ApartmentDetail = () => {
       {/* Breadcrumb */}
       <div className="bg-muted/30 py-4 border-b border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Link to="/" className="hover:text-primary transition-colors">
-              Trang chủ
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <Link to="/" className="hover:text-primary transition-colors">
+                Trang chủ
+              </Link>
+              <ChevronRight className="w-4 h-4" />
+              <Link to="/projects" className="hover:text-primary transition-colors">
+                Dự án
+              </Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-foreground font-medium">{apartment.name}</span>
+            </div>
+            <Link to="/projects">
+              <Button variant="outline" size="sm" className="gap-2">
+                <ChevronRight className="w-4 h-4 rotate-180" />
+                Quay lại dự án
+              </Button>
             </Link>
-            <ChevronRight className="w-4 h-4" />
-            <Link to="/projects" className="hover:text-primary transition-colors">
-              Dự án
-            </Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-foreground font-medium">{apartment.name}</span>
           </div>
         </div>
       </div>
