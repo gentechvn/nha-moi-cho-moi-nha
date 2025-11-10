@@ -12,11 +12,8 @@ import {
   MapPin,
   Building2,
   Maximize2,
-  Users,
   CheckCircle2,
   Phone,
-  FileText,
-  Share2,
   ChevronRight,
   Bath,
   Bed,
@@ -235,22 +232,12 @@ const ApartmentDetail = () => {
                     </p>
                   </div>
 
-                  <div className="space-y-3">
-                    <Link to="/register">
-                      <Button size="lg" className="w-full">
-                        <Phone className="w-4 h-4 mr-2" />
-                        Đăng ký tư vấn
-                      </Button>
-                    </Link>
-                    <Button size="lg" variant="outline" className="w-full">
-                      <FileText className="w-4 h-4 mr-2" />
-                      Tải bảng giá
+                  <Link to="/register" className="block">
+                    <Button size="lg" className="w-full">
+                      <Phone className="w-4 h-4 mr-2" />
+                      Đăng ký tư vấn
                     </Button>
-                    <Button size="lg" variant="ghost" className="w-full">
-                      <Share2 className="w-4 h-4 mr-2" />
-                      Chia sẻ
-                    </Button>
-                  </div>
+                  </Link>
 
                   <div className="mt-6 pt-6 border-t border-border">
                     <div className="flex items-start gap-2 text-sm text-muted-foreground">
