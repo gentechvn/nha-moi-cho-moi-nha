@@ -251,11 +251,18 @@ const Projects = () => {
                         {apartment.description}
                       </p>
 
-                      <Link to="/register">
-                        <Button size="lg" className="w-full">
-                          Đăng ký mua căn hộ này
-                        </Button>
-                      </Link>
+                      <div className="grid grid-cols-2 gap-3">
+                        <Link to={`/apartments/${apartment.id}`}>
+                          <Button size="lg" variant="outline" className="w-full">
+                            Xem chi tiết
+                          </Button>
+                        </Link>
+                        <Link to="/register">
+                          <Button size="lg" className="w-full">
+                            Đăng ký ngay
+                          </Button>
+                        </Link>
+                      </div>
                     </CardContent>
                   </div>
                 </Card>
