@@ -14,8 +14,8 @@ const HeroSection = () => {
         
         {/* Subtle Light Effects */}
         <div className="absolute inset-0 z-5 opacity-30" style={{
-          backgroundImage: 'radial-gradient(circle at 20% 80%, hsl(45 100% 60% / 0.2) 0%, transparent 50%), radial-gradient(circle at 80% 20%, hsl(48 100% 65% / 0.15) 0%, transparent 40%)',
-        }} />
+        backgroundImage: 'radial-gradient(circle at 20% 80%, hsl(45 100% 60% / 0.2) 0%, transparent 50%), radial-gradient(circle at 80% 20%, hsl(48 100% 65% / 0.15) 0%, transparent 40%)'
+      }} />
       </div>
 
       {/* Content */}
@@ -27,8 +27,8 @@ const HeroSection = () => {
           </div>
           
           {/* Main Heading with Gradient */}
-          <h1 className="font-be-vietnam text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 animate-fade-in leading-tight tracking-tight">
-            Khởi Đầu Hành Phúc<br />
+          <h1 className="font-be-vietnam text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 animate-fade-in leading-tight tracking-tight">khởi đầu hạnh phúc
+Từ Tổ Ấm Của Bạn<br />
             Từ <span className="gradient-text bg-gradient-to-r from-secondary via-primary-light to-secondary animate-shimmer bg-[length:200%_auto]">Tổ Ấm</span> Của Bạn
           </h1>
           
