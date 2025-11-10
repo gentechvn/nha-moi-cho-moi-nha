@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Home, Users, Award } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-[95vh] flex items-center overflow-hidden">
       {/* Animated Background Pattern */}
@@ -10,7 +11,7 @@ const HeroSection = () => {
         backgroundImage: 'radial-gradient(circle at 25% 25%, hsl(45 100% 60% / 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, hsl(48 100% 65% / 0.1) 0%, transparent 50%)',
         animation: 'pulse-slow 4s ease-in-out infinite'
       }} />
-        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070" alt="Modern housing development" className="w-full h-full object-cover" />
+        <img src={heroBackground} alt="Dự án nhà ở xã hội Đồng Hới" className="w-full h-full object-cover object-center" />
       </div>
 
       {/* Content */}
@@ -54,7 +55,7 @@ const HeroSection = () => {
                 <Home className="w-8 h-8 text-primary-foreground" />
               </div>
               <div>
-                <p className="text-4xl font-black text-white">1,200+</p>
+                <p className="text-4xl font-black text-white">560</p>
                 <p className="text-sm text-white/90 font-semibold">Căn hộ</p>
               </div>
             </div>
@@ -64,8 +65,8 @@ const HeroSection = () => {
                 <Users className="w-8 h-8 text-accent-foreground" />
               </div>
               <div>
-                <p className="text-4xl font-black text-white">10,000+</p>
-                <p className="text-sm text-white/90 font-semibold">Gia đình</p>
+                <p className="text-4xl font-black text-white">2</p>
+                <p className="text-sm text-white/90 font-semibold">Tòa tháp</p>
               </div>
             </div>
 
@@ -74,8 +75,8 @@ const HeroSection = () => {
                 <Award className="w-8 h-8 text-secondary-foreground" />
               </div>
               <div>
-                <p className="text-4xl font-black text-white">98%</p>
-                <p className="text-sm text-white/90 font-semibold">Hài lòng</p>
+                <p className="text-4xl font-black text-white">15</p>
+                <p className="text-sm text-white/90 font-semibold">Tầng cao</p>
               </div>
             </div>
           </div>
