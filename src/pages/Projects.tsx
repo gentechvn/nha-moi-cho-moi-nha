@@ -8,6 +8,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Home, MapPin, Building2, CheckCircle2, TrendingDown, Clock, Award } from "lucide-react";
 import { Link } from "react-router-dom";
+import projectAerial from "@/assets/project-aerial.jpg";
+import projectTowers from "@/assets/project-towers.jpg";
+import projectFacade from "@/assets/project-facade.jpg";
+import projectEntrance from "@/assets/project-entrance.jpg";
 
 const Projects = () => {
   const apartmentTypes = [
@@ -19,7 +23,7 @@ const Projects = () => {
       price: "16,5 - 17,5 triệu/m²",
       totalPrice: "577,5 - 612,5 triệu",
       layout: "1 phòng ngủ, 1 phòng khách, 1 bếp, 1 WC",
-      image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=800",
+      image: projectTowers,
       description: "Căn hộ nhỏ gọn, phù hợp cho cá nhân độc thân hoặc gia đình trẻ"
     },
     {
@@ -30,7 +34,7 @@ const Projects = () => {
       price: "16,5 - 17,5 triệu/m²",
       totalPrice: "973,5 triệu - 1,05 tỷ",
       layout: "2 phòng ngủ, 1 phòng khách, 1 bếp, 2 WC",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+      image: projectFacade,
       description: "Lựa chọn phổ biến nhất, phù hợp với gia đình nhỏ 3-4 người"
     },
     {
@@ -41,7 +45,7 @@ const Projects = () => {
       price: "16,5 - 17,5 triệu/m²",
       totalPrice: "1,14 - 1,28 tỷ",
       layout: "3 phòng ngủ, 1 phòng khách, 1 bếp, 2 WC",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
+      image: projectAerial,
       description: "Không gian rộng rãi, lý tưởng cho gia đình đông thành viên"
     }
   ];
@@ -116,7 +120,7 @@ const Projects = () => {
 
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=800"
+                src={projectEntrance}
                 alt="Dự án nhà ở xã hội Đồng Hới"
                 className="w-full h-full object-cover"
               />

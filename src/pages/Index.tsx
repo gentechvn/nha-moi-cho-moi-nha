@@ -13,6 +13,9 @@ import NewsCard from "@/components/NewsCard";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { CheckCircle2, Shield, TrendingUp, Users, ArrowRight, MapPin, Calendar, Trophy } from "lucide-react";
+import projectAerial from "@/assets/project-aerial.jpg";
+import projectTowers from "@/assets/project-towers.jpg";
+import projectFacade from "@/assets/project-facade.jpg";
 
 const Index = () => {
   const featuredProjects = [
@@ -20,7 +23,7 @@ const Index = () => {
       id: 1,
       title: "Căn hộ 1 phòng ngủ - Dự án Đồng Hới",
       location: "Phường Đồng Hới, TP. Đồng Hới, Quảng Bình",
-      image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=800",
+      image: projectTowers,
       units: 28,
       price: "577,5 - 612,5 triệu",
       status: "selling" as const,
@@ -30,7 +33,7 @@ const Index = () => {
       id: 2,
       title: "Căn hộ 2 phòng ngủ - Dự án Đồng Hới",
       location: "Phường Đồng Hới, TP. Đồng Hới, Quảng Bình",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+      image: projectFacade,
       units: 252,
       price: "973,5 triệu - 1,05 tỷ",
       status: "selling" as const,
@@ -40,7 +43,7 @@ const Index = () => {
       id: 3,
       title: "Căn hộ 3 phòng ngủ - Dự án Đồng Hới",
       location: "Phường Đồng Hới, TP. Đồng Hới, Quảng Bình",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
+      image: projectAerial,
       units: 280,
       price: "1,14 - 1,28 tỷ",
       status: "selling" as const,
