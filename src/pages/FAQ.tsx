@@ -15,19 +15,32 @@ import { Search, HelpCircle } from "lucide-react";
 const FAQ = () => {
   const faqs = [
     {
-      category: "Điều kiện mua nhà",
+      category: "Đối tượng được mua nhà",
       questions: [
         {
           question: "Ai có thể đăng ký mua nhà ở xã hội?",
-          answer: "Người có hộ khẩu thường trú tại tỉnh/thành phố nơi có dự án, có thu nhập ổn định, chưa có nhà ở hoặc diện tích nhà ở hiện tại dưới mức quy định, đáp ứng các điều kiện theo quy định của pháp luật về nhà ở.",
+          answer: "Theo Điều 76 Luật Nhà ở 2023, có 12 nhóm đối tượng được mua nhà ở xã hội bao gồm: (1) Người có công với cách mạng, thân nhân liệt sĩ; (2) Hộ gia đình nghèo, cận nghèo tại khu vực nông thôn; (3) Hộ gia đình nghèo, cận nghèo vùng thiên tai; (4) Hộ gia đình nghèo, cận nghèo tại đô thị; (5) Người thu nhập thấp tại đô thị; (6) Công nhân, người lao động tại doanh nghiệp, hợp tác xã; (7) Sĩ quan, quân nhân chuyên nghiệp, hạ sĩ quan lực lượng vũ trang, công chức công an, viên chức quốc phòng; (8) Cán bộ, công chức, viên chức; (9) Người đã trả lại nhà ở công vụ; (10) Hộ gia đình bị thu hồi đất; (11) Học sinh, sinh viên các trường đại học, cao đẳng, dạy nghề; (12) Doanh nghiệp, hợp tác xã trong khu công nghiệp.",
         },
         {
-          question: "Cần những giấy tờ gì để đăng ký?",
-          answer: "Cần chuẩn bị: CMND/CCCD, Sổ hộ khẩu, Giấy xác nhận thu nhập, Giấy xác nhận chưa có nhà ở (do UBND phường/xã cấp), Đơn đăng ký mua nhà, và các giấy tờ khác theo yêu cầu của dự án.",
+          question: "Điều kiện về nhà ở là gì?",
+          answer: "Chưa có nhà ở thuộc sở hữu của mình tại tỉnh Quảng Trị, chưa được mua hoặc thuê mua nhà ở xã hội, chưa được hưởng chính sách hỗ trợ nhà ở dưới mọi hình thức tại tỉnh Quảng Trị hoặc đã có nhà ở nhưng diện tích bình quân đầu người dưới 15m² (bao gồm vợ/chồng, cha/mẹ, cha/mẹ vợ/chồng, con cái và có thường trú tại căn nhà đó). Các đối tượng nhóm 1-10 có nhà ở nhưng cách xa địa điểm làm việc 30km trở lên và đang sinh sống, làm việc tại Quảng Trị thì vẫn đủ điều kiện.",
         },
         {
-          question: "Thu nhập tối thiểu là bao nhiêu?",
-          answer: "Thu nhập bình quân đầu người trong gia đình từ 5-15 triệu đồng/tháng (tùy theo từng địa phương). Cần có giấy xác nhận thu nhập của cơ quan, doanh nghiệp hoặc xác nhận của UBND.",
+          question: "Điều kiện về thu nhập là bao nhiêu?",
+          answer: "Đối với nhóm 5, 6, 8: Độc thân không quá 20 triệu/tháng; độc thân nuôi con dưới 18 tuổi không quá 30 triệu/tháng; đã kết hôn tổng thu nhập 2 vợ chồng không quá 40 triệu/tháng. Đối với nhóm 7 (lực lượng vũ trang): Độc thân không quá thu nhập của Đại tá; đã kết hôn cả 2 cùng trong lực lượng không quá 2 lần thu nhập Đại tá, chỉ 1 người trong lực lượng không quá 1,5 lần. Thời gian xác định: 12 tháng liền kề từ thời điểm cơ quan có thẩm quyền xác nhận.",
+        },
+      ],
+    },
+    {
+      category: "Căn cứ pháp lý",
+      questions: [
+        {
+          question: "Dự án được xây dựng dựa trên những văn bản pháp lý nào?",
+          answer: "Dự án tuân thủ các văn bản: (1) Nghị quyết 201/2025/QH15 ngày 29/5/2025 về thí điểm cơ chế, chính sách đặc thù phát triển nhà ở xã hội; (2) Luật Nhà ở số 27/2023/QH15 ngày 27/11/2023; (3) Nghị định 192/2025/NĐ-CP ngày 01/7/2025 quy định chi tiết Nghị quyết 201; (4) Nghị định 100/2024/NĐ-CP ngày 26/07/2024 về phát triển và quản lý nhà ở xã hội; (5) Thông tư 05/2024/TT-BXD ngày 31/07/2024; (6) Nghị định 261/2025/NĐ-CP ngày 10/10/2025 sửa đổi Nghị định 100/2024.",
+        },
+        {
+          question: "Thông tin dự án cụ thể?",
+          answer: "Tên dự án: Khu nhà ở xã hội trung tâm thành phố Đồng Hới. Chủ đầu tư: Công ty TNHH Nhà ở xã hội Trung tâm Đồng Hới. Nhà đầu tư: Liên danh Công ty CP Phúc Thành Quảng Bình – Công ty TNHH Thương mại và Xây dựng Toàn Cầu. Quy mô: 2 khối chung cư 15 tầng với 560 căn hộ, diện tích từ 36,1m² đến 74,3m². Văn phòng: PG08A – Đường Lê Trực – Phường Đồng Hới – Quảng Trị. ĐT: 0982.437.434.",
         },
       ],
     },
@@ -145,9 +158,9 @@ const FAQ = () => {
                 Liên hệ với chúng tôi để được tư vấn chi tiết hơn
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:1900xxxx">
+                <a href="tel:0982437434">
                   <button className="w-full sm:w-auto px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary-dark transition-colors">
-                    Gọi ngay: 1900 xxxx
+                    Gọi ngay: 0982.437.434
                   </button>
                 </a>
                 <a href="/register">

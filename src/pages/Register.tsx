@@ -92,23 +92,20 @@ const Register = () => {
                         className="w-full mt-2 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                       >
                         <option value="">Chọn dự án</option>
-                        <option value="green-city">Khu đô thị Green City</option>
-                        <option value="sunrise-tower">Chung cư Sunrise Tower</option>
-                        <option value="an-phu">Khu nhà ở An Phú</option>
-                        <option value="other">Dự án khác</option>
+                        <option value="dong-hoi-center">Khu nhà ở xã hội trung tâm thành phố Đồng Hới</option>
                       </select>
                     </div>
                     <div>
-                      <Label htmlFor="budget">Ngân sách dự kiến</Label>
+                      <Label htmlFor="area">Diện tích quan tâm</Label>
                       <select
-                        id="budget"
+                        id="area"
                         className="w-full mt-2 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                       >
-                        <option value="">Chọn mức giá</option>
-                        <option value="under-1b">Dưới 1 tỷ</option>
-                        <option value="1b-1.5b">1 - 1.5 tỷ</option>
-                        <option value="1.5b-2b">1.5 - 2 tỷ</option>
-                        <option value="above-2b">Trên 2 tỷ</option>
+                        <option value="">Chọn diện tích</option>
+                        <option value="36-45m2">36,1m² - 45m²</option>
+                        <option value="45-55m2">45m² - 55m²</option>
+                        <option value="55-65m2">55m² - 65m²</option>
+                        <option value="65-74m2">65m² - 74,3m²</option>
                       </select>
                     </div>
                   </div>
@@ -147,23 +144,22 @@ const Register = () => {
                     <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold">Hotline</p>
-                      <p className="text-sm text-muted-foreground">1900 xxxx</p>
-                      <p className="text-sm text-muted-foreground">0901 234 567</p>
+                      <p className="text-sm text-muted-foreground">0982.437.434</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <p className="text-sm text-muted-foreground">info@nhaoxahoi.vn</p>
+                      <p className="text-sm text-muted-foreground">nhaoxahoidonghoi@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold">Địa chỉ</p>
+                      <p className="font-semibold">Văn phòng Ban QLDA</p>
                       <p className="text-sm text-muted-foreground">
-                        Số 123, Đường ABC, Quận XYZ, Hà Nội
+                        PG08A – Đường Lê Trực – Phường Đồng Hới – Tỉnh Quảng Trị
                       </p>
                     </div>
                   </div>
@@ -179,15 +175,17 @@ const Register = () => {
               </Card>
 
               <Card className="p-6 bg-secondary text-secondary-foreground shadow-lg">
-                <h3 className="text-lg font-bold mb-2">Ưu đãi đặc biệt</h3>
+                <h3 className="text-lg font-bold mb-2">Thông tin dự án</h3>
                 <p className="text-sm mb-4">
-                  Đăng ký ngay hôm nay để nhận ưu đãi lên đến <strong>50 triệu đồng</strong> cho khách hàng đăng ký sớm!
+                  <strong>Khu nhà ở xã hội trung tâm thành phố Đồng Hới</strong>
                 </p>
-                <ul className="text-sm space-y-1">
-                  <li>✓ Tư vấn miễn phí 24/7</li>
-                  <li>✓ Hỗ trợ thủ tục pháp lý</li>
+                <ul className="text-sm space-y-2">
+                  <li>✓ 2 khối chung cư cao 15 tầng</li>
+                  <li>✓ Tổng 560 căn hộ</li>
+                  <li>✓ Diện tích: 36,1m² - 74,3m²</li>
+                  <li>✓ Hệ thống cây xanh & tiện ích đầy đủ</li>
                   <li>✓ Hỗ trợ vay vốn ưu đãi</li>
-                  <li>✓ Tặng voucher nội thất</li>
+                  <li>✓ Tư vấn pháp lý miễn phí</li>
                 </ul>
               </Card>
             </div>
