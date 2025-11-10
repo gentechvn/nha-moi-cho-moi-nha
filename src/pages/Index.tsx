@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 import HeroSection from "@/components/HeroSection";
-import VideoIntro from "@/components/home/VideoIntro";
 import ProcessSteps from "@/components/home/ProcessSteps";
 import Testimonials from "@/components/home/Testimonials";
 import ComparisonSection from "@/components/home/ComparisonSection";
@@ -111,9 +110,6 @@ const Index = () => {
 
       {/* Hero Section */}
       <HeroSection />
-
-      {/* Video Intro Section */}
-      <VideoIntro />
 
       {/* Benefits Section */}
       <section className="py-24 bg-gradient-to-br from-secondary/10 via-background to-primary/5 relative overflow-hidden">

@@ -84,16 +84,16 @@ const Footer = () => {
               <li className="flex items-start space-x-2 text-sm">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-secondary" />
                 <span className="text-primary-foreground/80">
-                  Số 123, Đường ABC, Quận XYZ, Thành phố Hà Nội
+                  Phường Đồng Hới, TP. Đồng Hới, Quảng Bình
                 </span>
               </li>
               <li className="flex items-center space-x-2 text-sm">
                 <Phone className="w-5 h-5 flex-shrink-0 text-secondary" />
-                <span className="text-primary-foreground/80">1900 xxxx</span>
+                <span className="text-primary-foreground/80">0232 3831 869</span>
               </li>
               <li className="flex items-center space-x-2 text-sm">
                 <Mail className="w-5 h-5 flex-shrink-0 text-secondary" />
-                <span className="text-primary-foreground/80">info@nhaoxahoi.vn</span>
+                <span className="text-primary-foreground/80">info@donghoiproject.vn</span>
               </li>
             </ul>
           </div>

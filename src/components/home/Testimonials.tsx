@@ -5,29 +5,26 @@ const Testimonials = () => {
     {
       name: "Anh Nguyễn Văn A",
       role: "Kỹ sư IT",
-      location: "Hà Nội",
+      location: "Đồng Hới, Quảng Bình",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200",
       content: "Tôi rất hài lòng với chất lượng căn hộ và dịch vụ hỗ trợ. Quy trình mua nhà rất nhanh chóng, chỉ sau 3 tháng là đã nhận được nhà. Đội ngũ tư vấn rất nhiệt tình và chuyên nghiệp.",
-      rating: 5,
-      project: "Green City"
+      rating: 5
     },
     {
       name: "Chị Trần Thị B",
       role: "Giáo viên",
-      location: "Hà Nội",
+      location: "Đồng Hới, Quảng Bình",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200",
       content: "Giá cả phải chăng, chất lượng tốt, vị trí thuận tiện. Đặc biệt là khu vực xung quanh rất yên tĩnh, an toàn cho gia đình có trẻ nhỏ. Tôi rất khuyến khích mọi người nên đến xem.",
-      rating: 5,
-      project: "Sunrise Tower"
+      rating: 5
     },
     {
       name: "Anh Lê Văn C",
       role: "Nhân viên văn phòng",
-      location: "Hà Nội",
+      location: "Đồng Hới, Quảng Bình",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
       content: "Đây là quyết định đúng đắn nhất của tôi. Từ một người thuê trở thành chủ nhà chỉ với số vốn ban đầu rất nhỏ. Cảm ơn chương trình hỗ trợ vay vốn và đội ngũ tư vấn tận tâm.",
-      rating: 5,
-      project: "An Phú"
+      rating: 5
     }
   ];
 
@@ -69,13 +66,6 @@ const Testimonials = () => {
               <p className="text-foreground leading-relaxed mb-6 italic">
                 "{testimonial.content}"
               </p>
-
-              {/* Project Badge */}
-              <div className="inline-block mb-4 px-3 py-1 bg-secondary/20 rounded-full">
-                <span className="text-xs font-semibold text-secondary-foreground">
-                  Dự án: {testimonial.project}
-                </span>
-              </div>
 
               {/* User Info */}
               <div className="flex items-center gap-4 pt-4 border-t border-border/50">
