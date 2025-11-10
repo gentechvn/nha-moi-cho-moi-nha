@@ -20,6 +20,10 @@ import {
   Calendar,
   TrendingDown
 } from "lucide-react";
+import floorplan25TowerA from "@/assets/floorplan-2-5-tower-a.png";
+import floorplan615TowerA from "@/assets/floorplan-6-15-tower-a.png";
+import floorplan25TowerB from "@/assets/floorplan-2-5-tower-b.png";
+import floorplan615TowerB from "@/assets/floorplan-6-15-tower-b.png";
 
 const ApartmentDetail = () => {
   const { type } = useParams();
@@ -415,16 +419,75 @@ const ApartmentDetail = () => {
               <Card>
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold text-foreground mb-6">
-                    Mặt bằng căn hộ
+                    Mặt bằng căn hộ điển hình
                   </h2>
-                  <div className="relative h-[600px] rounded-xl overflow-hidden border border-border">
-                    <img
-                      src={apartment.floorPlan}
-                      alt="Mặt bằng căn hộ"
-                      className="w-full h-full object-contain bg-muted"
-                    />
+                  <p className="text-muted-foreground mb-6">
+                    Mặt bằng căn hộ theo từng tòa nhà và tầng. Diện tích và bố cục có thể thay đổi tùy vị trí căn hộ.
+                  </p>
+                  
+                  <div className="space-y-8">
+                    {/* Tòa A */}
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                        <Building2 className="w-5 h-5 text-primary" />
+                        Tòa A
+                      </h3>
+                      <div className="grid gap-6">
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-3">Tầng 2-5</h4>
+                          <div className="relative h-[500px] rounded-xl overflow-hidden border border-border bg-background">
+                            <img
+                              src={floorplan25TowerA}
+                              alt="Mặt bằng tầng 2-5 tòa A"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-3">Tầng 6-15</h4>
+                          <div className="relative h-[500px] rounded-xl overflow-hidden border border-border bg-background">
+                            <img
+                              src={floorplan615TowerA}
+                              alt="Mặt bằng tầng 6-15 tòa A"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Tòa B */}
+                    <div className="pt-6 border-t border-border">
+                      <h3 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                        <Building2 className="w-5 h-5 text-primary" />
+                        Tòa B
+                      </h3>
+                      <div className="grid gap-6">
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-3">Tầng 2-5</h4>
+                          <div className="relative h-[500px] rounded-xl overflow-hidden border border-border bg-background">
+                            <img
+                              src={floorplan25TowerB}
+                              alt="Mặt bằng tầng 2-5 tòa B"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-3">Tầng 6-15</h4>
+                          <div className="relative h-[500px] rounded-xl overflow-hidden border border-border bg-background">
+                            <img
+                              src={floorplan615TowerB}
+                              alt="Mặt bằng tầng 6-15 tòa B"
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-4 text-center italic">
+
+                  <p className="text-sm text-muted-foreground mt-6 text-center italic">
                     Mặt bằng thiết kế {apartment.name} - Diện tích {apartment.area}
                   </p>
                 </CardContent>
