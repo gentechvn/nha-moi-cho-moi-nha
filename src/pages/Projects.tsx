@@ -12,6 +12,9 @@ import projectAerial from "@/assets/project-aerial.jpg";
 import projectTowers from "@/assets/project-towers.jpg";
 import projectFacade from "@/assets/project-facade.jpg";
 import projectEntrance from "@/assets/project-entrance.jpg";
+import projectNightView from "@/assets/project-night-view.jpg";
+import projectOverview from "@/assets/project-overview.jpg";
+import projectLandscape from "@/assets/project-landscape.jpg";
 
 const Projects = () => {
   const apartmentTypes = [
@@ -120,11 +123,43 @@ const Projects = () => {
 
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={projectEntrance}
+                src={projectNightView}
                 alt="Dự án nhà ở xã hội Đồng Hới"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+            </div>
+          </div>
+          
+          {/* Additional Project Images Gallery */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+            <div className="relative h-48 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src={projectOverview}
+                alt="Tổng quan dự án"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative h-48 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src={projectLandscape}
+                alt="Cảnh quan dự án"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative h-48 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src={projectTowers}
+                alt="Tòa nhà dự án"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative h-48 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src={projectEntrance}
+                alt="Lối vào dự án"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
           </div>
         </div>

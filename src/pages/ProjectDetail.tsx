@@ -23,6 +23,14 @@ import {
   Car,
 } from "lucide-react";
 import { useState } from "react";
+import projectNightView from "@/assets/project-night-view.jpg";
+import projectOverview from "@/assets/project-overview.jpg";
+import projectLandscape from "@/assets/project-landscape.jpg";
+import projectDetail1 from "@/assets/project-detail-1.jpg";
+import projectTowers from "@/assets/project-towers.jpg";
+import projectFacade from "@/assets/project-facade.jpg";
+import projectAerial from "@/assets/project-aerial.jpg";
+import projectEntrance from "@/assets/project-entrance.jpg";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -48,11 +56,14 @@ const ProjectDetail = () => {
     description:
       "Khu đô thị Green City là dự án nhà ở xã hội cao cấp với quy mô 450 căn hộ, tọa lạc tại vị trí đắc địa quận Long Biên. Dự án được thiết kế hiện đại, đầy đủ tiện ích phục vụ nhu cầu sinh hoạt của cư dân.",
     images: [
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200",
+      projectNightView,
+      projectOverview,
+      projectLandscape,
+      projectDetail1,
+      projectTowers,
+      projectFacade,
+      projectAerial,
+      projectEntrance,
     ],
     video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     amenities: [
@@ -208,8 +219,8 @@ const ProjectDetail = () => {
                 className="w-full h-[400px] lg:h-[500px] object-cover rounded-xl"
               />
             </div>
-            <div className="grid grid-cols-4 lg:grid-cols-1 gap-2">
-              {project.images.slice(0, 4).map((image, index) => (
+            <div className="grid grid-cols-4 lg:grid-cols-1 gap-2 overflow-y-auto max-h-[500px]">
+              {project.images.map((image, index) => (
                 <img
                   key={index}
                   src={image}

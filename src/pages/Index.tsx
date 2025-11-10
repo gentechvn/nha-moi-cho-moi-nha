@@ -16,6 +16,9 @@ import { CheckCircle2, Shield, TrendingUp, Users, ArrowRight, MapPin, Calendar, 
 import projectAerial from "@/assets/project-aerial.jpg";
 import projectTowers from "@/assets/project-towers.jpg";
 import projectFacade from "@/assets/project-facade.jpg";
+import projectNightView from "@/assets/project-night-view.jpg";
+import projectOverview from "@/assets/project-overview.jpg";
+import projectLandscape from "@/assets/project-landscape.jpg";
 
 const Index = () => {
   const featuredProjects = [
@@ -56,7 +59,7 @@ const Index = () => {
       id: 1,
       title: "Chính sách mới hỗ trợ mua nhà ở xã hội 2024",
       excerpt: "Chính phủ công bố gói hỗ trợ vay vốn ưu đãi lên đến 70% giá trị căn hộ với lãi suất 0% trong 5 năm đầu...",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+      image: projectNightView,
       date: "15/01/2024",
       category: "Chính sách",
     },
@@ -64,7 +67,7 @@ const Index = () => {
       id: 2,
       title: "Dự án Green City đạt tiến độ vượt kế hoạch",
       excerpt: "Sau 18 tháng thi công, dự án Green City đã hoàn thành 85% khối lượng và dự kiến bàn giao vào quý 2/2024...",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+      image: projectOverview,
       date: "12/01/2024",
       category: "Dự án",
     },
@@ -72,7 +75,7 @@ const Index = () => {
       id: 3,
       title: "Hướng dẫn thủ tục đăng ký mua nhà ở xã hội",
       excerpt: "Quy trình đăng ký mua nhà ở xã hội đơn giản với 5 bước cơ bản. Người dân có thể đăng ký trực tuyến...",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+      image: projectLandscape,
       date: "10/01/2024",
       category: "Hướng dẫn",
     },
