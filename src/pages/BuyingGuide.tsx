@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import PageBanner from "@/components/PageBanner";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, FileText, ClipboardCheck, Home, Phone, ArrowRight } from "lucide-react";
+import { CheckCircle2, FileText, ClipboardCheck, Home, Phone, ArrowRight, Download, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const BuyingGuide = () => {
@@ -75,14 +75,105 @@ const BuyingGuide = () => {
     }
   ];
 
-  const requiredDocuments = [
-    "Chứng minh nhân dân/Căn cước công dân (bản sao công chứng)",
-    "Sổ hộ khẩu (bản sao công chứng)",
-    "Giấy xác nhận thu nhập (do cơ quan có thẩm quyền cấp)",
-    "Giấy xác nhận không sở hữu nhà ở (do UBND phường/xã cấp)",
-    "Đơn đăng ký mua nhà ở xã hội (theo mẫu)",
-    "Giấy kết hôn (nếu có) - bản sao công chứng",
-    "Các giấy tờ chứng minh thuộc đối tượng ưu tiên (nếu có)"
+  const downloadableForms = [
+    {
+      number: "01",
+      title: "Giấy tờ chứng minh đối tượng được hưởng chính sách hỗ trợ về nhà ở xã hội",
+      description: "Mẫu xác nhận đối tượng được mua NOXH (áp dụng cho tất cả trừ đối tượng 7)",
+      reference: "Mẫu số 01, Phụ lục I, Thông tư 05/2024/TT-BXD"
+    },
+    {
+      number: "02",
+      title: "Giấy tờ chứng minh điều kiện về nhà ở (chưa có nhà ở thuộc sở hữu)",
+      description: "Dành cho trường hợp chưa có nhà ở thuộc sở hữu của mình",
+      reference: "Mẫu số 02, Phụ lục I, Thông tư 05/2024/TT-BXD"
+    },
+    {
+      number: "03",
+      title: "Giấy tờ chứng minh điều kiện về nhà ở (diện tích < 15m²/người)",
+      description: "Dành cho trường hợp có nhà ở nhưng diện tích bình quân đầu người thấp hơn 15m² sàn/người",
+      reference: "Mẫu số 03, Phụ lục I, Thông tư 05/2024/TT-BXD"
+    },
+    {
+      number: "04",
+      title: "Giấy tờ chứng minh điều kiện về thu nhập (có Hợp đồng lao động)",
+      description: "Xác nhận thu nhập cho người có Hợp đồng lao động",
+      reference: "Mẫu số 04, Phụ lục I, Thông tư 05/2024/TT-BXD"
+    },
+    {
+      number: "05",
+      title: "Giấy kê khai về điều kiện thu nhập (không có HĐLĐ)",
+      description: "Dành cho đối tượng thu nhập thấp tại khu vực đô thị không có Hợp đồng lao động",
+      reference: "Mẫu số 05, Phụ lục I, Thông tư 05/2024/TT-BXD"
+    }
+  ];
+
+  const documentsByGroup = [
+    {
+      group: "Đối tượng 1: Người có công với cách mạng",
+      description: "Thân nhân liệt sỹ thuộc trường hợp được hỗ trợ cải thiện nhà ở",
+      documents: [
+        "CCCD (bản chứng thực) - 2 bản (đã kết hôn thì mỗi người 2 bản)",
+        "Giấy chứng nhận đăng ký kết hôn (bản chứng thực) - 2 bản (nếu đã kết hôn)",
+        "Giấy xác nhận tình trạng hôn nhân (bản chứng thực) - 2 bản (nếu độc thân)",
+        "Đơn đăng ký mua NOXH (bản chính) - 1 bản",
+        "Xác nhận về đối tượng (bản chứng thực) - 1 bản",
+        "Xác nhận về nhà ở (bản chính) - 1 bản (cả vợ/chồng nếu đã kết hôn)"
+      ]
+    },
+    {
+      group: "Đối tượng 2, 3, 4: Hộ nghèo, cận nghèo",
+      description: "Tại khu vực nông thôn và đô thị",
+      documents: [
+        "CCCD (bản chứng thực) - 2 bản",
+        "Giấy chứng nhận đăng ký kết hôn (bản chứng thực) - 2 bản (nếu đã kết hôn)",
+        "Giấy xác nhận tình trạng hôn nhân (bản chứng thực) - 2 bản (nếu độc thân)",
+        "Đơn đăng ký mua NOXH (bản chính) - 1 bản",
+        "Xác nhận về đối tượng (bản chính) - 1 bản",
+        "Xác nhận về nhà ở (bản chính) - 1 bản (cả vợ/chồng nếu đã kết hôn)",
+        "Xác nhận về thu nhập (bản chính) - 1 bản (cả vợ/chồng nếu đã kết hôn)"
+      ]
+    },
+    {
+      group: "Đối tượng 6: Công nhân, người lao động",
+      description: "Đang làm tại doanh nghiệp, hợp tác xã trong/ngoài khu công nghiệp",
+      documents: [
+        "CCCD (bản chứng thực) - 2 bản",
+        "Giấy chứng nhận đăng ký kết hôn (bản chứng thực) - 2 bản (nếu đã kết hôn)",
+        "Giấy xác nhận tình trạng hôn nhân (bản chứng thực) - 2 bản (nếu độc thân)",
+        "Đơn đăng ký mua NOXH (bản chính) - 1 bản",
+        "Xác nhận về đối tượng (bản chính) - 1 bản",
+        "Xác nhận về nhà ở (bản chính) - 1 bản",
+        "Xác nhận về thu nhập (bản chính) - 1 bản"
+      ]
+    },
+    {
+      group: "Đối tượng 7: Lực lượng vũ trang",
+      description: "Sĩ quan, quân nhân chuyên nghiệp, công an nhân dân, công chức quốc phòng",
+      documents: [
+        "CCCD (bản chứng thực) - 2 bản",
+        "Giấy chứng nhận đăng ký kết hôn (bản chứng thực) - 1 bản (nếu đã kết hôn)",
+        "Giấy xác nhận tình trạng hôn nhân (bản chứng thực) - 1 bản (nếu độc thân)",
+        "Đơn đăng ký mua NOXH (bản chính) - 1 bản",
+        "Xác nhận đối tượng QĐND hoặc CAND (bản chính) - 1 bản",
+        "Xác nhận về nhà ở (bản chính) - 1 bản",
+        "Xác nhận về thu nhập (bản chứng thực) - 1 bản"
+      ]
+    },
+    {
+      group: "Đối tượng 8: Cán bộ, công chức, viên chức",
+      description: "Cán bộ, công chức, viên chức nhà nước",
+      documents: [
+        "CCCD (bản chứng thực) - 2 bản",
+        "Giấy chứng nhận đăng ký kết hôn (bản chứng thực) - 2 bản (nếu đã kết hôn)",
+        "Giấy xác nhận tình trạng hôn nhân (bản chứng thực) - 2 bản (nếu độc thân)",
+        "Đơn đăng ký mua NOXH (bản chính) - 1 bản",
+        "Xác nhận về đối tượng (bản chính) - 1 bản",
+        "Xác nhận về nhà ở (bản chính) - 1 bản",
+        "Xác nhận về thu nhập (bản chính) - 1 bản",
+        "Xác nhận có nhà ở nhưng cách xa nơi làm việc >30km (nếu có) - 1 bản"
+      ]
+    }
   ];
 
   const priorityGroups = [
@@ -164,27 +255,118 @@ const BuyingGuide = () => {
           </div>
         </section>
 
-        {/* Required Documents Section */}
+        {/* Downloadable Forms Section */}
         <section className="py-16 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-accent/5" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-black mb-8 text-center gradient-text">
-                Hồ Sơ Cần Chuẩn Bị
-              </h2>
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black mb-4 gradient-text">
+                  Tải Mẫu Đơn & Giấy Tờ
+                </h2>
+                <p className="text-muted-foreground text-lg">
+                  Download các mẫu đơn và giấy tờ cần thiết để chuẩn bị hồ sơ đăng ký
+                </p>
+              </div>
               
-              <Card className="overflow-hidden border-2">
-                <CardContent className="p-8">
-                  <ul className="grid md:grid-cols-2 gap-4">
-                    {requiredDocuments.map((doc, index) => (
-                      <li key={index} className="flex items-start gap-3 group">
-                        <FileText className="w-5 h-5 text-primary flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                        <span className="text-foreground/90">{doc}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+              <div className="grid gap-4">
+                {downloadableForms.map((form, index) => (
+                  <Card 
+                    key={index}
+                    className="overflow-hidden hover:shadow-lg transition-all duration-300 border-l-4 border-l-primary"
+                  >
+                    <CardContent className="p-6">
+                      <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
+                        <div className="flex gap-4 flex-1">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                              <span className="text-lg font-bold text-primary">{form.number}</span>
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="font-bold text-lg mb-2">{form.title}</h3>
+                            <p className="text-muted-foreground text-sm mb-1">{form.description}</p>
+                            <p className="text-xs text-muted-foreground/70 italic">{form.reference}</p>
+                          </div>
+                        </div>
+                        <Button variant="outline" className="gap-2 whitespace-nowrap">
+                          <Download className="w-4 h-4" />
+                          Tải xuống
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              <div className="mt-8 p-6 bg-accent/10 rounded-lg border-l-4 border-accent">
+                <div className="flex gap-3">
+                  <FileText className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold mb-2">Lưu ý quan trọng:</p>
+                    <ul className="text-sm text-muted-foreground space-y-1">
+                      <li>• Tải mẫu đơn phù hợp với đối tượng của bạn</li>
+                      <li>• Điền đầy đủ, chính xác thông tin vào các mẫu</li>
+                      <li>• Chuẩn bị bản chính và bản sao công chứng theo yêu cầu</li>
+                      <li>• Liên hệ hotline 0982.437.434 nếu cần hỗ trợ điền đơn</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Required Documents by Group Section */}
+        <section className="py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black mb-4 gradient-text">
+                  Hồ Sơ Chi Tiết Theo Đối Tượng
+                </h2>
+                <p className="text-muted-foreground text-lg">
+                  Danh sách giấy tờ cụ thể cho từng nhóm đối tượng
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                {documentsByGroup.map((item, index) => (
+                  <Card 
+                    key={index}
+                    className="overflow-hidden hover:shadow-lg transition-all duration-300"
+                  >
+                    <CardContent className="p-0">
+                      <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 border-b">
+                        <div className="flex items-start gap-4">
+                          <Users className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <h3 className="font-bold text-xl mb-2">{item.group}</h3>
+                            <p className="text-muted-foreground">{item.description}</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <ul className="grid md:grid-cols-2 gap-3">
+                          {item.documents.map((doc, idx) => (
+                            <li key={idx} className="flex items-start gap-3 group">
+                              <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                              <span className="text-sm text-foreground/90">{doc}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              <div className="mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">
+                <p className="text-sm text-muted-foreground">
+                  <strong className="text-foreground">Quy định chung:</strong> Tất cả bản sao phải được công chứng theo quy định. 
+                  Trường hợp đã kết hôn, vợ và chồng đều phải cung cấp giấy tờ xác nhận về điều kiện nhà ở và thu nhập.
+                </p>
+              </div>
             </div>
           </div>
         </section>
