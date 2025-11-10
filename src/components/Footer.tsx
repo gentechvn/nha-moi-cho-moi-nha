@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { Facebook, Mail, Phone, MapPin, Youtube, MessageCircle } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -100,13 +98,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-sm text-primary-foreground/80">
-            © 2024 Nhà Ở Xã Hội. Tất cả quyền được bảo lưu.
-          </p>
+          <p className="text-sm text-primary-foreground/80">© 2025 Nhà Ở Xã Hội. Tất cả quyền được bảo lưu.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
