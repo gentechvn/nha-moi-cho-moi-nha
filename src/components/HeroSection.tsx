@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="max-w-4xl">
           {/* Premium Badge */}
           <div className="inline-block mb-6 px-5 py-2.5 bg-red-600 rounded-full border border-white/30 animate-fade-in shadow-xl">
-            <span className="text-white font-bold text-sm tracking-wide">✨ Chương trình ưu đãi đặc biệt 2024 - Giảm đến 15%</span>
+            <span className="text-white font-bold text-sm tracking-wide">✨ Chương trình ưu đãi đặc biệt 2025</span>
           </div>
           
           {/* Main Heading with Gradient */}
