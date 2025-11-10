@@ -4,14 +4,18 @@ import { ArrowRight, Home, Users, Award } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-[95vh] flex items-center overflow-hidden">
-      {/* Animated Background Pattern */}
+      {/* Hero Background with Modern Overlay */}
       <div className="absolute inset-0 z-0">
+        {/* Main Image */}
+        <img src={heroBackground} alt="Dự án nhà ở xã hội Đồng Hới" className="w-full h-full object-cover object-center scale-105 animate-[scale_20s_ease-in-out_infinite_alternate]" />
+        
+        {/* Gradient Overlay - Bottom heavy to show image on top */}
         <div className="absolute inset-0 bg-gradient-hero z-10" />
-        <div className="absolute inset-0 z-5" style={{
-        backgroundImage: 'radial-gradient(circle at 25% 25%, hsl(45 100% 60% / 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, hsl(48 100% 65% / 0.1) 0%, transparent 50%)',
-        animation: 'pulse-slow 4s ease-in-out infinite'
-      }} />
-        <img src={heroBackground} alt="Dự án nhà ở xã hội Đồng Hới" className="w-full h-full object-cover object-center" />
+        
+        {/* Subtle Light Effects */}
+        <div className="absolute inset-0 z-5 opacity-30" style={{
+          backgroundImage: 'radial-gradient(circle at 20% 80%, hsl(45 100% 60% / 0.2) 0%, transparent 50%), radial-gradient(circle at 80% 20%, hsl(48 100% 65% / 0.15) 0%, transparent 40%)',
+        }} />
       </div>
 
       {/* Content */}
