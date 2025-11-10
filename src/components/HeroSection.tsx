@@ -27,8 +27,8 @@ const HeroSection = () => {
           </div>
           
           {/* Main Heading with Gradient */}
-          <h1 className="font-be-vietnam text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 animate-fade-in leading-tight tracking-tight">khởi đầu hạnh phúc
-Từ Tổ Ấm Của Bạn<br />
+          <h1 className="font-be-vietnam text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 animate-fade-in leading-tight tracking-tight">
+            Khởi Đầu Hạnh Phúc<br />
             Từ <span className="gradient-text bg-gradient-to-r from-secondary via-primary-light to-secondary animate-shimmer bg-[length:200%_auto]">Tổ Ấm</span> Của Bạn
           </h1>
           
