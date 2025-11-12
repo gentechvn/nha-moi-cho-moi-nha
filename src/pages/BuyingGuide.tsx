@@ -80,31 +80,36 @@ const BuyingGuide = () => {
       number: "01",
       title: "Giấy tờ chứng minh đối tượng được hưởng chính sách hỗ trợ về nhà ở xã hội",
       description: "Mẫu xác nhận đối tượng được mua NOXH (áp dụng cho tất cả trừ đối tượng 7)",
-      reference: "Mẫu số 01, Phụ lục I, Thông tư 05/2024/TT-BXD"
+      reference: "Mẫu số 01, Phụ lục I, Thông tư 05/2024/TT-BXD",
+      downloadUrl: "/forms/mau-so-01.docx"
     },
     {
       number: "02",
       title: "Giấy tờ chứng minh điều kiện về nhà ở (chưa có nhà ở thuộc sở hữu)",
       description: "Dành cho trường hợp chưa có nhà ở thuộc sở hữu của mình",
-      reference: "Mẫu số 02, Phụ lục I, Thông tư 05/2024/TT-BXD"
+      reference: "Mẫu số 02, Phụ lục I, Thông tư 05/2024/TT-BXD",
+      downloadUrl: "/forms/mau-so-02.docx"
     },
     {
       number: "03",
       title: "Giấy tờ chứng minh điều kiện về nhà ở (diện tích < 15m²/người)",
       description: "Dành cho trường hợp có nhà ở nhưng diện tích bình quân đầu người thấp hơn 15m² sàn/người",
-      reference: "Mẫu số 03, Phụ lục I, Thông tư 05/2024/TT-BXD"
+      reference: "Mẫu số 03, Phụ lục I, Thông tư 05/2024/TT-BXD",
+      downloadUrl: "/forms/mau-so-03.docx"
     },
     {
       number: "04",
       title: "Giấy tờ chứng minh điều kiện về thu nhập (có Hợp đồng lao động)",
       description: "Xác nhận thu nhập cho người có Hợp đồng lao động",
-      reference: "Mẫu số 04, Phụ lục I, Thông tư 05/2024/TT-BXD"
+      reference: "Mẫu số 04, Phụ lục I, Thông tư 05/2024/TT-BXD",
+      downloadUrl: "/forms/mau-so-04.docx"
     },
     {
       number: "05",
       title: "Giấy kê khai về điều kiện thu nhập (không có HĐLĐ)",
       description: "Dành cho đối tượng thu nhập thấp tại khu vực đô thị không có Hợp đồng lao động",
-      reference: "Mẫu số 05, Phụ lục I, Thông tư 05/2024/TT-BXD"
+      reference: "Mẫu số 05, Phụ lục I, Thông tư 05/2024/TT-BXD",
+      downloadUrl: "/forms/mau-so-05.docx"
     }
   ];
 
@@ -289,9 +294,15 @@ const BuyingGuide = () => {
                             <p className="text-xs text-muted-foreground/70 italic">{form.reference}</p>
                           </div>
                         </div>
-                        <Button variant="outline" className="gap-2 whitespace-nowrap">
-                          <Download className="w-4 h-4" />
-                          Tải xuống
+                        <Button 
+                          variant="outline" 
+                          className="gap-2 whitespace-nowrap"
+                          asChild
+                        >
+                          <a href={form.downloadUrl} download>
+                            <Download className="w-4 h-4" />
+                            Tải xuống
+                          </a>
                         </Button>
                       </div>
                     </CardContent>
