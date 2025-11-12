@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-4">
-              <img src={logo} alt="Nhà Ở Xã Hội" className="h-16 w-auto" />
+              <img src={logo} alt="Nhà Ở Xã Hội" className="h-20 w-auto" />
             </div>
             <p className="text-sm text-primary-foreground/80 mb-4">
               Cung cấp giải pháp nhà ở xã hội chất lượng cao, giá cả phải chăng cho người dân.
