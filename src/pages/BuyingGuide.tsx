@@ -231,7 +231,7 @@ const BuyingGuide = () => {
                           <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                             <step.icon className="w-8 h-8 text-primary" />
                           </div>
-                          <div className="text-5xl font-black text-primary/20">
+                          <div className="text-5xl font-black text-primary font-bold">
                             {step.number}
                           </div>
                         </div>
