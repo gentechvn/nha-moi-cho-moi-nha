@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,14 +25,8 @@ const Header = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">NH</span>
-            </div>
-            <div className="hidden sm:block">
-              <p className="font-bold text-lg text-foreground">Nhà Ở Xã Hội</p>
-              <p className="text-xs text-muted-foreground">Mơ ước có thật</p>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Nhà Ở Xã Hội" className="h-12 w-auto sm:h-14" />
           </Link>
 
           {/* Desktop Navigation */}

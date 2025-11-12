@@ -1,19 +1,14 @@
 import { Link } from "react-router-dom";
 import { Facebook, Mail, Phone, MapPin, Youtube, MessageCircle } from "lucide-react";
+import logo from "@/assets/logo.png";
 const Footer = () => {
   return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                <span className="text-secondary-foreground font-bold text-xl">NH</span>
-              </div>
-              <div>
-                <p className="font-bold text-lg">Nhà Ở Xã Hội</p>
-                <p className="text-xs text-primary-foreground/80">Mơ ước có thật</p>
-              </div>
+            <div className="mb-4">
+              <img src={logo} alt="Nhà Ở Xã Hội" className="h-16 w-auto" />
             </div>
             <p className="text-sm text-primary-foreground/80 mb-4">
               Cung cấp giải pháp nhà ở xã hội chất lượng cao, giá cả phải chăng cho người dân.
