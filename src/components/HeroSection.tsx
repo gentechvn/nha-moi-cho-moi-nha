@@ -38,15 +38,11 @@ const HeroSection = () => {
           </div>
 
           {/* Main Heading with Gradient */}
-          <h1 className="leading-3 text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 animate-fade-in tracking-tight">
-            Khởi Đầu Hạnh Phúc
-            <br />
-            Từ{" "}
-            <span className="gradient-text bg-gradient-to-r from-secondary via-primary-light to-secondary animate-shimmer bg-[length:200%_auto]">
-              Tổ Ấm
-            </span>{" "}
-            Của Bạn
-          </h1>
+          <div className="flex flex-col gap-5 text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 animate-fade-in tracking-tight">
+            <span>KHỞI ĐẦU HẠNH PHÚC</span>
+            <span className="text-[#F6CA36]">TỪ TỔ ẤM</span>
+            CỦA BẠN
+          </div>
 
           {/* Enhanced Description */}
           <p className="text-xl sm:text-2xl text-white/95 mb-10 animate-fade-in leading-relaxed font-light max-w-2xl">
