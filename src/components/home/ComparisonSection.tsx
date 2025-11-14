@@ -63,48 +63,48 @@ const ComparisonSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-card rounded-2xl shadow-2xl overflow-hidden border border-border/50 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             {/* Header */}
-            <div className="grid grid-cols-3 bg-muted/30">
-              <div className="p-6">
-                <h3 className="font-bold text-foreground">Tiêu chí</h3>
+            <div className="grid grid-cols-3 bg-muted/30 overflow-x-auto">
+              <div className="p-4 sm:p-6 min-w-[120px]">
+                <h3 className="font-bold text-foreground text-sm sm:text-base">Tiêu chí</h3>
               </div>
-              <div className="p-6 bg-gradient-primary text-center">
-                <h3 className="font-bold text-primary-foreground">Nhà Ở Xã Hội</h3>
-                <p className="text-xs text-primary-foreground/80 mt-1">Lựa chọn tốt nhất</p>
+              <div className="p-4 sm:p-6 bg-gradient-primary text-center min-w-[140px]">
+                <h3 className="font-bold text-primary-foreground text-sm sm:text-base">Nhà Ở Xã Hội</h3>
+                <p className="text-xs text-primary-foreground/80 mt-1 hidden sm:block">Lựa chọn tốt nhất</p>
               </div>
-              <div className="p-6 text-center">
-                <h3 className="font-bold text-foreground">Nhà Thương Mại</h3>
+              <div className="p-4 sm:p-6 text-center min-w-[140px]">
+                <h3 className="font-bold text-foreground text-sm sm:text-base">Nhà Thương Mại</h3>
               </div>
             </div>
 
             {/* Comparison Rows */}
-            <div className="divide-y divide-border/50">
+            <div className="divide-y divide-border/50 overflow-x-auto">
               {comparisons.map((item, index) => (
                 <div
                   key={index}
-                  className="grid grid-cols-3 hover:bg-muted/20 transition-colors"
+                  className="grid grid-cols-3 hover:bg-muted/20 transition-colors min-w-[600px] sm:min-w-0"
                 >
-                  <div className="p-6 flex items-center">
-                    <span className="text-foreground font-medium">{item.feature}</span>
+                  <div className="p-4 sm:p-6 flex items-center min-w-[120px]">
+                    <span className="text-foreground font-medium text-sm sm:text-base">{item.feature}</span>
                   </div>
-                  <div className="p-6 flex items-center justify-center bg-primary/5">
+                  <div className="p-4 sm:p-6 flex items-center justify-center bg-primary/5 min-w-[140px]">
                     {item.social ? (
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                        <Check className="w-5 h-5 text-primary-foreground" />
+                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-primary rounded-full flex items-center justify-center">
+                        <Check className="w-4 h-4 sm:w-5 sm:h-5 text-primary-foreground" />
                       </div>
                     ) : (
-                      <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center">
-                        <X className="w-5 h-5 text-muted-foreground" />
+                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-muted rounded-full flex items-center justify-center">
+                        <X className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground" />
                       </div>
                     )}
                   </div>
-                  <div className="p-6 flex items-center justify-center">
+                  <div className="p-4 sm:p-6 flex items-center justify-center min-w-[140px]">
                     {item.commercial ? (
-                      <div className="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center">
-                        <Check className="w-5 h-5 text-accent" />
+                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-accent/20 rounded-full flex items-center justify-center">
+                        <Check className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
                       </div>
                     ) : (
-                      <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center">
-                        <X className="w-5 h-5 text-muted-foreground" />
+                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-muted rounded-full flex items-center justify-center">
+                        <X className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground" />
                       </div>
                     )}
                   </div>

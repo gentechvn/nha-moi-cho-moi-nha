@@ -129,7 +129,7 @@ const Index = () => {
       <HeroSection />
 
       {/* Benefits Section */}
-      <section className="py-24 bg-gradient-to-br from-secondary/10 via-background to-primary/5 relative overflow-hidden">
+      <section className="py-16 sm:py-24 bg-gradient-to-br from-secondary/10 via-background to-primary/5 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
@@ -141,7 +141,7 @@ const Index = () => {
                 ✨ Ưu điểm vượt trội
               </span>
             </div>
-            <h2 className="text-4xl sm:text-5xl font-black text-foreground mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-foreground mb-4 break-words">
               Vì sao chọn <span className="gradient-text">Nhà Ở Xã Hội</span>?
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
@@ -179,7 +179,7 @@ const Index = () => {
       <ProcessSteps />
 
       {/* Featured Projects Section */}
-      <section className="py-24 bg-muted/30 relative">
+      <section className="py-16 sm:py-24 bg-muted/30 relative">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-16 animate-fade-in gap-4">
             <div>
@@ -188,7 +188,7 @@ const Index = () => {
                   🏘️ Dự án nổi bật
                 </span>
               </div>
-              <h2 className="text-4xl sm:text-5xl font-black text-foreground mb-3">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-foreground mb-3 break-words">
                 Dự Án <span className="gradient-text">Đang Mở Bán</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
@@ -234,7 +234,7 @@ const Index = () => {
       {/* <Testimonials /> */}
 
       {/* CTA Banner */}
-      <section className="py-24 bg-gradient-primary text-primary-foreground relative overflow-hidden">
+      <section className="py-16 sm:py-24 bg-gradient-primary text-primary-foreground relative overflow-hidden">
         {/* Enhanced decorative elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-secondary/30 rounded-full blur-3xl animate-pulse-slow" />
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-accent/20 rounded-full blur-3xl animate-pulse-slow" />
@@ -246,32 +246,32 @@ const Index = () => {
               🎉 Ưu đãi đặc biệt - Giảm ngay 15%
             </span>
           </div>
-          <h2 className="text-4xl sm:text-6xl font-black mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black mb-6 leading-tight break-words">
             Sẵn Sàng Sở Hữu
             <br />
             Ngôi Nhà{" "}
             <span className="text-secondary drop-shadow-lg">Mơ Ước</span>?
           </h2>
-          <p className="text-xl text-primary-foreground/95 mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="text-base sm:text-lg lg:text-xl text-primary-foreground/95 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed font-medium px-4">
             Đăng ký ngay hôm nay để nhận tư vấn miễn phí và ưu đãi đặc biệt dành
             cho <span className="font-bold text-secondary">100 khách hàng</span>{" "}
             đăng ký sớm nhất
           </p>
-          <div className="flex flex-col sm:flex-row gap-5 justify-center mb-14">
-            <Link to="/register">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center mb-10 sm:mb-14 px-4">
+            <Link to="/register" className="w-full sm:w-auto">
               <Button
                 size="lg"
-                className="w-full sm:w-auto h-16 bg-card hover:bg-card/90 text-foreground shadow-2xl px-12 group font-bold text-lg"
+                className="w-full sm:w-auto h-14 sm:h-16 bg-card hover:bg-card/90 text-foreground shadow-2xl px-8 sm:px-12 group font-bold text-base sm:text-lg"
               >
                 Đăng ký tư vấn miễn phí
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-2 transition-transform" />
               </Button>
             </Link>
-            <Link to="/contact">
+            <Link to="/contact" className="w-full sm:w-auto">
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full sm:w-auto h-16 border-3 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-12 font-bold text-lg"
+                className="w-full sm:w-auto h-14 sm:h-16 border-3 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 sm:px-12 font-bold text-base sm:text-lg"
               >
                 Liên hệ hotline
               </Button>
@@ -303,7 +303,7 @@ const Index = () => {
       <PartnersSection />
 
       {/* Latest News Section */}
-      <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
+      <section className="py-16 sm:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
         <div className="absolute top-1/4 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
 
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
@@ -314,7 +314,7 @@ const Index = () => {
                   📰 Tin tức & cập nhật
                 </span>
               </div>
-              <h2 className="text-4xl sm:text-5xl font-black text-foreground mb-3">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-foreground mb-3 break-words">
                 Tin Tức <span className="gradient-text">Mới Nhất</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
