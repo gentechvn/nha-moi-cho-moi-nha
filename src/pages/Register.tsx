@@ -1,3 +1,5 @@
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
@@ -10,15 +12,88 @@ import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Phone, Mail, MapPin, Clock, ClipboardList } from "lucide-react";
 
+// EmailJS configuration
+// Bạn cần thay thế các giá trị này bằng thông tin từ EmailJS dashboard
+const EMAILJS_SERVICE_ID =
+  import.meta.env.VITE_EMAILJS_SERVICE_ID || "your_service_id";
+const EMAILJS_TEMPLATE_ID =
+  import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "your_template_id";
+const EMAILJS_PUBLIC_KEY =
+  import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "your_public_key";
+
 const Register = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    fullname: "",
+    phone: "",
+    email: "",
+    address: "",
+    project: "",
+    area: "",
+    message: "",
+  });
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({ ...prev, [id]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({
-      title: "Đăng ký thành công!",
-      description: "Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.",
-    });
+    setIsSubmitting(true);
+
+    try {
+      // Prepare template parameters for EmailJS
+      const templateParams = {
+        to_email: "genzmentalhealth2024@gmail.com",
+        from_name: formData.fullname,
+        from_email: formData.email || "N/A",
+        phone: formData.phone,
+        address: formData.address || "N/A",
+        project: formData.project || "N/A",
+        area: formData.area || "N/A",
+        message: formData.message || "N/A",
+        reply_to: formData.email || "genzmentalhealth2024@gmail.com",
+      };
+
+      // Send email using EmailJS
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
+      );
+
+      toast({
+        title: "Đăng ký thành công!",
+        description: "Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.",
+      });
+
+      // Reset form
+      setFormData({
+        fullname: "",
+        phone: "",
+        email: "",
+        address: "",
+        project: "",
+        area: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast({
+        title: "Có lỗi xảy ra",
+        description: "Vui lòng thử lại sau hoặc liên hệ trực tiếp qua hotline.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -49,6 +124,8 @@ const Register = () => {
                         type="text"
                         placeholder="Nguyễn Văn A"
                         required
+                        value={formData.fullname}
+                        onChange={handleChange}
                         className="mt-2"
                       />
                     </div>
@@ -59,6 +136,8 @@ const Register = () => {
                         type="tel"
                         placeholder="0901 234 567"
                         required
+                        value={formData.phone}
+                        onChange={handleChange}
                         className="mt-2"
                       />
                     </div>
@@ -70,6 +149,8 @@ const Register = () => {
                       id="email"
                       type="email"
                       placeholder="example@email.com"
+                      value={formData.email}
+                      onChange={handleChange}
                       className="mt-2"
                     />
                   </div>
@@ -80,6 +161,8 @@ const Register = () => {
                       id="address"
                       type="text"
                       placeholder="Số nhà, đường, quận/huyện, thành phố"
+                      value={formData.address}
+                      onChange={handleChange}
                       className="mt-2"
                     />
                   </div>
@@ -89,16 +172,22 @@ const Register = () => {
                       <Label htmlFor="project">Dự án quan tâm</Label>
                       <select
                         id="project"
+                        value={formData.project}
+                        onChange={handleChange}
                         className="w-full mt-2 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                       >
                         <option value="">Chọn dự án</option>
-                        <option value="dong-hoi-center">Khu nhà ở xã hội trung tâm thành phố Đồng Hới</option>
+                        <option value="dong-hoi-center">
+                          Khu nhà ở xã hội trung tâm thành phố Đồng Hới
+                        </option>
                       </select>
                     </div>
                     <div>
                       <Label htmlFor="area">Diện tích quan tâm</Label>
                       <select
                         id="area"
+                        value={formData.area}
+                        onChange={handleChange}
                         className="w-full mt-2 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                       >
                         <option value="">Chọn diện tích</option>
@@ -116,12 +205,19 @@ const Register = () => {
                       id="message"
                       placeholder="Chia sẻ thêm về nhu cầu và mong muốn của bạn..."
                       rows={4}
+                      value={formData.message}
+                      onChange={handleChange}
                       className="mt-2"
                     />
                   </div>
 
-                  <Button type="submit" className="w-full bg-gradient-primary shadow-primary" size="lg">
-                    Đăng ký ngay
+                  <Button
+                    type="submit"
+                    className="w-full bg-gradient-primary shadow-primary"
+                    size="lg"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Đang gửi..." : "Đăng ký ngay"}
                   </Button>
 
                   <p className="text-sm text-muted-foreground text-center">
@@ -144,14 +240,18 @@ const Register = () => {
                     <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold">Hotline</p>
-                      <p className="text-sm text-muted-foreground">0982.437.434</p>
+                      <p className="text-sm text-muted-foreground">
+                        0982.437.434
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <p className="text-sm text-muted-foreground">nhaoxahoidonghoi@gmail.com</p>
+                      <p className="text-sm text-muted-foreground">
+                        nhaoxahoidonghoi@gmail.com
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -167,8 +267,12 @@ const Register = () => {
                     <Clock className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-semibold">Giờ làm việc</p>
-                      <p className="text-sm text-muted-foreground">Thứ 2 - Thứ 7: 8:00 - 18:00</p>
-                      <p className="text-sm text-muted-foreground">Chủ nhật: 8:00 - 12:00</p>
+                      <p className="text-sm text-muted-foreground">
+                        Thứ 2 - Thứ 7: 8:00 - 18:00
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        Chủ nhật: 8:00 - 12:00
+                      </p>
                     </div>
                   </div>
                 </div>
