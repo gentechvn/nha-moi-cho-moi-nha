@@ -1,29 +1,31 @@
 import { Link } from "react-router-dom";
-import { Facebook, Mail, Phone, MapPin, Youtube, MessageCircle } from "lucide-react";
+import {
+  Facebook,
+  Mail,
+  Phone,
+  MapPin,
+  Youtube,
+  MessageCircle,
+} from "lucide-react";
 import logo from "@/assets/logo.png";
 const Footer = () => {
-  return <footer className="bg-primary text-primary-foreground">
+  return (
+    <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="mb-4">
-              <img src={logo} alt="Nhà Ở Xã Hội" className="h-20 w-auto" />
+            <div className="mb-4 bg-white h-[150px] w-[150px] rounded-full">
+              <img
+                src={logo}
+                alt="Nhà Ở Xã Hội"
+                className="h-full w-auto object-contain scale-[1.5]"
+              />
             </div>
             <p className="text-sm text-primary-foreground/80 mb-4">
-              Cung cấp giải pháp nhà ở xã hội chất lượng cao, giá cả phải chăng cho người dân.
+              Cung cấp giải pháp nhà ở xã hội chất lượng cao, giá cả phải chăng
+              cho người dân.
             </p>
-            <div className="flex space-x-3">
-              <a href="#" className="w-9 h-9 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-full flex items-center justify-center transition-all">
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-9 h-9 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-full flex items-center justify-center transition-all">
-                <Youtube className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-9 h-9 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-full flex items-center justify-center transition-all">
-                <MessageCircle className="w-4 h-4" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -31,27 +33,42 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Liên kết nhanh</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/about" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link
+                  to="/about"
+                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Giới thiệu
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link
+                  to="/projects"
+                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Dự án
                 </Link>
               </li>
               <li>
-                <Link to="/news" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link
+                  to="/news"
+                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Tin tức
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link
+                  to="/faq"
+                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Câu hỏi thường gặp
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link
+                  to="/contact"
+                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Liên hệ
                 </Link>
               </li>
@@ -62,11 +79,21 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Dịch vụ</h3>
             <ul className="space-y-2">
-              <li className="text-sm text-primary-foreground/80">Tư vấn mua nhà</li>
-              <li className="text-sm text-primary-foreground/80">Hỗ trợ vay vốn</li>
-              <li className="text-sm text-primary-foreground/80">Thủ tục pháp lý</li>
-              <li className="text-sm text-primary-foreground/80">Đặt lịch xem nhà</li>
-              <li className="text-sm text-primary-foreground/80">Chăm sóc sau bán</li>
+              <li className="text-sm text-primary-foreground/80">
+                Tư vấn mua nhà
+              </li>
+              <li className="text-sm text-primary-foreground/80">
+                Hỗ trợ vay vốn
+              </li>
+              <li className="text-sm text-primary-foreground/80">
+                Thủ tục pháp lý
+              </li>
+              <li className="text-sm text-primary-foreground/80">
+                Đặt lịch xem nhà
+              </li>
+              <li className="text-sm text-primary-foreground/80">
+                Chăm sóc sau bán
+              </li>
             </ul>
           </div>
 
@@ -82,20 +109,27 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2 text-sm">
                 <Phone className="w-5 h-5 flex-shrink-0 text-secondary" />
-                <span className="text-primary-foreground/80">0232 3831 869</span>
+                <span className="text-primary-foreground/80">
+                  0232 3831 869
+                </span>
               </li>
               <li className="flex items-center space-x-2 text-sm">
                 <Mail className="w-5 h-5 flex-shrink-0 text-secondary" />
-                <span className="text-primary-foreground/80">info@donghoiproject.vn</span>
+                <span className="text-primary-foreground/80">
+                  info@donghoiproject.vn
+                </span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-sm text-primary-foreground/80">© 2025 Nhà Ở Xã Hội. Tất cả quyền được bảo lưu.</p>
+          <p className="text-sm text-primary-foreground/80">
+            © 2025 Nhà Ở Xã Hội. Tất cả quyền được bảo lưu.
+          </p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
 export default Footer;

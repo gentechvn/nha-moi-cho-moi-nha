@@ -3,19 +3,28 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Home, Users, Award } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 const HeroSection = () => {
-  return <section className="relative min-h-[95vh] flex items-center overflow-hidden">
+  return (
+    <section className="relative min-h-[95vh] flex items-center overflow-hidden">
       {/* Hero Background with Modern Overlay */}
       <div className="absolute inset-0 z-0">
         {/* Main Image */}
-        <img src={heroBackground} alt="Dự án nhà ở xã hội Đồng Hới" className="w-full h-full object-cover object-center scale-105 animate-[scale_20s_ease-in-out_infinite_alternate]" />
-        
+        <img
+          src={heroBackground}
+          alt="Dự án nhà ở xã hội Đồng Hới"
+          className="w-full h-full object-cover object-center scale-105 animate-[scale_20s_ease-in-out_infinite_alternate]"
+        />
+
         {/* Gradient Overlay - Bottom heavy to show image on top */}
         <div className="absolute inset-0 bg-gradient-hero z-10" />
-        
+
         {/* Subtle Light Effects */}
-        <div className="absolute inset-0 z-5 opacity-30" style={{
-        backgroundImage: 'radial-gradient(circle at 20% 80%, hsl(45 100% 60% / 0.2) 0%, transparent 50%), radial-gradient(circle at 80% 20%, hsl(48 100% 65% / 0.15) 0%, transparent 40%)'
-      }} />
+        <div
+          className="absolute inset-0 z-5 opacity-30"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 20% 80%, hsl(45 100% 60% / 0.2) 0%, transparent 50%), radial-gradient(circle at 80% 20%, hsl(48 100% 65% / 0.15) 0%, transparent 40%)",
+          }}
+        />
       </div>
 
       {/* Content */}
@@ -23,30 +32,47 @@ const HeroSection = () => {
         <div className="max-w-4xl">
           {/* Premium Badge */}
           <div className="inline-block mb-6 px-5 py-2.5 bg-red-600 rounded-full border border-white/30 animate-fade-in shadow-xl">
-            <span className="text-white font-bold text-sm tracking-wide">✨ Chương trình ưu đãi đặc biệt 2025</span>
+            <span className="text-white font-bold text-sm tracking-wide">
+              ✨ Chương trình ưu đãi đặc biệt 2025
+            </span>
           </div>
-          
+
           {/* Main Heading with Gradient */}
-          <h1 className="font-be-vietnam text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 animate-fade-in leading-tight tracking-tight">
-            Khởi Đầu Hạnh Phúc<br />
-            Từ <span className="gradient-text bg-gradient-to-r from-secondary via-primary-light to-secondary animate-shimmer bg-[length:200%_auto]">Tổ Ấm</span> Của Bạn
+          <h1 className="leading-3 text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 animate-fade-in tracking-tight">
+            Khởi Đầu Hạnh Phúc
+            <br />
+            Từ{" "}
+            <span className="gradient-text bg-gradient-to-r from-secondary via-primary-light to-secondary animate-shimmer bg-[length:200%_auto]">
+              Tổ Ấm
+            </span>{" "}
+            Của Bạn
           </h1>
-          
+
           {/* Enhanced Description */}
           <p className="text-xl sm:text-2xl text-white/95 mb-10 animate-fade-in leading-relaxed font-light max-w-2xl">
-            Nhà ở xã hội chất lượng cao, giá cả phải chăng. Biến mơ ước sở hữu nhà thành hiện thực với nhiều ưu đãi và hỗ trợ vay vốn lên đến <span className="font-bold text-secondary">70%</span>.
+            Nhà ở xã hội chất lượng cao, giá cả phải chăng. Biến mơ ước sở hữu
+            nhà thành hiện thực với nhiều ưu đãi và hỗ trợ vay vốn lên đến{" "}
+            <span className="font-bold text-secondary">70%</span>.
           </p>
 
           {/* Premium CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-5 mb-16 animate-scale-in">
             <Link to="/register" className="group">
-              <Button variant="premium" size="lg" className="w-full sm:w-auto h-16 px-12 shadow-2xl hover:shadow-primary transition-all duration-500 text-lg hover:scale-110">
+              <Button
+                variant="premium"
+                size="lg"
+                className="w-full sm:w-auto h-16 px-12 shadow-2xl hover:shadow-primary transition-all duration-500 text-lg hover:scale-110"
+              >
                 Đăng ký ngay
                 <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
               </Button>
             </Link>
             <Link to="/projects" className="group">
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto h-16 px-12 text-lg font-bold hover:scale-110 transition-all duration-500 shadow-2xl">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="w-full sm:w-auto h-16 px-12 text-lg font-bold hover:scale-110 transition-all duration-500 shadow-2xl"
+              >
                 Xem dự án
               </Button>
             </Link>
@@ -88,9 +114,8 @@ const HeroSection = () => {
       </div>
 
       {/* Elegant Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce-slow">
-        
-      </div>
-    </section>;
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce-slow"></div>
+    </section>
+  );
 };
 export default HeroSection;
