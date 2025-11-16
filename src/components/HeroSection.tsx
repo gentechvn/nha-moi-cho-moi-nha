@@ -40,15 +40,17 @@ const HeroSection = () => {
           {/* Main Heading with Gradient */}
           <div className="flex flex-col gap-2 sm:gap-3 text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-6 sm:mb-8 animate-fade-in tracking-tight break-words">
             <span className="leading-tight">KHỞI ĐẦU HẠNH PHÚC</span>
-            <span className="text-[#F6CA36] leading-tight">TỪ TỔ ẤM</span>
-            <span className="leading-tight">CỦA BẠN</span>
+            <div className="flex items-center gap-3">
+              <span className="text-[#F6CA36]">TỪ&nbsp; TỔ ẤM</span>
+              <span className="leading-tight">CỦA BẠN</span>
+            </div>
           </div>
 
           {/* Enhanced Description */}
           <p className="text-base sm:text-xl lg:text-2xl text-white/95 mb-8 sm:mb-10 animate-fade-in leading-relaxed font-light max-w-2xl">
             Nhà ở xã hội chất lượng cao, giá cả phải chăng. Biến mơ ước sở hữu
-            nhà thành hiện thực với nhiều ưu đãi và hỗ trợ vay vốn lên đến{" "}
-            <span className="font-bold text-secondary">70%</span>.
+            nhà thành hiện thực với nhiều ưu đãi và tư vấn{" "}
+            <span className="font-bold text-secondary">miễn phí</span>.
           </p>
 
           {/* Premium CTA Buttons */}
@@ -81,8 +83,12 @@ const HeroSection = () => {
                 <Home className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground" />
               </div>
               <div>
-                <p className="text-3xl sm:text-4xl font-black text-white">560</p>
-                <p className="text-xs sm:text-sm text-white/90 font-semibold">Căn hộ</p>
+                <p className="text-3xl sm:text-4xl font-black text-white">
+                  560
+                </p>
+                <p className="text-xs sm:text-sm text-white/90 font-semibold">
+                  Căn hộ
+                </p>
               </div>
             </div>
 
@@ -92,7 +98,9 @@ const HeroSection = () => {
               </div>
               <div>
                 <p className="text-3xl sm:text-4xl font-black text-white">2</p>
-                <p className="text-xs sm:text-sm text-white/90 font-semibold">Tòa tháp</p>
+                <p className="text-xs sm:text-sm text-white/90 font-semibold">
+                  Tòa tháp
+                </p>
               </div>
             </div>
 
@@ -102,7 +110,9 @@ const HeroSection = () => {
               </div>
               <div>
                 <p className="text-3xl sm:text-4xl font-black text-white">15</p>
-                <p className="text-xs sm:text-sm text-white/90 font-semibold">Tầng cao</p>
+                <p className="text-xs sm:text-sm text-white/90 font-semibold">
+                  Tầng cao
+                </p>
               </div>
             </div>
           </div>

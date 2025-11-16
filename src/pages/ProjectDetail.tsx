@@ -40,7 +40,8 @@ const ProjectDetail = () => {
   const project = {
     id: 1,
     title: "Khu đô thị Green City",
-    location: "Số 123, Đường Nguyễn Văn Cừ, Phường Gia Thụy, Quận Long Biên, Hà Nội",
+    location:
+      "Số 123, Đường Nguyễn Văn Cừ, Phường Gia Thụy, Quận Long Biên, Hà Nội",
     price: "1.2 tỷ",
     pricePerM2: "25 triệu",
     area: "55-75m²",
@@ -67,44 +68,104 @@ const ProjectDetail = () => {
     ],
     video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     amenities: [
-      { icon: School, name: "Trường học", description: "Trường mầm non, tiểu học trong khu" },
-      { icon: ShoppingCart, name: "Siêu thị", description: "Siêu thị, chợ, cửa hàng tiện lợi" },
-      { icon: Hospital, name: "Y tế", description: "Trạm y tế, phòng khám đa khoa" },
-      { icon: Trees, name: "Công viên", description: "Công viên cây xanh, khu vui chơi" },
-      { icon: Dumbbell, name: "Thể thao", description: "Phòng gym, sân tennis, bể bơi" },
+      {
+        icon: School,
+        name: "Trường học",
+        description: "Trường mầm non, tiểu học trong khu",
+      },
+      {
+        icon: ShoppingCart,
+        name: "Siêu thị",
+        description: "Siêu thị, chợ, cửa hàng tiện lợi",
+      },
+      {
+        icon: Hospital,
+        name: "Y tế",
+        description: "Trạm y tế, phòng khám đa khoa",
+      },
+      {
+        icon: Trees,
+        name: "Công viên",
+        description: "Công viên cây xanh, khu vui chơi",
+      },
+      {
+        icon: Dumbbell,
+        name: "Thể thao",
+        description: "Phòng gym, sân tennis, bể bơi",
+      },
       { icon: Car, name: "Đỗ xe", description: "Hầm đỗ xe rộng rãi, an toàn" },
     ],
     progress: [
       { phase: "Khởi công", date: "Q1/2023", status: "completed" },
       { phase: "Hoàn thành móng", date: "Q2/2023", status: "completed" },
-      { phase: "Xây dựng thân", date: "Q3/2023 - Q2/2024", status: "completed" },
-      { phase: "Hoàn thiện ngoại thất", date: "Q3/2024", status: "in-progress" },
-      { phase: "Hoàn thiện nội thất", date: "Q4/2024 - Q1/2025", status: "upcoming" },
+      {
+        phase: "Xây dựng thân",
+        date: "Q3/2023 - Q2/2024",
+        status: "completed",
+      },
+      {
+        phase: "Hoàn thiện ngoại thất",
+        date: "Q3/2024",
+        status: "in-progress",
+      },
+      {
+        phase: "Hoàn thiện nội thất",
+        date: "Q4/2024 - Q1/2025",
+        status: "upcoming",
+      },
       { phase: "Bàn giao", date: "Q2/2025", status: "upcoming" },
     ],
     floorPlans: [
       {
         type: "1 Phòng ngủ",
         area: "55m²",
-        image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=600",
+        image:
+          "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=600",
       },
       {
         type: "2 Phòng ngủ",
         area: "68m²",
-        image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=600",
+        image:
+          "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=600",
       },
       {
         type: "3 Phòng ngủ",
         area: "75m²",
-        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=600",
+        image:
+          "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=600",
       },
     ],
     paymentPlans: [
-      { stage: "Đặt cọc", percent: "5%", amount: "60 triệu", timing: "Khi ký hợp đồng" },
-      { stage: "Đợt 1", percent: "30%", amount: "360 triệu", timing: "Hoàn thành móng" },
-      { stage: "Đợt 2", percent: "30%", amount: "360 triệu", timing: "Hoàn thành thân" },
-      { stage: "Đợt 3", percent: "30%", amount: "360 triệu", timing: "Hoàn thiện" },
-      { stage: "Nhận nhà", percent: "5%", amount: "60 triệu", timing: "Khi bàn giao" },
+      {
+        stage: "Đặt cọc",
+        percent: "5%",
+        amount: "60 triệu",
+        timing: "Khi ký hợp đồng",
+      },
+      {
+        stage: "Đợt 1",
+        percent: "30%",
+        amount: "360 triệu",
+        timing: "Hoàn thành móng",
+      },
+      {
+        stage: "Đợt 2",
+        percent: "30%",
+        amount: "360 triệu",
+        timing: "Hoàn thành thân",
+      },
+      {
+        stage: "Đợt 3",
+        percent: "30%",
+        amount: "360 triệu",
+        timing: "Hoàn thiện",
+      },
+      {
+        stage: "Nhận nhà",
+        percent: "5%",
+        amount: "60 triệu",
+        timing: "Khi bàn giao",
+      },
     ],
   };
 
@@ -156,7 +217,8 @@ const ProjectDetail = () => {
                 <div className="flex items-center space-x-2">
                   <Home className="w-5 h-5 text-primary" />
                   <span className="text-sm">
-                    <strong>{project.availableUnits}</strong>/{project.units} căn còn lại
+                    <strong>{project.availableUnits}</strong>/{project.units}{" "}
+                    căn còn lại
                   </span>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -169,8 +231,12 @@ const ProjectDetail = () => {
             <Card className="lg:w-80 p-6 shadow-lg">
               <div className="mb-4">
                 <p className="text-sm text-muted-foreground mb-1">Giá từ</p>
-                <p className="text-3xl font-bold text-primary">{project.price}</p>
-                <p className="text-sm text-muted-foreground">{project.pricePerM2}/m²</p>
+                <p className="text-3xl font-bold text-primary">
+                  {project.price}
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  {project.pricePerM2}/m²
+                </p>
               </div>
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between text-sm">
@@ -227,7 +293,9 @@ const ProjectDetail = () => {
                   alt={`${project.title} ${index + 1}`}
                   onClick={() => setSelectedImage(index)}
                   className={`w-full h-24 object-cover rounded-lg cursor-pointer transition-all ${
-                    selectedImage === index ? "ring-2 ring-primary" : "opacity-70 hover:opacity-100"
+                    selectedImage === index
+                      ? "ring-2 ring-primary"
+                      : "opacity-70 hover:opacity-100"
                   }`}
                 />
               ))}
@@ -254,24 +322,40 @@ const ProjectDetail = () => {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <div className="lg:col-span-2">
                   <Card className="p-6 mb-6">
-                    <h2 className="text-2xl font-bold mb-4">Giới thiệu dự án</h2>
-                    <p className="text-muted-foreground mb-4">{project.description}</p>
+                    <h2 className="text-2xl font-bold mb-4">
+                      Giới thiệu dự án
+                    </h2>
+                    <p className="text-muted-foreground mb-4">
+                      {project.description}
+                    </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
                       <div>
-                        <p className="text-sm text-muted-foreground mb-1">Chủ đầu tư</p>
+                        <p className="text-sm text-muted-foreground mb-1">
+                          Chủ đầu tư
+                        </p>
                         <p className="font-semibold">{project.investor}</p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground mb-1">Tổng thầu</p>
+                        <p className="text-sm text-muted-foreground mb-1">
+                          Tổng thầu
+                        </p>
                         <p className="font-semibold">{project.constructor}</p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground mb-1">Quy mô</p>
-                        <p className="font-semibold">{project.units} căn hộ, {project.floors} tầng</p>
+                        <p className="text-sm text-muted-foreground mb-1">
+                          Quy mô
+                        </p>
+                        <p className="font-semibold">
+                          {project.units} căn hộ, {project.floors} tầng
+                        </p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground mb-1">Pháp lý</p>
-                        <p className="font-semibold text-secondary">{project.legalStatus}</p>
+                        <p className="text-sm text-muted-foreground mb-1">
+                          Pháp lý
+                        </p>
+                        <p className="font-semibold text-secondary">
+                          {project.legalStatus}
+                        </p>
                       </div>
                     </div>
                   </Card>
@@ -295,7 +379,9 @@ const ProjectDetail = () => {
 
                 <div>
                   <Card className="p-6">
-                    <h3 className="text-xl font-bold mb-4">Thông tin nổi bật</h3>
+                    <h3 className="text-xl font-bold mb-4">
+                      Thông tin nổi bật
+                    </h3>
                     <div className="space-y-4">
                       <div className="flex items-start space-x-3">
                         <CheckCircle2 className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
@@ -351,7 +437,9 @@ const ProjectDetail = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">{amenity.name}</h3>
-                        <p className="text-sm text-muted-foreground">{amenity.description}</p>
+                        <p className="text-sm text-muted-foreground">
+                          {amenity.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -364,11 +452,21 @@ const ProjectDetail = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {project.floorPlans.map((plan, index) => (
                   <Card key={index} className="overflow-hidden">
-                    <img src={plan.image} alt={plan.type} className="w-full h-48 object-cover" />
+                    <img
+                      src={plan.image}
+                      alt={plan.type}
+                      className="w-full h-48 object-cover"
+                    />
                     <div className="p-4">
                       <h3 className="font-bold mb-1">{plan.type}</h3>
-                      <p className="text-sm text-muted-foreground">Diện tích: {plan.area}</p>
-                      <Button variant="outline" size="sm" className="w-full mt-4">
+                      <p className="text-sm text-muted-foreground">
+                        Diện tích: {plan.area}
+                      </p>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="w-full mt-4"
+                      >
                         Xem chi tiết
                       </Button>
                     </div>
@@ -401,7 +499,9 @@ const ProjectDetail = () => {
                       <div className="flex-1 pb-6">
                         <div className="flex items-center justify-between mb-1">
                           <h3 className="font-semibold">{item.phase}</h3>
-                          <span className="text-sm text-muted-foreground">{item.date}</span>
+                          <span className="text-sm text-muted-foreground">
+                            {item.date}
+                          </span>
                         </div>
                         <span
                           className={`inline-block px-2 py-1 rounded text-xs font-semibold ${
@@ -428,7 +528,9 @@ const ProjectDetail = () => {
             {/* Payment Tab */}
             <TabsContent value="payment">
               <Card className="p-6">
-                <h2 className="text-2xl font-bold mb-6">Phương thức thanh toán</h2>
+                <h2 className="text-2xl font-bold mb-6">
+                  Phương thức thanh toán
+                </h2>
                 <div className="space-y-4">
                   {project.paymentPlans.map((plan, index) => (
                     <div
@@ -437,19 +539,25 @@ const ProjectDetail = () => {
                     >
                       <div className="flex-1">
                         <h3 className="font-semibold mb-1">{plan.stage}</h3>
-                        <p className="text-sm text-muted-foreground">{plan.timing}</p>
+                        <p className="text-sm text-muted-foreground">
+                          {plan.timing}
+                        </p>
                       </div>
                       <div className="text-right">
-                        <p className="text-2xl font-bold text-primary">{plan.percent}</p>
-                        <p className="text-sm text-muted-foreground">{plan.amount}</p>
+                        <p className="text-2xl font-bold text-primary">
+                          {plan.percent}
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          {plan.amount}
+                        </p>
                       </div>
                     </div>
                   ))}
                 </div>
                 <div className="mt-6 p-4 bg-muted/50 rounded-lg">
                   <p className="text-sm text-muted-foreground">
-                    <strong>Lưu ý:</strong> Hỗ trợ vay ngân hàng lên đến 70% giá trị căn hộ với lãi suất
-                    ưu đãi. Liên hệ với chúng tôi để được tư vấn chi tiết về các gói vay.
+                    <strong>Lưu ý:</strong> Liên hệ với chúng tôi để được tư vấn
+                    chi tiết về dự án
                   </p>
                 </div>
               </Card>
@@ -478,21 +586,27 @@ const ProjectDetail = () => {
                       <TrendingUp className="w-5 h-5 text-primary mt-0.5" />
                       <div>
                         <p className="font-semibold">3 phút</p>
-                        <p className="text-sm text-muted-foreground">Đến trục đường Nguyễn Văn Cừ</p>
+                        <p className="text-sm text-muted-foreground">
+                          Đến trục đường Nguyễn Văn Cừ
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <TrendingUp className="w-5 h-5 text-primary mt-0.5" />
                       <div>
                         <p className="font-semibold">10 phút</p>
-                        <p className="text-sm text-muted-foreground">Đến trung tâm Hoàn Kiếm</p>
+                        <p className="text-sm text-muted-foreground">
+                          Đến trung tâm Hoàn Kiếm
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <TrendingUp className="w-5 h-5 text-primary mt-0.5" />
                       <div>
                         <p className="font-semibold">25 phút</p>
-                        <p className="text-sm text-muted-foreground">Đến sân bay Nội Bài</p>
+                        <p className="text-sm text-muted-foreground">
+                          Đến sân bay Nội Bài
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -506,17 +620,26 @@ const ProjectDetail = () => {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Quan tâm đến dự án này?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            Quan tâm đến dự án này?
+          </h2>
           <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
             Đăng ký ngay để nhận tư vấn chi tiết và ưu đãi đặc biệt
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/register">
-              <Button size="lg" className="bg-secondary hover:bg-secondary-light text-secondary-foreground shadow-xl">
+              <Button
+                size="lg"
+                className="bg-secondary hover:bg-secondary-light text-secondary-foreground shadow-xl"
+              >
                 Đăng ký tư vấn
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+            >
               Gọi: 1900 xxxx
             </Button>
           </div>

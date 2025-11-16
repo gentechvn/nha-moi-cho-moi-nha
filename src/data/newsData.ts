@@ -94,7 +94,7 @@ export const newsArticles: NewsArticle[] = [
 
       <p>Để biết thêm chi tiết và được tư vấn, quý khách hàng vui lòng đăng ký tư vấn trực tuyến trên website.</p>
     `,
-    tags: ["Chính sách", "Hỗ trợ vay", "Nhà ở xã hội", "2024"],
+    tags: ["Chính sách", "Nhà ở xã hội", "2024"],
   },
   {
     id: 2,
@@ -252,7 +252,6 @@ export const newsArticles: NewsArticle[] = [
         <li>Giảm 5% giá bán cho 50 khách hàng đầu tiên</li>
         <li>Miễn phí 2 năm phí quản lý</li>
         <li>Tặng gói nội thất cơ bản trị giá 50 triệu đồng</li>
-        <li>Hỗ trợ vay vốn lãi suất 0% trong 3 năm đầu</li>
         <li>Miễn phí phí bảo trì năm đầu tiên</li>
       </ul>
 

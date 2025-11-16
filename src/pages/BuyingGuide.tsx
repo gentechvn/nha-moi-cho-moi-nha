@@ -67,7 +67,6 @@ const BuyingGuide = () => {
       description: "Hoàn tất thanh toán và làm thủ tục nhận bàn giao căn hộ",
       details: [
         "Thanh toán theo tiến độ: 30% - 30% - 40% (hoặc theo hợp đồng)",
-        "Hỗ trợ vay ngân hàng lãi suất ưu đãi",
         "Nhận bàn giao căn hộ và chìa khóa",
         "Làm thủ tục cấp sổ hồng theo quy định"
       ],

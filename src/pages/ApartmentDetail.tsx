@@ -207,7 +207,8 @@ const ApartmentDetail = () => {
   // Check scroll position
   const checkScrollButtons = () => {
     if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
+      const { scrollLeft, scrollWidth, clientWidth } =
+        scrollContainerRef.current;
       setCanScrollLeft(scrollLeft > 0);
       setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 1);
     }
@@ -707,13 +708,6 @@ const ApartmentDetail = () => {
                       Chính sách ưu đãi
                     </h3>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                        <span>
-                          Hỗ trợ vay ngân hàng lên đến 70% giá trị căn hộ với
-                          lãi suất ưu đãi
-                        </span>
-                      </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                         <span>

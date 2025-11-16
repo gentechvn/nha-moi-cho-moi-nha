@@ -288,7 +288,6 @@ const Register = () => {
                   <li>✓ Tổng 560 căn hộ</li>
                   <li>✓ Diện tích: 36,1m² - 74,3m²</li>
                   <li>✓ Hệ thống cây xanh & tiện ích đầy đủ</li>
-                  <li>✓ Hỗ trợ vay vốn ưu đãi</li>
                   <li>✓ Tư vấn pháp lý miễn phí</li>
                 </ul>
               </Card>

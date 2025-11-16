@@ -83,9 +83,6 @@ const Footer = () => {
                 Tư vấn mua nhà
               </li>
               <li className="text-sm text-primary-foreground/80">
-                Hỗ trợ vay vốn
-              </li>
-              <li className="text-sm text-primary-foreground/80">
                 Thủ tục pháp lý
               </li>
               <li className="text-sm text-primary-foreground/80">
