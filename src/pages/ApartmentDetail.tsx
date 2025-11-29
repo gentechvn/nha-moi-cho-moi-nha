@@ -447,11 +447,10 @@ const ApartmentDetail = () => {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="overview" className="w-full">
-            <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 mb-8">
+            <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-3 mb-8">
               <TabsTrigger value="overview">Tổng quan</TabsTrigger>
               <TabsTrigger value="amenities">Tiện ích</TabsTrigger>
               <TabsTrigger value="floorplan">Mặt bằng</TabsTrigger>
-              <TabsTrigger value="payment">Thanh toán</TabsTrigger>
             </TabsList>
 
             <TabsContent value="overview" className="space-y-8">
@@ -668,60 +667,6 @@ const ApartmentDetail = () => {
                     Mặt bằng thiết kế {apartment.name} - Diện tích{" "}
                     {apartment.area}
                   </p>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="payment">
-              <Card>
-                <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold text-foreground mb-6">
-                    Phương thức thanh toán
-                  </h2>
-                  <div className="space-y-4 mb-8">
-                    {paymentStages.map((stage, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center gap-4 p-6 bg-muted/50 rounded-lg border border-border"
-                      >
-                        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                          <span className="text-2xl font-bold text-primary">
-                            {stage.percentage}
-                          </span>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="font-bold text-foreground mb-1">
-                            {stage.stage} - {stage.timing}
-                          </h3>
-                          <p className="text-lg font-bold text-primary">
-                            {stage.amount}
-                          </p>
-                        </div>
-                        <Calendar className="w-6 h-6 text-muted-foreground" />
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="p-6 bg-primary/5 border border-primary/20 rounded-lg">
-                    <h3 className="font-bold text-foreground mb-3 flex items-center gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-primary" />
-                      Chính sách ưu đãi
-                    </h3>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                        <span>
-                          Miễn phí phí bảo trì và quản lý 2 năm đầu tiên
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                        <span>
-                          Hỗ trợ làm thủ tục pháp lý, sổ hồng nhanh chóng
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
                 </CardContent>
               </Card>
             </TabsContent>

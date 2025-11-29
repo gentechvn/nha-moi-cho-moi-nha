@@ -5,6 +5,7 @@ import PageBanner from "@/components/PageBanner";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import apartmentInterior2 from "@/assets/apartment-interior-2.jpg";
 import {
   Building2,
   ArrowRight,
@@ -97,7 +98,7 @@ const About = () => {
               style={{ animationDelay: "0.2s" }}
             >
               <img
-                src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&q=80&w=800"
+                src={apartmentInterior2}
                 alt="Vị trí dự án"
                 className="rounded-2xl shadow-2xl"
               />
