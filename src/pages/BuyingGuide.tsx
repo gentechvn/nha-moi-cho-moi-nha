@@ -274,7 +274,7 @@ const BuyingGuide = () => {
                 <div className="p-3 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl shadow-lg">
                   <Scale className="w-8 h-8 text-white" />
                 </div>
-                <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent">
+                <h2 className="text-4xl font-bold bg-gradient-to-r text-yellow-600 bg-clip-text text-transparent">
                   Căn Cứ Pháp Lý
                 </h2>
               </div>
@@ -307,7 +307,7 @@ const BuyingGuide = () => {
                 <div className="p-3 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl shadow-lg">
                   <Users className="w-8 h-8 text-white" />
                 </div>
-                <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent">
+                <h2 className="text-4xl font-bold bg-gradient-to-r text-yellow-600 bg-clip-text text-transparent">
                   12 Đối Tượng Được Mua Nhà Ở Xã Hội
                 </h2>
               </div>
@@ -346,7 +346,7 @@ const BuyingGuide = () => {
                 <div className="p-3 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl shadow-lg">
                   <ClipboardCheck className="w-8 h-8 text-white" />
                 </div>
-                <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent">
+                <h2 className="text-4xl font-bold bg-gradient-to-r text-yellow-600 bg-clip-text text-transparent">
                   Điều Kiện Được Hưởng Chính Sách
                 </h2>
               </div>
@@ -363,7 +363,7 @@ const BuyingGuide = () => {
                   {housingConditions.map((cond, idx) => (
                     <Card key={idx} className="h-full border-0 shadow-xl bg-gradient-to-br from-white to-yellow-50/30 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                       <CardHeader>
-                        <CardTitle className="text-xl bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent flex items-center gap-2">
+                        <CardTitle className="text-xl bg-gradient-to-r text-yellow-600 bg-clip-text text-transparent flex items-center gap-2">
                           <Home className="w-6 h-6 text-yellow-600" />
                           {cond.title}
                         </CardTitle>
@@ -381,7 +381,7 @@ const BuyingGuide = () => {
                   {incomeConditions.map((cond, idx) => (
                     <Card key={idx} className="h-full border-0 shadow-xl bg-gradient-to-br from-white to-yellow-50/30 hover:shadow-2xl transition-all duration-300">
                       <CardHeader>
-                        <CardTitle className="text-lg bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent">{cond.group}</CardTitle>
+                        <CardTitle className="text-lg bg-gradient-to-r text-yellow-600 bg-clip-text text-transparent">{cond.group}</CardTitle>
                       </CardHeader>
                       <CardContent>
                         <ul className="space-y-3">
@@ -407,7 +407,7 @@ const BuyingGuide = () => {
                 <div className="p-3 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl shadow-lg">
                   <Building2 className="w-8 h-8 text-white" />
                 </div>
-                <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent">
+                <h2 className="text-4xl font-bold bg-gradient-to-r text-yellow-600 bg-clip-text text-transparent">
                   Hồ Sơ Chi Tiết Theo Đối Tượng
                 </h2>
               </div>
@@ -433,7 +433,7 @@ const BuyingGuide = () => {
                   <Card className="border-0 shadow-2xl bg-gradient-to-br from-white via-yellow-50/20 to-white overflow-hidden">
                     <div className="h-2 bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-500"></div>
                     <CardHeader className="bg-gradient-to-br from-yellow-50/50 to-transparent pb-6">
-                      <CardTitle className="text-3xl bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent flex items-center gap-3">
+                      <CardTitle className="text-3xl bg-gradient-to-r text-yellow-600 bg-clip-text text-transparent flex items-center gap-3">
                         <FileText className="w-8 h-8 text-yellow-600" />
                         {doc.title}
                       </CardTitle>
@@ -503,7 +503,7 @@ const BuyingGuide = () => {
                 <div className="p-3 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl shadow-lg">
                   <ArrowRight className="w-8 h-8 text-white" />
                 </div>
-                <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent">
+                <h2 className="text-4xl font-bold bg-gradient-to-r text-yellow-600 bg-clip-text text-transparent">
                   Quy Trình Đăng Ký
                 </h2>
               </div>
@@ -531,7 +531,7 @@ const BuyingGuide = () => {
                 <div className="p-3 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl shadow-lg">
                   <Download className="w-8 h-8 text-white" />
                 </div>
-                <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent">
+                <h2 className="text-4xl font-bold bg-gradient-to-r text-yellow-600 bg-clip-text text-transparent">
                   Tải Mẫu Đơn & Giấy Tờ
                 </h2>
               </div>

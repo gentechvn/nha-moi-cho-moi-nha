@@ -30,7 +30,6 @@ const Register = () => {
     email: "",
     address: "",
     project: "",
-    area: "",
     message: "",
   });
 
@@ -50,16 +49,17 @@ const Register = () => {
     try {
       // Prepare template parameters for EmailJS
       const templateParams = {
-        to_email: "genzmentalhealth2024@gmail.com",
+        title: "Đăng ký tư vấn cho dự án " + formData.project,
+        email: "genzmentalhealth2024@gmail.com",
+        name: "Khách hàng: " + formData.fullname,
         from_name: formData.fullname,
-        from_email: formData.email || "N/A",
+        from_email: formData.email || "Không có email",
         phone: formData.phone,
-        address: formData.address || "N/A",
-        project: formData.project || "N/A",
-        area: formData.area || "N/A",
-        message: formData.message || "N/A",
-        reply_to: formData.email || "genzmentalhealth2024@gmail.com",
+        address: formData.address || "Không có địa chỉ",
+        project: formData.project || "Dự án không xác định",
+        message: formData.message || "Không có nội dung",
       };
+      console.log("templateParams", templateParams);
 
       // Send email using EmailJS
       await emailjs.send(
@@ -81,7 +81,6 @@ const Register = () => {
         email: "",
         address: "",
         project: "",
-        area: "",
         message: "",
       });
     } catch (error) {
@@ -144,10 +143,11 @@ const Register = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="email">Email</Label>
+                    <Label htmlFor="email">Email *</Label>
                     <Input
                       id="email"
                       type="email"
+                      required
                       placeholder="example@email.com"
                       value={formData.email}
                       onChange={handleChange}
@@ -156,9 +156,10 @@ const Register = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="address">Địa chỉ hiện tại</Label>
+                    <Label htmlFor="address">Địa chỉ hiện tại *</Label>
                     <Input
                       id="address"
+                      required
                       type="text"
                       placeholder="Số nhà, đường, quận/huyện, thành phố"
                       value={formData.address}
@@ -168,9 +169,10 @@ const Register = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="project">Dự án quan tâm</Label>
+                    <Label htmlFor="project">Dự án quan tâm *</Label>
                     <select
                       id="project"
+                      required
                       value={formData.project}
                       onChange={handleChange}
                       className="w-full mt-2 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
@@ -183,9 +185,10 @@ const Register = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="message">Nội dung cần tư vấn</Label>
+                    <Label htmlFor="message">Nội dung cần tư vấn *</Label>
                     <Textarea
                       id="message"
+                      required
                       placeholder="Chia sẻ thêm về nhu cầu và mong muốn của bạn..."
                       rows={4}
                       value={formData.message}
@@ -204,11 +207,8 @@ const Register = () => {
                   </Button>
 
                   <p className="text-sm text-muted-foreground text-center">
-                    Bằng việc đăng ký, bạn đồng ý với{" "}
-                    <a href="#" className="text-primary hover:underline">
-                      điều khoản sử dụng
-                    </a>{" "}
-                    của chúng tôi
+                    Bằng việc đăng ký, bạn đồng ý với điều khoản sử dụng của
+                    chúng tôi
                   </p>
                 </form>
               </Card>
