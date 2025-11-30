@@ -167,36 +167,19 @@ const Register = () => {
                     />
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div>
-                      <Label htmlFor="project">Dự án quan tâm</Label>
-                      <select
-                        id="project"
-                        value={formData.project}
-                        onChange={handleChange}
-                        className="w-full mt-2 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                      >
-                        <option value="">Chọn dự án</option>
-                        <option value="dong-hoi-center">
-                          Khu nhà ở xã hội trung tâm thành phố Đồng Hới
-                        </option>
-                      </select>
-                    </div>
-                    <div>
-                      <Label htmlFor="area">Diện tích quan tâm</Label>
-                      <select
-                        id="area"
-                        value={formData.area}
-                        onChange={handleChange}
-                        className="w-full mt-2 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                      >
-                        <option value="">Chọn diện tích</option>
-                        <option value="36-45m2">36,1m² - 45m²</option>
-                        <option value="45-55m2">45m² - 55m²</option>
-                        <option value="55-65m2">55m² - 65m²</option>
-                        <option value="65-74m2">65m² - 74,3m²</option>
-                      </select>
-                    </div>
+                  <div>
+                    <Label htmlFor="project">Dự án quan tâm</Label>
+                    <select
+                      id="project"
+                      value={formData.project}
+                      onChange={handleChange}
+                      className="w-full mt-2 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    >
+                      <option value="">Chọn loại căn hộ</option>
+                      <option value="1-bedroom">1 phòng ngủ</option>
+                      <option value="2-bedroom">2 phòng ngủ</option>
+                      <option value="3-bedroom">3 phòng ngủ</option>
+                    </select>
                   </div>
 
                   <div>
