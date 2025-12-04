@@ -42,7 +42,7 @@ const FAQPreview = () => {
               <span className="text-primary font-semibold text-sm">❓ FAQ</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-bold text-foreground mb-6">
-              Câu Hỏi <span className="text-primary">Thường Gặp</span>
+              Câu Hỏi <span className="text-[#ca8a04]">Thường Gặp</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               Tìm câu trả lời nhanh chóng cho các thắc mắc phổ biến nhất về nhà

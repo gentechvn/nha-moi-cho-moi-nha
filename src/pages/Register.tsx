@@ -269,7 +269,20 @@ const Register = () => {
                 <ul className="text-sm space-y-2">
                   <li>✓ 2 khối chung cư cao 15 tầng</li>
                   <li>✓ Tổng 560 căn hộ</li>
-                  <li>✓ Diện tích: 36,1m² - 74,3m²</li>
+                  <li>
+                    ✓ Diện tích căn hộ:
+                    <ul className="ml-4 mt-1 space-y-1">
+                      <li>
+                        - 1 phòng ngủ: <span className="p-1">35m²</span>
+                      </li>
+                      <li>
+                        - 2 phòng ngủ: <span className="p-1">59m² - 60m²</span>
+                      </li>
+                      <li>
+                        - 3 phòng ngủ: <span className="p-1">69m² - 73m²</span>
+                      </li>
+                    </ul>
+                  </li>
                   <li>✓ Hệ thống cây xanh & tiện ích đầy đủ</li>
                   <li>✓ Tư vấn pháp lý miễn phí</li>
                 </ul>

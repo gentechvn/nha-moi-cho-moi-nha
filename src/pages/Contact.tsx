@@ -28,7 +28,7 @@ const Contact = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-black mb-4">
-              <span className="gradient-text">Kết nối với chúng tôi</span>
+              <span className="text-[#ca8a04]">Kết nối với chúng tôi</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Đội ngũ chuyên viên giàu kinh nghiệm luôn sẵn sàng hỗ trợ bạn 24/7

@@ -21,9 +21,9 @@ import {
   Calendar,
   Trophy,
 } from "lucide-react";
-import projectAerial from "@/assets/project-aerial.jpg";
-import projectTowers from "@/assets/project-towers.jpg";
-import projectFacade from "@/assets/project-facade.jpg";
+import threeBedroomApartment from "@/assets/z7222428327882_934719693d3e3d65a5a4fea206856ef6.jpg";
+import oneBedroomApartment from "@/assets/z7222428305123_0f7a210df6d992327340cd127bb40c36.jpg";
+import twoBedroomApartment from "@/assets/z7222428307228_4956d81079636766e1dd915c39c2060b.jpg";
 import projectNightView from "@/assets/project-night-view.jpg";
 import projectOverview from "@/assets/project-overview.jpg";
 import projectLandscape from "@/assets/project-landscape.jpg";
@@ -34,7 +34,7 @@ const Index = () => {
       id: 1,
       title: "Căn hộ 1 phòng ngủ - Dự án Đồng Hới",
       location: "Phường Đồng Hới, TP. Đồng Hới, Quảng Bình",
-      image: projectTowers,
+      image: oneBedroomApartment,
       units: 28,
       price: "577,5 - 612,5 triệu",
       status: "selling" as const,
@@ -44,7 +44,7 @@ const Index = () => {
       id: 2,
       title: "Căn hộ 2 phòng ngủ - Dự án Đồng Hới",
       location: "Phường Đồng Hới, TP. Đồng Hới, Quảng Bình",
-      image: projectFacade,
+      image: twoBedroomApartment,
       units: 252,
       price: "973,5 triệu - 1,05 tỷ",
       status: "selling" as const,
@@ -54,7 +54,7 @@ const Index = () => {
       id: 3,
       title: "Căn hộ 3 phòng ngủ - Dự án Đồng Hới",
       location: "Phường Đồng Hới, TP. Đồng Hới, Quảng Bình",
-      image: projectAerial,
+      image: threeBedroomApartment,
       units: 280,
       price: "1,14 - 1,28 tỷ",
       status: "selling" as const,
@@ -142,7 +142,7 @@ const Index = () => {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-foreground mb-4 break-words">
-              Vì sao chọn <span className="gradient-text">Nhà Ở Xã Hội</span>?
+              Vì sao chọn <span className="text-[#ca8a04]">Nhà Ở Xã Hội</span>?
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
               Chúng tôi cam kết mang đến cho bạn những giá trị tốt nhất với chất
@@ -189,7 +189,7 @@ const Index = () => {
                 </span>
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-foreground mb-3 break-words">
-                Dự Án <span className="gradient-text">Đang Mở Bán</span>
+                Dự Án <span className="text-[#ca8a04]">Đang Mở Bán</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 Khám phá các dự án nhà ở xã hội chất lượng cao với giá tốt nhất
@@ -315,7 +315,7 @@ const Index = () => {
                 </span>
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-foreground mb-3 break-words">
-                Tin Tức <span className="gradient-text">Mới Nhất</span>
+                Tin Tức <span className="text-[#ca8a04]">Mới Nhất</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 Cập nhật thông tin và chính sách mới nhất về nhà ở xã hội
