@@ -77,7 +77,7 @@ const ApartmentDetail = () => {
       bathrooms: 2,
       price: "16,5 - 17,5 triệu/m²",
       totalPrice: "973,5 triệu - 1,05 tỷ",
-      layout: "2 phòng ngủ, 1 phòng khách, 1 bếp, 2 WC",
+      layout: "2 phòng ngủ, 1 phòng khách, 1 bếp, 1 WC",
       description:
         "Lựa chọn phổ biến và được ưa chuộng nhất tại dự án. Không gian sống rộng rãi, thoải mái cho gia đình nhỏ 3-4 người. Thiết kế 2 phòng ngủ riêng biệt đảm bảo sự riêng tư và tiện nghi.",
       images: [
