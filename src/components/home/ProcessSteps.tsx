@@ -36,7 +36,7 @@ const ProcessSteps = () => {
             <span className="text-primary font-semibold text-sm">📋 Quy trình</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-bold text-foreground mb-4">
-            4 Bước <span className="text-primary">Đơn Giản</span>
+            4 Bước <span className="text-[#ca8a04]">Đơn Giản</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Quy trình mua nhà ở xã hội được đơn giản hóa tối đa, giúp bạn dễ dàng sở hữu ngôi nhà mơ ước

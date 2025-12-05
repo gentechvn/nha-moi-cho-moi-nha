@@ -8,9 +8,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Home, MapPin, Building2, CheckCircle2, TrendingDown, Clock, Award } from "lucide-react";
 import { Link } from "react-router-dom";
-import projectAerial from "@/assets/project-aerial.jpg";
+import threeBedroomApartment from "@/assets/z7222428327882_934719693d3e3d65a5a4fea206856ef6.jpg";
+import oneBedroomApartment from "@/assets/z7222428305123_0f7a210df6d992327340cd127bb40c36.jpg";
+import twoBedroomApartment from "@/assets/z7222428307228_4956d81079636766e1dd915c39c2060b.jpg";
 import projectTowers from "@/assets/project-towers.jpg";
-import projectFacade from "@/assets/project-facade.jpg";
 import projectEntrance from "@/assets/project-entrance.jpg";
 import projectNightView from "@/assets/project-night-view.jpg";
 import projectOverview from "@/assets/project-overview.jpg";
@@ -26,7 +27,7 @@ const Projects = () => {
       price: "16,5 - 17,5 triệu/m²",
       totalPrice: "577,5 - 612,5 triệu",
       layout: "1 phòng ngủ, 1 phòng khách, 1 bếp, 1 WC",
-      image: projectTowers,
+      image: oneBedroomApartment,
       description: "Căn hộ nhỏ gọn, phù hợp cho cá nhân độc thân hoặc gia đình trẻ"
     },
     {
@@ -37,7 +38,7 @@ const Projects = () => {
       price: "16,5 - 17,5 triệu/m²",
       totalPrice: "973,5 triệu - 1,05 tỷ",
       layout: "2 phòng ngủ, 1 phòng khách, 1 bếp, 2 WC",
-      image: projectFacade,
+      image: twoBedroomApartment,
       description: "Lựa chọn phổ biến nhất, phù hợp với gia đình nhỏ 3-4 người"
     },
     {
@@ -48,7 +49,7 @@ const Projects = () => {
       price: "16,5 - 17,5 triệu/m²",
       totalPrice: "1,14 - 1,28 tỷ",
       layout: "3 phòng ngủ, 1 phòng khách, 1 bếp, 2 WC",
-      image: projectAerial,
+      image: threeBedroomApartment,
       description: "Không gian rộng rãi, lý tưởng cho gia đình đông thành viên"
     }
   ];
@@ -56,7 +57,7 @@ const Projects = () => {
   const projectAdvantages = [
     {
       icon: <TrendingDown className="w-6 h-6 text-primary" />,
-      title: "Giá rẻ hơn 3-4 lần",
+      title: "Giá rẻ hơn 2 lần",
       description: "So với nhà ở thương mại cùng khu vực"
     },
     {
@@ -224,7 +225,7 @@ const Projects = () => {
                       <img
                         src={apartment.image}
                         alt={apartment.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                       <div className="absolute top-4 left-4">
                         <Badge className="bg-primary text-primary-foreground font-bold">

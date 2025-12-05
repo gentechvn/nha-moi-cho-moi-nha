@@ -50,7 +50,7 @@ const ComparisonSection = () => {
             </span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-bold text-foreground mb-4">
-            Tại Sao Chọn <span className="text-primary">Nhà Ở Xã Hội</span>?
+            Tại Sao Chọn <span className="text-[#ca8a04]">Nhà Ở Xã Hội</span>?
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             So sánh chi tiết giữa nhà ở xã hội và nhà ở thương mại

@@ -42,7 +42,7 @@ const About = () => {
                 </span>
               </div>
               <h2 className="text-4xl sm:text-5xl font-black text-foreground mb-6">
-                Tổng Quan <span className="gradient-text">Dự Án</span>
+                Tổng Quan <span className="text-[#ca8a04]">Dự Án</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
@@ -115,7 +115,7 @@ const About = () => {
                 </span>
               </div>
               <h2 className="text-4xl sm:text-5xl font-black text-foreground mb-6">
-                Vị Trí <span className="gradient-text">Tuyệt Vời</span>
+                Vị Trí <span className="text-[#ca8a04]">Tuyệt Vời</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
@@ -151,7 +151,7 @@ const About = () => {
               </span>
             </div>
             <h2 className="text-4xl sm:text-5xl font-black text-foreground mb-4">
-              Thiết Kế <span className="gradient-text">Hợp Lý</span>
+              Thiết Kế <span className="text-[#ca8a04]">Hợp Lý</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
               Sự kết hợp hoàn hảo giữa công năng và thẩm mỹ, mang đến không gian sống lý tưởng.
@@ -191,10 +191,10 @@ const About = () => {
               </div>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Quy mô quỹ đất xây dựng công trình kiến trúc là <span className="font-bold text-foreground">8.750 m2</span>, trong đó 3.460 m2 dành xây dựng chung cư.
+                  Quy mô quỹ đất xây dựng công trình kiến trúc là <span className="font-bold text-foreground">8.750 m²</span>, trong đó 3.460 m² dành xây dựng chung cư.
                 </p>
                 <p>
-                  Dự án dành <span className="font-bold text-foreground">5.290 m2 (64,46%)</span> để xây dựng hạ tầng giao thông, cây xanh, bãi đổ xe,... tạo nên không gian thoáng đãng.
+                  Dự án dành <span className="font-bold text-foreground">5.290 m² (60,46%)</span> để xây dựng hạ tầng giao thông, cây xanh, bãi đổ xe,... tạo nên không gian thoáng đãng.
                 </p>
               </div>
             </Card>
@@ -206,17 +206,17 @@ const About = () => {
               <div className="text-center p-4 bg-muted/30 rounded-xl">
                 <div className="text-4xl font-black text-primary mb-2">28</div>
                 <div className="font-bold text-foreground">Căn hộ 1 PN</div>
-                <div className="text-sm text-muted-foreground">Diện tích ~34 m2</div>
+                <div className="text-sm text-muted-foreground">Diện tích 35 m²</div>
               </div>
               <div className="text-center p-4 bg-muted/30 rounded-xl">
                 <div className="text-4xl font-black text-primary mb-2">252</div>
                 <div className="font-bold text-foreground">Căn hộ 2 PN</div>
-                <div className="text-sm text-muted-foreground">Diện tích ~56 m2</div>
+                <div className="text-sm text-muted-foreground">Diện tích 59 - 60 m²</div>
               </div>
               <div className="text-center p-4 bg-muted/30 rounded-xl">
                 <div className="text-4xl font-black text-primary mb-2">280</div>
                 <div className="font-bold text-foreground">Căn hộ 3 PN</div>
-                <div className="text-sm text-muted-foreground">Diện tích 68-72.7 m2</div>
+                <div className="text-sm text-muted-foreground">Diện tích 69 - 73 m²</div>
               </div>
             </div>
             <p className="mt-6 text-center text-muted-foreground">
@@ -238,7 +238,7 @@ const About = () => {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-foreground mb-6">
-              Đồng Hành Cùng <span className="gradient-text">Ước Mơ</span> Của
+              Đồng Hành Cùng <span className="text-[#ca8a04]">Ước Mơ</span> Của
               Bạn
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-2xl mx-auto">

@@ -41,7 +41,7 @@ const HeroSection = () => {
           <div className="flex flex-col gap-2 sm:gap-3 text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-6 sm:mb-8 animate-fade-in tracking-tight break-words">
             <span className="leading-tight">KHỞI ĐẦU HẠNH PHÚC</span>
             <div className="flex items-center gap-3">
-              <span className="text-[#F6CA36]">TỪ&nbsp; TỔ ẤM</span>
+              <span className="text-[#ca8a04]">TỪ&nbsp; TỔ ẤM</span>
               <span className="leading-tight">CỦA BẠN</span>
             </div>
           </div>

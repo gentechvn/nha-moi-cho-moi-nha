@@ -64,19 +64,7 @@ const ApartmentDetail = () => {
       description:
         "Căn hộ nhỏ gọn, thiết kế thông minh tối ưu hóa không gian sống. Phù hợp cho cá nhân độc thân hoặc gia đình trẻ mới bắt đầu. Bố cục thông thoáng, đầy đủ công năng sinh hoạt cơ bản.",
       images: [
-        projectTowers,
-        apartmentInterior1,
-        apartmentInterior2,
-        projectFacade,
         apartmentImage1,
-        apartmentImage2,
-        apartmentImage3,
-        apartmentImage4,
-        apartmentImage5,
-        apartmentImage6,
-        apartmentImage7,
-        apartmentImage8,
-        apartmentImage9,
       ],
       floorPlan: floorplan25TowerA,
     },
@@ -93,10 +81,7 @@ const ApartmentDetail = () => {
       description:
         "Lựa chọn phổ biến và được ưa chuộng nhất tại dự án. Không gian sống rộng rãi, thoải mái cho gia đình nhỏ 3-4 người. Thiết kế 2 phòng ngủ riêng biệt đảm bảo sự riêng tư và tiện nghi.",
       images: [
-        projectFacade,
-        apartmentInterior4,
-        apartmentInterior8,
-        projectTowers,
+        apartmentImage2
       ],
       floorPlan: floorplan615TowerA,
     },
@@ -113,10 +98,13 @@ const ApartmentDetail = () => {
       description:
         "Không gian sống rộng rãi và thoải mái nhất, lý tưởng cho gia đình đông thành viên hoặc gia đình nhiều thế hệ. Thiết kế 3 phòng ngủ độc lập, phòng khách rộng tạo không gian sinh hoạt chung ấm cúng.",
       images: [
-        projectAerial,
-        apartmentInterior1,
-        apartmentInterior2,
-        apartmentInterior8,
+        apartmentImage3,
+        apartmentImage4,
+        apartmentImage5,
+        apartmentImage6,
+        apartmentImage7,
+        apartmentImage8,
+        apartmentImage9,
       ],
       floorPlan: floorplan25TowerB,
     },
@@ -368,7 +356,7 @@ const ApartmentDetail = () => {
                       <TrendingDown className="w-5 h-5 text-primary mt-0.5" />
                       <p>
                         <strong className="text-foreground">
-                          Giá rẻ hơn 3-4 lần
+                          Giá rẻ hơn 2 lần
                         </strong>{" "}
                         so với nhà ở thương mại cùng khu vực
                       </p>

@@ -250,8 +250,8 @@ const FAQ = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             {faqs.map((category, idx) => (
               <Card key={idx} className="p-8 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-l-primary">
-                <h2 className="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
-                  <span className="w-1 h-8 bg-primary rounded-full"></span>
+                <h2 className="text-2xl font-bold text-[#ca8a04] mb-6 flex items-center gap-2">
+                  <span className="w-1 h-8 bg-[#ca8a04] rounded-full"></span>
                   {category.category}
                 </h2>
                 <Accordion type="single" collapsible className="w-full">
