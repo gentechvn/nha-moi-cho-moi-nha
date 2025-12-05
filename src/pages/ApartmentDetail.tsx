@@ -74,7 +74,7 @@ const ApartmentDetail = () => {
       area: "59-60m²",
       units: 252,
       bedrooms: 2,
-      bathrooms: 2,
+      bathrooms: 1,
       price: "16,5 - 17,5 triệu/m²",
       totalPrice: "973,5 triệu - 1,05 tỷ",
       layout: "2 phòng ngủ, 1 phòng khách, 1 bếp, 1 WC",
