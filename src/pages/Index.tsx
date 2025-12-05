@@ -279,7 +279,7 @@ const Index = () => {
           </div>
 
           {/* Enhanced trust indicators */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
             {[
               { icon: MapPin, text: "50+ Dự án trên toàn quốc" },
               { icon: Calendar, text: "Bàn giao đúng tiến độ" },
@@ -295,7 +295,7 @@ const Index = () => {
                 </span>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 

@@ -19,7 +19,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Nhà Ở Xã Hội"
-                className="h-full w-auto object-contain scale-[1.5]"
+                className="h-full w-auto object-contain "
               />
             </div>
             <p className="text-sm text-primary-foreground/80 mb-4">
@@ -113,7 +113,7 @@ const Footer = () => {
               <li className="flex items-center space-x-2 text-sm">
                 <Mail className="w-5 h-5 flex-shrink-0 text-secondary" />
                 <span className="text-primary-foreground/80">
-                  info@donghoiproject.vn
+                  nhaoxahoidonghoi@gmail.com
                 </span>
               </li>
             </ul>

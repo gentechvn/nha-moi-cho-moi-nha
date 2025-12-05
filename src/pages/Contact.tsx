@@ -24,7 +24,7 @@ const Contact = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-        
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-black mb-4">
@@ -52,7 +52,7 @@ const Contact = () => {
                   <Mail className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Email</h3>
-                <a href="mailto:info@donghoiproject.vn" className="block text-primary font-semibold hover:underline mb-1">info@donghoiproject.vn</a>
+                <a href="mailto:nhaoxahoidonghoi@gmail.com" className="block text-primary font-semibold hover:underline mb-1">nhaoxahoidonghoi@gmail.com</a>
               </CardContent>
             </Card>
 
@@ -92,7 +92,7 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="space-y-6">
                   <div className="p-4 rounded-xl bg-gradient-to-br from-primary/5 to-transparent hover:from-primary/10 transition-colors">
                     <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
@@ -101,10 +101,10 @@ const Contact = () => {
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       📞 Hotline: <a href="tel:02323831869" className="text-primary hover:underline font-semibold">0232 3831 869</a><br />
-                      📧 Email: <a href="mailto:info@donghoiproject.vn" className="text-primary hover:underline font-semibold">info@donghoiproject.vn</a>
+                      📧 Email: <a href="mailto:nhaoxahoidonghoi@gmail.com" className="text-primary hover:underline font-semibold">nhaoxahoidonghoi@gmail.com</a>
                     </p>
                   </div>
-                  
+
                   <div className="p-4 rounded-xl bg-gradient-to-br from-accent/5 to-transparent hover:from-accent/10 transition-colors">
                     <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-accent" />
@@ -112,10 +112,10 @@ const Contact = () => {
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       📞 Hotline: <a href="tel:02323831869" className="text-primary hover:underline font-semibold">0232 3831 869</a><br />
-                      📧 Email: <a href="mailto:info@donghoiproject.vn" className="text-primary hover:underline font-semibold">info@donghoiproject.vn</a>
+                      📧 Email: <a href="mailto:nhaoxahoidonghoi@gmail.com" className="text-primary hover:underline font-semibold">nhaoxahoidonghoi@gmail.com</a>
                     </p>
                   </div>
-                  
+
                   <div className="p-4 rounded-xl bg-gradient-to-br from-primary/5 to-transparent hover:from-primary/10 transition-colors">
                     <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-primary" />
@@ -123,7 +123,7 @@ const Contact = () => {
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       📞 Hotline: <a href="tel:02323831869" className="text-primary hover:underline font-semibold">0232 3831 869</a><br />
-                      📧 Email: <a href="mailto:info@donghoiproject.vn" className="text-primary hover:underline font-semibold">info@donghoiproject.vn</a>
+                      📧 Email: <a href="mailto:nhaoxahoidonghoi@gmail.com" className="text-primary hover:underline font-semibold">nhaoxahoidonghoi@gmail.com</a>
                     </p>
                   </div>
                 </div>
@@ -153,13 +153,13 @@ const Contact = () => {
       <section className="relative py-20 overflow-hidden bg-gradient-to-b from-background to-muted/30">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-        
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary to-primary/80 p-12 text-center shadow-2xl">
             <div className="absolute inset-0 bg-grid-white/10" />
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
-            
+
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-black text-primary-foreground mb-4">
                 Sẵn sàng tìm ngôi nhà mơ ước?
