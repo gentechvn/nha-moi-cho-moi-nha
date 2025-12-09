@@ -20,6 +20,9 @@ import {
   Bed,
   Calendar,
   TrendingDown,
+  Sofa,
+  ChefHat,
+  Droplet,
 } from "lucide-react";
 import floorplan25TowerA from "@/assets/z7222428594440_60c5ddd4181bbda03e5aadfef28774da.jpg";
 import floorplan615TowerA from "@/assets/z7222428596061_08a783bf5115c6101c4c3a3fd6d01f15.jpg";
@@ -57,6 +60,9 @@ const ApartmentDetail = () => {
       area: "35m²",
       units: 28,
       bedrooms: 1,
+      livingRooms: 1,
+      kitchens: 1,
+      toilets: 1,
       bathrooms: 1,
       price: "16,5 - 17,5 triệu/m²",
       totalPrice: "577,5 - 612,5 triệu",
@@ -74,6 +80,9 @@ const ApartmentDetail = () => {
       area: "59-60m²",
       units: 252,
       bedrooms: 2,
+      livingRooms: 1,
+      kitchens: 1,
+      toilets: 1,
       bathrooms: 1,
       price: "16,5 - 17,5 triệu/m²",
       totalPrice: "973,5 triệu - 1,05 tỷ",
@@ -91,6 +100,9 @@ const ApartmentDetail = () => {
       area: "69-73m²",
       units: 280,
       bedrooms: 3,
+      livingRooms: 1,
+      kitchens: 1,
+      toilets: 2,
       bathrooms: 2,
       price: "16,5 - 17,5 triệu/m²",
       totalPrice: "1,14 - 1,28 tỷ",
@@ -154,8 +166,8 @@ const ApartmentDetail = () => {
         type === "1"
           ? "115 - 123 triệu"
           : type === "2"
-          ? "195 - 210 triệu"
-          : "228 - 256 triệu",
+            ? "195 - 210 triệu"
+            : "228 - 256 triệu",
     },
     {
       stage: "Đợt 2",
@@ -165,8 +177,8 @@ const ApartmentDetail = () => {
         type === "1"
           ? "173 - 184 triệu"
           : type === "2"
-          ? "292 - 315 triệu"
-          : "342 - 384 triệu",
+            ? "292 - 315 triệu"
+            : "342 - 384 triệu",
     },
     {
       stage: "Đợt 3",
@@ -176,8 +188,8 @@ const ApartmentDetail = () => {
         type === "1"
           ? "173 - 184 triệu"
           : type === "2"
-          ? "292 - 315 triệu"
-          : "342 - 384 triệu",
+            ? "292 - 315 triệu"
+            : "342 - 384 triệu",
     },
     {
       stage: "Đợt 4",
@@ -187,8 +199,8 @@ const ApartmentDetail = () => {
         type === "1"
           ? "115 - 123 triệu"
           : type === "2"
-          ? "195 - 210 triệu"
-          : "228 - 256 triệu",
+            ? "195 - 210 triệu"
+            : "228 - 256 triệu",
     },
   ];
 
@@ -289,7 +301,7 @@ const ApartmentDetail = () => {
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                 <div className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
                   <Maximize2 className="w-5 h-5 text-primary" />
                   <div>
@@ -309,20 +321,29 @@ const ApartmentDetail = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
-                  <Bath className="w-5 h-5 text-primary" />
+                  <Sofa className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="text-xs text-muted-foreground">Phòng tắm</p>
+                    <p className="text-xs text-muted-foreground">Phòng khách</p>
                     <p className="font-bold text-foreground">
-                      {apartment.bathrooms}
+                      {apartment.livingRooms}
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
-                  <Home className="w-5 h-5 text-primary" />
+                  <ChefHat className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="text-xs text-muted-foreground">Còn lại</p>
+                    <p className="text-xs text-muted-foreground">Bếp</p>
                     <p className="font-bold text-foreground">
-                      {apartment.units} căn
+                      {apartment.kitchens}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+                  <Droplet className="w-5 h-5 text-primary" />
+                  <div>
+                    <p className="text-xs text-muted-foreground">WC</p>
+                    <p className="font-bold text-foreground">
+                      {apartment.toilets}
                     </p>
                   </div>
                 </div>
@@ -391,11 +412,10 @@ const ApartmentDetail = () => {
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
-                  className={`mx-3 relative min-w-[80px] min-h-[80px] w-[80px] h-[80px] flex-shrink-0 rounded-lg overflow-hidden transition-all ${
-                    selectedImage === index
-                      ? "ring-4 ring-primary shadow-lg scale-105"
-                      : "opacity-70 hover:opacity-100"
-                  }`}
+                  className={`mx-3 relative min-w-[80px] min-h-[80px] w-[80px] h-[80px] flex-shrink-0 rounded-lg overflow-hidden transition-all ${selectedImage === index
+                    ? "ring-4 ring-primary shadow-lg scale-105"
+                    : "opacity-70 hover:opacity-100"
+                    }`}
                 >
                   <img
                     src={image}
