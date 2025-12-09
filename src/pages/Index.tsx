@@ -32,7 +32,7 @@ const Index = () => {
   const featuredProjects = [
     {
       id: 1,
-      title: "Căn hộ 1 phòng ngủ - Dự án Đồng Hới",
+      title: "Căn hộ 1 phòng ngủ",
       location: "Phường Đồng Hới, TP. Đồng Hới, Quảng Bình",
       image: oneBedroomApartment,
       units: 28,
@@ -42,7 +42,7 @@ const Index = () => {
     },
     {
       id: 2,
-      title: "Căn hộ 2 phòng ngủ - Dự án Đồng Hới",
+      title: "Căn hộ 2 phòng ngủ",
       location: "Phường Đồng Hới, TP. Đồng Hới, Quảng Bình",
       image: twoBedroomApartment,
       units: 252,
@@ -52,7 +52,7 @@ const Index = () => {
     },
     {
       id: 3,
-      title: "Căn hộ 3 phòng ngủ - Dự án Đồng Hới",
+      title: "Căn hộ 3 phòng ngủ",
       location: "Phường Đồng Hới, TP. Đồng Hới, Quảng Bình",
       image: threeBedroomApartment,
       units: 280,
