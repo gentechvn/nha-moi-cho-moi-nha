@@ -42,7 +42,7 @@ const Contact = () => {
                   <Phone className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Hotline</h3>
-                <a href="tel:02323831869" className="block text-primary font-semibold hover:underline mb-1 text-lg">0232 3831 869</a>
+                <a href="tel:02323831869" className="block text-primary font-semibold hover:underline mb-1 text-lg">0982 437 434</a>
               </CardContent>
             </Card>
 
@@ -52,7 +52,7 @@ const Contact = () => {
                   <Mail className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Email</h3>
-                <a href="mailto:nhaoxahoidonghoi@gmail.com" className="block text-primary font-semibold hover:underline mb-1">nhaoxahoidonghoi@gmail.com</a>
+                <a href="mailto:duannhaoxahoidonghoi@gmail.com" className="block text-primary font-semibold hover:underline mb-1">duannhaoxahoidonghoi@gmail.com</a>
               </CardContent>
             </Card>
 
@@ -62,7 +62,7 @@ const Contact = () => {
                   <MessageCircle className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Zalo</h3>
-                <a href="https://zalo.me/0232383186" target="_blank" rel="noopener noreferrer" className="block text-primary font-semibold hover:underline mb-1">0232 3831 869</a>
+                <a href="https://zalo.me/0232383186" target="_blank" rel="noopener noreferrer" className="block text-primary font-semibold hover:underline mb-1">0982 437 434</a>
               </CardContent>
             </Card>
 
@@ -100,8 +100,8 @@ const Contact = () => {
                       Phòng kinh doanh
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      📞 Hotline: <a href="tel:02323831869" className="text-primary hover:underline font-semibold">0232 3831 869</a><br />
-                      📧 Email: <a href="mailto:nhaoxahoidonghoi@gmail.com" className="text-primary hover:underline font-semibold">nhaoxahoidonghoi@gmail.com</a>
+                      📞 Hotline: <a href="tel:02323831869" className="text-primary hover:underline font-semibold">0982 437 434</a><br />
+                      📧 Email: <a href="mailto:duannhaoxahoidonghoi@gmail.com" className="text-primary hover:underline font-semibold">duannhaoxahoidonghoi@gmail.com</a>
                     </p>
                   </div>
 
@@ -111,8 +111,8 @@ const Contact = () => {
                       Phòng chăm sóc khách hàng
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      📞 Hotline: <a href="tel:02323831869" className="text-primary hover:underline font-semibold">0232 3831 869</a><br />
-                      📧 Email: <a href="mailto:nhaoxahoidonghoi@gmail.com" className="text-primary hover:underline font-semibold">nhaoxahoidonghoi@gmail.com</a>
+                      📞 Hotline: <a href="tel:02323831869" className="text-primary hover:underline font-semibold">0982 437 434</a><br />
+                      📧 Email: <a href="mailto:duannhaoxahoidonghoi@gmail.com" className="text-primary hover:underline font-semibold">duannhaoxahoidonghoi@gmail.com</a>
                     </p>
                   </div>
 
@@ -122,8 +122,8 @@ const Contact = () => {
                       Phòng pháp lý
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      📞 Hotline: <a href="tel:02323831869" className="text-primary hover:underline font-semibold">0232 3831 869</a><br />
-                      📧 Email: <a href="mailto:nhaoxahoidonghoi@gmail.com" className="text-primary hover:underline font-semibold">nhaoxahoidonghoi@gmail.com</a>
+                      📞 Hotline: <a href="tel:02323831869" className="text-primary hover:underline font-semibold">0982 437 434</a><br />
+                      📧 Email: <a href="mailto:duannhaoxahoidonghoi@gmail.com" className="text-primary hover:underline font-semibold">duannhaoxahoidonghoi@gmail.com</a>
                     </p>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ const Contact = () => {
                 </Button>
                 <Button size="lg" variant="outline" className="gap-2 font-bold bg-white/10 border-white/30 text-primary-foreground hover:bg-white/20 shadow-lg">
                   <Phone className="w-5 h-5" />
-                  Gọi ngay: 0232 3831 869
+                  Gọi ngay: 0982 437 434
                 </Button>
               </div>
             </div>

@@ -97,55 +97,6 @@ export const newsArticles: NewsArticle[] = [
     tags: ["Chính sách", "Nhà ở xã hội", "2024"],
   },
   {
-    id: 2,
-    slug: "du-an-green-city-dat-tien-do-vuot-ke-hoach",
-    title: "Dự án Green City đạt tiến độ vượt kế hoạch",
-    category: "Dự án",
-    date: "05/11/2025",
-    author: "Duy Sơn",
-    readTime: "4 phút đọc",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-    excerpt:
-      "Sau 18 tháng thi công, dự án Green City đã hoàn thành 85% khối lượng và dự kiến bàn giao vào quý 2/2024...",
-    content: `
-      <h5>Tổng quan dự án</h5>
-      <p>Dự án Green City, một trong những dự án nhà ở xã hội quy mô lớn tại Hà Nội, đã đạt được những tiến độ đáng kể sau 18 tháng thi công. Với tổng vốn đầu tư hơn 500 tỷ đồng, dự án đang trên đà hoàn thành sớm hơn kế hoạch ban đầu.</p>
-
-      <h5>Tiến độ thi công</h5>
-      <p>Hiện tại, dự án đã hoàn thành 85% khối lượng công việc, vượt 5% so với kế hoạch ban đầu. Các hạng mục chính đã hoàn thành bao gồm:</p>
-      
-      <ul>
-        <li>Hoàn thiện 100% phần móng và khung kết cấu</li>
-        <li>Hoàn thiện 90% phần thô cho 3 tòa nhà</li>
-        <li>Đang thi công phần hoàn thiện cho tòa A và tòa B</li>
-        <li>Hoàn thành 70% hệ thống hạ tầng kỹ thuật</li>
-        <li>Bắt đầu thi công các tiện ích nội khu</li>
-      </ul>
-
-      <h5>Chất lượng thi công</h5>
-      <p>Ban quản lý dự án đã đảm bảo chất lượng thi công đạt tiêu chuẩn cao nhất. Tất cả các vật liệu sử dụng đều được kiểm tra kỹ lưỡng và đạt chứng nhận chất lượng. Hệ thống giám sát được thực hiện 24/7 để đảm bảo an toàn lao động và chất lượng công trình.</p>
-
-      <h5>Kế hoạch bàn giao</h5>
-      <p>Dự kiến, dự án sẽ bàn giao đợt 1 vào quý 2/2024 với 120 căn hộ. Đợt 2 sẽ được bàn giao vào quý 3/2024 với 180 căn hộ còn lại. Khách hàng đã đặt cọc sẽ được ưu tiên lựa chọn căn hộ trước.</p>
-
-      <h5>Tiện ích dự án</h5>
-      <p>Dự án Green City được trang bị đầy đủ tiện ích hiện đại:</p>
-      <ul>
-        <li>Hồ bơi ngoài trời và trong nhà</li>
-        <li>Khu vui chơi trẻ em</li>
-        <li>Phòng gym và yoga</li>
-        <li>Khu BBQ và tổ chức sự kiện</li>
-        <li>Siêu thị mini và cửa hàng tiện lợi</li>
-        <li>Bãi đỗ xe rộng rãi</li>
-      </ul>
-
-      <h5>Cam kết của chủ đầu tư</h5>
-      <p>Chủ đầu tư cam kết sẽ hoàn thành dự án đúng tiến độ và chất lượng như đã cam kết. Khách hàng có thể yên tâm về tính pháp lý và chất lượng của dự án.</p>
-    `,
-    tags: ["Dự án", "Green City", "Tiến độ", "Bàn giao"],
-  },
-  {
     id: 3,
     slug: "huong-dan-thu-tuc-dang-ky-mua-nha-o-xa-hoi",
     title: "Hướng dẫn thủ tục đăng ký mua nhà ở xã hội",
@@ -229,57 +180,36 @@ export const newsArticles: NewsArticle[] = [
   },
   {
     id: 4,
-    slug: "sunrise-tower-chinh-thuc-mo-ban-dot-1",
-    title: "Sunrise Tower chính thức mở bán đợt 1",
+    slug: "khoi-cong-du-an-nha-o-xa-hoi-trung-tam-dong-hoi",
+    title: "Khởi công Dự án Khu nhà ở xã hội Trung tâm Đồng Hới",
     category: "Dự án",
-    date: "15/11/2025",
+    date: "19/12/2025",
     author: "Duy Sơn",
-    readTime: "3 phút đọc",
+    readTime: "4 phút đọc",
     image:
-      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&q=80&w=1200",
+      "https://bcp.cdnchinhphu.vn/334894974524682240/2025/12/19/ncdung-17661072181711260531265.jpg",
     excerpt:
-      "Dự án Sunrise Tower công bố chính thức mở bán 120 căn hộ với nhiều ưu đãi hấp dẫn cho khách hàng đăng ký sớm...",
+      "Phó Thủ tướng Nguyễn Chí Dũng dự lễ khởi công Dự án Khu nhà ở xã hội Trung tâm Đồng Hới, góp phần giải quyết nhu cầu nhà ở cho người thu nhập thấp và công nhân trên địa bàn tỉnh Quảng Bình.",
     content: `
-      <h5>Thông báo mở bán</h5>
-      <p>Chủ đầu tư dự án Sunrise Tower chính thức thông báo mở bán đợt 1 với 120 căn hộ vào ngày 08/01/2024. Đây là cơ hội tuyệt vời cho những khách hàng đang tìm kiếm căn hộ nhà ở xã hội chất lượng cao tại vị trí đắc địa.</p>
+    <h5>Lễ khởi công dự án</h5>
+    <p>Ngày 19/12, tại thành phố Đồng Hới (tỉnh Quảng Bình), Phó Thủ tướng Chính phủ Nguyễn Chí Dũng đã tham dự lễ khởi công Dự án Khu nhà ở xã hội Trung tâm Đồng Hới. Đây là một trong những dự án trọng điểm nhằm cụ thể hóa chủ trương của Chính phủ về phát triển nhà ở xã hội cho người thu nhập thấp và công nhân khu công nghiệp.</p>
 
-      <h5>Thông tin dự án</h5>
-      <p>Sunrise Tower là dự án nhà ở xã hội cao cấp với quy mô 450 căn hộ, tọa lạc tại vị trí trung tâm, gần các trường học, bệnh viện và trung tâm thương mại. Dự án được thiết kế hiện đại với đầy đủ tiện ích.</p>
+    <h5>Mục tiêu và ý nghĩa</h5>
+    <p>Dự án được triển khai với mục tiêu cung cấp quỹ nhà ở xã hội đồng bộ, hiện đại, góp phần cải thiện điều kiện sống cho người dân, bảo đảm an sinh xã hội và thúc đẩy phát triển kinh tế – xã hội của địa phương. Việc đầu tư xây dựng nhà ở xã hội tại khu vực trung tâm thành phố Đồng Hới được đánh giá là cần thiết, phù hợp với định hướng quy hoạch đô thị.</p>
 
-      <h5>Ưu đãi đặc biệt</h5>
-      <p>Khách hàng đăng ký trong tháng 1/2024 sẽ được hưởng các ưu đãi sau:</p>
-      <ul>
-        <li>Giảm 5% giá bán cho 50 khách hàng đầu tiên</li>
-        <li>Miễn phí 2 năm phí quản lý</li>
-        <li>Tặng gói nội thất cơ bản trị giá 50 triệu đồng</li>
-        <li>Miễn phí phí bảo trì năm đầu tiên</li>
-      </ul>
+    <h5>Quy mô dự án</h5>
+    <p>Khu nhà ở xã hội Trung tâm Đồng Hới được xây dựng trên diện tích quy hoạch đồng bộ, bao gồm các khối nhà ở cao tầng cùng hệ thống hạ tầng kỹ thuật và hạ tầng xã hội như: giao thông nội khu, cây xanh, khu sinh hoạt cộng đồng và các tiện ích thiết yếu phục vụ cư dân.</p>
 
-      <h5>Loại căn hộ</h5>
-      <p>Đợt 1 mở bán các loại căn hộ sau:</p>
-      <ul>
-        <li><strong>1 phòng ngủ:</strong> 35m² - Giá từ 577,5 triệu đồng</li>
-        <li><strong>2 phòng ngủ:</strong> 59-60m² - Giá từ 973,5 triệu đồng</li>
-        <li><strong>3 phòng ngủ:</strong> 75m² - Giá từ 1,237,5 triệu đồng</li>
-      </ul>
+    <h5>Phát biểu chỉ đạo</h5>
+    <p>Phát biểu tại buổi lễ, Phó Thủ tướng Nguyễn Chí Dũng nhấn mạnh vai trò quan trọng của nhà ở xã hội trong chiến lược phát triển bền vững. Phó Thủ tướng đề nghị chủ đầu tư tập trung nguồn lực, bảo đảm tiến độ, chất lượng công trình, đồng thời tuân thủ đầy đủ các quy định pháp luật về xây dựng, đất đai và môi trường.</p>
 
-      <h5>Cách thức đăng ký</h5>
-      <p>Khách hàng có thể đăng ký theo các cách sau:</p>
-      <ol>
-        <li>Đăng ký trực tuyến trên website của dự án</li>
-        <li>Đến trực tiếp văn phòng bán hàng tại dự án</li>
-        <li>Gọi hotline để được tư vấn và đăng ký</li>
-      </ol>
+    <h5>Cam kết của chủ đầu tư</h5>
+    <p>Đại diện chủ đầu tư cam kết triển khai dự án đúng tiến độ, bảo đảm chất lượng, an toàn lao động và sớm đưa công trình vào sử dụng, đáp ứng kỳ vọng của chính quyền địa phương và người dân. Dự án được kỳ vọng sẽ trở thành điểm nhấn trong phát triển nhà ở xã hội tại tỉnh Quảng Bình.</p>
 
-      <h5>Lịch trình</h5>
-      <ul>
-        <li><strong>Ngày 08/01:</strong> Mở đăng ký online</li>
-        <li><strong>Ngày 15/01:</strong> Mở văn phòng bán hàng</li>
-        <li><strong>Ngày 20/01:</strong> Sự kiện ra mắt dự án</li>
-        <li><strong>Ngày 25/01:</strong> Bắt đầu ký hợp đồng</li>
-      </ul>
-    `,
-    tags: ["Dự án", "Sunrise Tower", "Mở bán", "Ưu đãi"],
+    <h5>Định hướng thời gian tới</h5>
+    <p>Trong thời gian tới, tỉnh Quảng Bình sẽ tiếp tục rà soát, bổ sung quỹ đất và tạo điều kiện thuận lợi để thu hút các doanh nghiệp tham gia đầu tư phát triển nhà ở xã hội, góp phần hiện thực hóa mục tiêu phát triển đô thị bền vững và bao trùm.</p>
+  `,
+    tags: ["Dự án", "Nhà ở xã hội", "Đồng Hới", "Quảng Bình", "Khởi công"],
   },
   {
     id: 5,
@@ -359,77 +289,6 @@ export const newsArticles: NewsArticle[] = [
       <p>Việc chọn mua nhà ở xã hội cần được cân nhắc kỹ lưỡng. Hãy dành thời gian nghiên cứu, so sánh và tham khảo ý kiến để đưa ra quyết định tốt nhất cho bạn và gia đình.</p>
     `,
     tags: ["Tư vấn", "Kinh nghiệm", "Chọn mua", "Nhà ở"],
-  },
-  {
-    id: 6,
-    slug: "cac-tien-ich-noi-bat-tai-khu-do-thi-green-city",
-    title: "Các tiện ích nổi bật tại khu đô thị Green City",
-    category: "Tiện ích",
-    date: "25/11/2025",
-    author: "Duy Sơn",
-    readTime: "5 phút đọc",
-    image:
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
-    excerpt:
-      "Khám phá hệ thống tiện ích đẳng cấp tại Green City: hồ bơi, công viên, trường học, bệnh viện...",
-    content: `
-      <h5>Giới thiệu</h5>
-      <p>Khu đô thị Green City được thiết kế với hệ thống tiện ích đầy đủ và hiện đại, đáp ứng mọi nhu cầu sinh hoạt của cư dân. Hãy cùng khám phá những tiện ích nổi bật tại đây.</p>
-
-      <h5>1. Hệ thống giáo dục</h5>
-      <p>Green City có hệ thống giáo dục hoàn chỉnh:</p>
-      <ul>
-        <li>Trường mầm non quốc tế trong khu</li>
-        <li>Trường tiểu học và THCS cách dự án 500m</li>
-        <li>Thư viện cộng đồng với không gian đọc sách rộng rãi</li>
-        <li>Khu vui chơi và học tập cho trẻ em</li>
-      </ul>
-
-      <h5>2. Y tế và chăm sóc sức khỏe</h5>
-      <ul>
-        <li>Trạm y tế 24/7 trong khu</li>
-        <li>Phòng khám đa khoa cách 1km</li>
-        <li>Bệnh viện đa khoa quốc tế cách 3km</li>
-        <li>Phòng gym và yoga miễn phí</li>
-      </ul>
-
-      <h5>3. Thương mại và mua sắm</h5>
-      <ul>
-        <li>Siêu thị mini trong khu</li>
-        <li>Chợ truyền thống cách 200m</li>
-        <li>Trung tâm thương mại cách 1.5km</li>
-        <li>Nhiều cửa hàng tiện lợi xung quanh</li>
-      </ul>
-
-      <h5>4. Giải trí và thể thao</h5>
-      <ul>
-        <li>Hồ bơi ngoài trời và trong nhà</li>
-        <li>Sân tennis và cầu lông</li>
-        <li>Khu vui chơi trẻ em</li>
-        <li>Khu BBQ và tổ chức sự kiện</li>
-        <li>Công viên cây xanh rộng 2ha</li>
-      </ul>
-
-      <h5>5. Giao thông và đỗ xe</h5>
-      <ul>
-        <li>Hầm đỗ xe rộng rãi, an toàn</li>
-        <li>Bãi đỗ xe ngoài trời</li>
-        <li>Gần các tuyến xe bus chính</li>
-        <li>Thuận tiện di chuyển đến trung tâm thành phố</li>
-      </ul>
-
-      <h5>6. An ninh và quản lý</h5>
-      <ul>
-        <li>Hệ thống bảo vệ 24/7</li>
-        <li>Camera an ninh toàn khu</li>
-        <li>Thẻ từ ra vào</li>
-        <li>Ban quản lý chuyên nghiệp</li>
-      </ul>
-
-      <h5>Kết luận</h5>
-      <p>Với hệ thống tiện ích đầy đủ và hiện đại, Green City mang đến cho cư dân một cuộc sống tiện nghi và thoải mái. Đây là lựa chọn lý tưởng cho những gia đình muốn tận hưởng cuộc sống chất lượng cao.</p>
-    `,
-    tags: ["Tiện ích", "Green City", "Đô thị", "Cuộc sống"],
   },
 ];
 

@@ -50,7 +50,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-3">
             <Button variant="outline" size="sm" className="gap-2 border-2 hover:border-primary">
               <Phone className="w-4 h-4" />
-              <span className="font-bold">0232 3831 869</span>
+              <span className="font-bold">0982 437 434</span>
             </Button>
             <Link to="/register">
               <Button variant="premium" size="sm" className="gap-2 shadow-2xl">
@@ -91,7 +91,7 @@ const Header = () => {
             <div className="mt-4 space-y-2 px-4">
               <Button variant="outline" size="sm" className="w-full gap-2">
                 <Phone className="w-4 h-4" />
-                <span>0232 3831 869</span>
+                <span>0982 437 434</span>
               </Button>
               <Link to="/register" className="block" onClick={() => setIsOpen(false)}>
                 <Button size="sm" className="w-full bg-gradient-primary">

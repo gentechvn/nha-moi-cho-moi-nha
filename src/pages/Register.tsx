@@ -233,7 +233,7 @@ const Register = () => {
                     <div>
                       <p className="font-semibold">Email</p>
                       <p className="text-sm text-muted-foreground">
-                        nhaoxahoidonghoi@gmail.com
+                        duannhaoxahoidonghoi@gmail.com
                       </p>
                     </div>
                   </div>
