@@ -74,6 +74,17 @@ const Index = () => {
       category: "Chính sách",
     },
     {
+      id: 4,
+      slug: "khoi-cong-du-an-nha-o-xa-hoi-trung-tam-dong-hoi",
+      title: "Khởi công Dự án Khu nhà ở xã hội Trung tâm Đồng Hới",
+      category: "Dự án",
+      date: "19/12/2025",
+      image:
+        "https://bcp.cdnchinhphu.vn/334894974524682240/2025/12/19/ncdung-17661072181711260531265.jpg",
+      excerpt:
+        "Phó Thủ tướng Nguyễn Chí Dũng dự lễ khởi công Dự án Khu nhà ở xã hội Trung tâm Đồng Hới, góp phần giải quyết nhu cầu nhà ở cho người thu nhập thấp và công nhân trên địa bàn tỉnh Quảng Bình.",
+    },
+    {
       id: 3,
       slug: "huong-dan-thu-tuc-dang-ky-mua-nha-o-xa-hoi",
       title: "Hướng dẫn thủ tục đăng ký mua nhà ở xã hội",
