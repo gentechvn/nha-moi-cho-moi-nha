@@ -39,9 +39,9 @@ const ProjectDetail = () => {
   // Mock data - trong thực tế sẽ fetch từ API
   const project = {
     id: 1,
-    title: "Khu đô thị Green City",
+    title: "Khu đô thị dự án Nhà ở Xã Hội",
     location:
-      "Số 123, Đường Nguyễn Văn Cừ, Phường Gia Thụy, Quận Long Biên, Hà Nội",
+      "",
     price: "1.2 tỷ",
     pricePerM2: "25 triệu",
     area: "55-75m²",
@@ -53,9 +53,9 @@ const ProjectDetail = () => {
     handover: "Quý 2/2025",
     legalStatus: "Đã có sổ đỏ, pháp lý đầy đủ",
     investor: "Công ty Cổ phần Đầu tư Phát triển Nhà",
-    constructor: "Công ty TNHH Xây dựng ABC",
+    constructor: "",
     description:
-      "Khu đô thị Green City là dự án nhà ở xã hội cao cấp với quy mô 450 căn hộ, tọa lạc tại vị trí đắc địa quận Long Biên. Dự án được thiết kế hiện đại, đầy đủ tiện ích phục vụ nhu cầu sinh hoạt của cư dân.",
+      "Dự án được thiết kế hiện đại, đầy đủ tiện ích phục vụ nhu cầu sinh hoạt của cư dân.",
     images: [
       projectNightView,
       projectOverview,

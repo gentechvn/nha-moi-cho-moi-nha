@@ -74,16 +74,6 @@ const Index = () => {
       category: "Chính sách",
     },
     {
-      id: 2,
-      slug: "du-an-green-city-dat-tien-do-vuot-ke-hoach",
-      title: "Dự án Green City đạt tiến độ vượt kế hoạch",
-      excerpt:
-        "Sau 18 tháng thi công, dự án Green City đã hoàn thành 85% khối lượng và dự kiến bàn giao vào quý 2/2024...",
-      image: projectOverview,
-      date: "12/01/2024",
-      category: "Dự án",
-    },
-    {
       id: 3,
       slug: "huong-dan-thu-tuc-dang-ky-mua-nha-o-xa-hoi",
       title: "Hướng dẫn thủ tục đăng ký mua nhà ở xã hội",
